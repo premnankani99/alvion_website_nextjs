@@ -56,7 +56,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 2. ABOUT SECTION */}
-        <section className="py-16 relative bg-[#f8fbff] border-b border-zinc-100">
+        <section className="py-20 relative bg-[#f8fbff] border-b border-zinc-100">
           <div className="container mx-auto px-6 md:px-12 relative z-10">
             <div className="max-w-[95%] mx-auto flex flex-col lg:flex-row items-center gap-16">
               <div className="lg:w-1/2">
@@ -79,7 +79,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 3. OUR SERVICES GRID */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-white">
           <div className="container mx-auto px-6 md:px-12">
             <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12">
               <h2 className="text-[42px] font-bold text-[#0d1b2a] mb-4">Our Services</h2>
@@ -101,7 +101,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 4. CASE STUDIES */}
-        <section className="py-16 bg-white border-t border-zinc-100 overflow-hidden">
+        <section className="py-20 bg-white border-t border-zinc-100 overflow-hidden">
           <div className="container mx-auto px-6 md:px-12">
             <div className="text-center mb-12"><h2 className="text-[42px] font-bold text-[#0d1b2a]">Case Studies</h2></div>
             <div className="relative max-w-[95%] mx-auto mb-10">

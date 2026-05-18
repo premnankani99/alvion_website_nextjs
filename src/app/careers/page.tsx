@@ -116,7 +116,7 @@ export default function CareersPage() {
       </section>
 
       {/* 3. CURRENT OPENINGS - PURE TEXT MINIMALIST */}
-      <section id="openings" className="py-24 bg-[#fcfdfe] scroll-mt-20">
+      <section id="openings" className="py-20 bg-[#fcfdfe] scroll-mt-20">
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <h3 className="text-[52px] font-bold text-[#0d1b2a] mb-4">Current Openings</h3>

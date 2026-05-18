@@ -7,7 +7,7 @@ export default function BlogsPage() {
   return (
     <>
       <div className="bg-[#f4f7fb] min-h-screen flex flex-col pt-32">
-        <main className="flex-grow flex flex-col items-center justify-center px-6 py-12">
+        <main className="flex-grow flex flex-col items-center justify-center px-6 py-20">
           {/* Section Title */}
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
