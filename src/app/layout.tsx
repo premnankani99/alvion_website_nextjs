@@ -13,12 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alvion Technologies | Best Web Development & SEO Company in Jaipur",
-  description: "Alvion Technologies is a top-rated IT company in Jaipur offering expert web development, mobile apps, software solutions, and digital marketing services.",
-  keywords: ["IT Company in Jaipur", "Web Development Company in Jaipur", "Software Company in Jaipur", "SEO Services Jaipur", "Best Digital Marketing Agency Jaipur"],
+  title: "Alvion Technologies | Top Appian & Software Development Company in Jaipur",
+  description: "Alvion Technologies provides expert Appian low-code solutions, Java backend, React, and mobile app development. The leading IT company in Jaipur for digital transformation.",
+  keywords: ["Appian development company Jaipur", "Low-code solutions", "Java backend development", "React Native app development", "IT company in Jaipur"],
   authors: [{ name: "Alvion Technologies" }],
   viewport: "width=device-width, initial-scale=1",
 };
+
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
@@ -30,7 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
