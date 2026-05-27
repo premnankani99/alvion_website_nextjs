@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function BlogsPage() {
@@ -71,13 +72,12 @@ export default function BlogsPage() {
                 A practical series breaking down real-world system architecture concepts — from databases and caching to scalability and distributed systems. Learn how modern applications are designed to handle millions of users.
               </p>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 md:px-8 py-3 md:py-3.5 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-bold rounded-full transition-all duration-300 text-[11px] md:text-xs shadow-md hover:shadow-[0_10px_20px_rgba(30,58,138,0.15)] uppercase tracking-wider"
+              <Link
+                href="/list-of-days"
+                className="inline-block px-6 md:px-8 py-3 md:py-3.5 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-bold rounded-full transition-all duration-300 text-[11px] md:text-xs shadow-md hover:shadow-[0_10px_20px_rgba(30,58,138,0.15)] uppercase tracking-wider hover:scale-105 active:scale-95"
               >
                 Read Series →
-              </motion.button>
+              </Link>
             </div>
           </motion.div>
 

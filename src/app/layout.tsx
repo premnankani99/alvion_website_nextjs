@@ -17,7 +17,14 @@ export const metadata: Metadata = {
   description: "Alvion Technologies provides expert Appian low-code solutions, Java backend, React, and mobile app development. The leading IT company in Jaipur for digital transformation.",
   keywords: ["Appian development company Jaipur", "Low-code solutions", "Java backend development", "React Native app development", "IT company in Jaipur"],
   authors: [{ name: "Alvion Technologies" }],
-  viewport: "width=device-width, initial-scale=1",
+  alternates: {
+    canonical: "https://alviontechnologies.com",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 import Navbar from "@/components/Navbar";

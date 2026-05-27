@@ -71,6 +71,7 @@ export default function Navbar() {
         <button 
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none"
+          aria-label="Toggle mobile menu"
         >
           <div className={`w-6 h-0.5 bg-zinc-800 transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
           <div className={`w-6 h-0.5 bg-zinc-800 transition-all ${isOpen ? "opacity-0" : ""}`} />
