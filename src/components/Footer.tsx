@@ -13,12 +13,12 @@ export default function Footer() {
           <div className="max-w-xs mx-auto md:mx-0 text-center md:text-left">
             <h4 className="text-[20px] font-bold mb-4 text-white">Follow us</h4>
             <div className="flex gap-4 text-xl">
-               <FaFacebookF className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" />
-               <FaInstagram className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" />
-               <FaLinkedinIn className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" />
-               <Globe className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" />
-               <FaGoogle className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" />
-               <span className="text-lg font-bold cursor-pointer hover:text-white/70 transition-all">💬</span>
+               <a href="#" aria-label="Facebook"><FaFacebookF className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" /></a>
+               <a href="#" aria-label="Instagram"><FaInstagram className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" /></a>
+               <a href="#" aria-label="LinkedIn"><FaLinkedinIn className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" /></a>
+               <a href="#" aria-label="Website"><Globe className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" /></a>
+               <a href="#" aria-label="Google"><FaGoogle className="w-5 h-5 cursor-pointer hover:text-white/70 transition-all" /></a>
+               <a href="#" aria-label="Chat"><span className="text-lg font-bold cursor-pointer hover:text-white/70 transition-all">💬</span></a>
             </div>
           </div>
 

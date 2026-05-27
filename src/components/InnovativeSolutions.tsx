@@ -36,6 +36,7 @@ export default function InnovativeSolutions() {
               src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=852,fit=crop/YNqMEWZ1PXT9OR5G/siteexample-3BMzBTWrZmF04ckF.png" 
               alt="Innovative Software Solutions Dashboard" 
               fill 
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               priority
             />
