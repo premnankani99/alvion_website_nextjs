@@ -1,0 +1,217 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
+import { MapPin, Clock, Briefcase, GraduationCap, ArrowLeft } from "lucide-react";
+
+export default function ReactNativeDeveloperPage() {
+  const responsibilities = [
+    { title: "Cross-Platform Development", desc: "Develop, test, and deploy robust mobile applications for both iOS and Android using the React Native framework." },
+    { title: "UI/UX Implementation", desc: "Translate UI/UX designs and wireframes into high-quality, reusable code and components, ensuring a consistent look and feel across platforms." },
+    { title: "API Integration", desc: "Integrate with back-end services and RESTful APIs to fetch, manage, and display data within the application." },
+    { title: "Performance Optimization", desc: "Diagnose and fix bugs, performance bottlenecks, and crashes to ensure the application runs smoothly and efficiently." },
+    { title: "Native Module Integration", desc: "Implement native modules and bridges when required to access device-specific features like the camera, GPS, and push notifications." },
+    { title: "Collaboration & Agile Practices", desc: "Actively participate in an Agile development process, including sprint planning, daily stand-ups, and code reviews to deliver features iteratively." },
+    { title: "App Deployment", desc: "Manage the application release process to the Apple App Store and Google Play Store, including handling updates and certificates." }
+  ];
+
+  const qualifications = [
+    "Bachelor’s degree in Computer Science, Information Technology, or a related field.",
+    "2-4 years of professional experience in mobile application development.",
+    "Strong proficiency in JavaScript (ES6+), and preferably TypeScript.",
+    "Hands-on experience with the React Native framework, its core principles, and its ecosystem.",
+    "Familiarity with state management libraries like Redux, Zustand, or MobX.",
+    "Experience with consuming RESTful APIs for data integration and knowledge of modern authorization mechanisms (e.g., JWT).",
+    "Familiarity with native build tools like Xcode, Gradle, and Android Studio.",
+    "Strong problem-solving skills and a keen eye for detail and UI/UX design."
+  ];
+
+  const preferredSkills = [
+    "Experience with automated testing suites for mobile applications, such as Jest or Detox.",
+    "A portfolio of published applications on the Apple App Store or Google Play Store.",
+    "Understanding of native mobile development (Swift/Objective-C for iOS or Java/Kotlin for Android).",
+    "Knowledge of CI/CD pipelines for mobile development."
+  ];
+
+  const perks = [
+    { title: "Competitive Salary", desc: "A competitive salary and comprehensive benefits package.", icon: "💰" },
+    { title: "Dynamic Environment", desc: "A dynamic and collaborative work environment that fosters innovation and growth.", icon: "🚀" },
+    { title: "Modern Technologies", desc: "Opportunities to work on exciting projects with the latest mobile technologies.", icon: "📱" },
+    { title: "Professional Support", desc: "Support for professional development and continuous learning.", icon: "📚" }
+  ];
+
+  return (
+    <>
+      <Navbar />
+      <div className="bg-white pt-20 min-h-screen flex flex-col text-[#0d1b2a]">
+        
+        {/* HERO BANNER */}
+        <section className="relative h-[280px] md:h-[380px] w-full flex items-center overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=2000"
+              alt="React Native Developer Banner"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-[#070b19]/80 z-10" />
+            <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none z-10" />
+          </div>
+
+          <div className="container mx-auto px-6 md:px-12 relative z-20 w-full">
+            <div className="max-w-6xl mx-auto">
+              <Link 
+                href="/careers" 
+                className="inline-flex items-center gap-2 text-zinc-400 hover:text-white mb-6 text-sm transition-colors"
+              >
+                <ArrowLeft size={16} /> Back to Careers
+              </Link>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight"
+              >
+                React Native Developer
+              </motion.h1>
+              <div className="flex flex-wrap gap-4 text-zinc-300 text-xs md:text-sm">
+                <span className="flex items-center gap-1.5"><MapPin size={16} className="text-[#3b82f6]" /> Jaipur, India</span>
+                <span className="flex items-center gap-1.5"><Briefcase size={16} className="text-[#3b82f6]" /> Full-Time</span>
+                <span className="flex items-center gap-1.5"><GraduationCap size={16} className="text-[#3b82f6]" /> 2-4 Years Exp</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* DETAILS SECTION */}
+        <section className="py-12 md:py-20 bg-[#fafbfc] flex-grow">
+          <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              
+              {/* Left Column (Job Details) */}
+              <div className="lg:col-span-2 space-y-12">
+                
+                {/* Job Overview */}
+                <div>
+                  <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Job Overview</h2>
+                  <p className="text-zinc-600 leading-relaxed font-normal text-sm md:text-base">
+                    Alvion Technologies is looking for a talented React Native Developer to design and develop high-performance cross-platform mobile applications. In this role, you will lead the creation of responsive mobile experiences for both iOS and Android platforms, ensuring smooth APIs integration, writing clean code, and optimizing app performance for our clients.
+                  </p>
+                </div>
+
+                {/* Key Responsibilities */}
+                <div>
+                  <h2 className="text-xl md:text-2xl font-bold text-black mb-6">Key Responsibilities</h2>
+                  <div className="space-y-6">
+                    {responsibilities.map((resp, i) => (
+                      <div key={i} className="flex gap-4">
+                        <div className="w-1.5 h-1.5 bg-[#1e3a8a] rounded-full mt-2.5 shrink-0" />
+                        <div>
+                          <h4 className="font-bold text-black text-base mb-1">{resp.title}</h4>
+                          <p className="text-zinc-500 text-sm leading-relaxed">{resp.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Required Qualifications */}
+                <div>
+                  <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Required Skills & Qualifications</h2>
+                  <ul className="space-y-3">
+                    {qualifications.map((qual, i) => (
+                      <li key={i} className="flex gap-3 text-zinc-600 text-sm md:text-base leading-relaxed">
+                        <span className="text-[#1e3a8a] font-bold">✓</span>
+                        <span>{qual}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Preferred Skills */}
+                {preferredSkills.length > 0 && (
+                  <div>
+                    <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Preferred Skills</h2>
+                    <ul className="space-y-3">
+                      {preferredSkills.map((pref, i) => (
+                        <li key={i} className="flex gap-3 text-zinc-600 text-sm md:text-base leading-relaxed">
+                          <span className="text-blue-500 font-bold">•</span>
+                          <span>{pref}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+              </div>
+
+              {/* Right Column (Sticky Summary Card) */}
+              <div className="lg:col-span-1">
+                <div className="bg-white border border-zinc-200 rounded-[24px] p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow sticky top-28">
+                  <h3 className="text-lg font-bold text-black mb-6 pb-4 border-b border-zinc-100">Job Summary</h3>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-400">Location</span>
+                      <span className="font-semibold text-black">Jaipur, India</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-400">Job Type</span>
+                      <span className="font-semibold text-black">Full-Time</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-400">Workplace</span>
+                      <span className="font-semibold text-black">In-Office</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-400">Experience</span>
+                      <span className="font-semibold text-black">2-4 Years</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-zinc-400">Department</span>
+                      <span className="font-semibold text-black">Mobile Engineering</span>
+                    </div>
+                  </div>
+
+                  <Link 
+                    href="/contact" 
+                    className="block w-full text-center py-4 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-bold rounded-full shadow-lg hover:shadow-[0_10px_20px_rgba(30,58,138,0.15)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 uppercase tracking-widest text-[10px]"
+                  >
+                    Apply Now
+                  </Link>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* WHAT WE OFFER */}
+        <section className="py-12 md:py-20 bg-white border-t border-zinc-100 relative overflow-hidden">
+          <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+            <h2 className="text-2xl md:text-3xl font-black text-black text-center mb-12">
+              What We Offer at <span className="text-[#1e3a8a]">Alvion Technologies</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {perks.map((perk, i) => (
+                <div 
+                  key={i} 
+                  className="p-6 bg-[#fbfcfd] border border-zinc-150 rounded-[20px] shadow-[0_4px_20px_rgba(0,0,0,0.005)] hover:shadow-[0_10px_25px_rgba(30,58,138,0.04)] transition-all duration-300"
+                >
+                  <div className="text-3xl mb-4">{perk.icon}</div>
+                  <h4 className="font-bold text-black text-lg mb-2">{perk.title}</h4>
+                  <p className="text-zinc-500 text-sm leading-relaxed">{perk.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    </>
+  );
+}

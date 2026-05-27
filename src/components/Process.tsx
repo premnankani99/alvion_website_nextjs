@@ -26,11 +26,11 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-24 bg-zinc-50">
+    <section className="py-12 md:py-20 bg-zinc-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-sm font-bold text-secondary uppercase tracking-[0.2em] mb-4">Our Methodology</h2>
-          <h3 className="text-4xl font-bold text-primary">How We Bring Your Ideas To Life</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-primary">How We Bring Your Ideas To Life</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -40,10 +40,10 @@ export default function Process() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.04 }}
               className="relative p-8 bg-white border border-zinc-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
             >
-              <span className="text-6xl font-black text-primary/5 absolute top-4 right-4">{step.number}</span>
+              <span className="text-4xl md:text-6xl font-black text-primary/5 absolute top-4 right-4">{step.number}</span>
               <div className="relative z-10">
                 <h4 className="text-xl font-bold text-primary mb-4">{step.title}</h4>
                 <p className="text-zinc-500 text-sm leading-relaxed">{step.description}</p>

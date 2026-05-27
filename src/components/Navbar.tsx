@@ -27,9 +27,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${scrolled ? "bg-white py-3 shadow-md" : "bg-white py-4 md:py-5"}`}>
+    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
+      scrolled 
+        ? "bg-white py-3 border-b border-zinc-200/60 shadow-[0_4px_25px_rgba(0,0,0,0.03)] backdrop-blur-md" 
+        : "bg-white py-4 md:py-5 border-b border-zinc-100"
+    }`}>
+      {/* Fine Obsidian Black & Dark Blue top visual accent border line */}
+      <div className="absolute top-0 left-0 w-full h-[2.5px] bg-gradient-to-r from-zinc-950 via-[#1e3a8a] to-blue-500 z-50 pointer-events-none" />
+
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Official Image Logo Restored with Responsive Sizing */}
+        {/* Official Logo */}
         <Link href="/" className="relative w-36 md:w-48 h-10 md:h-12 transition-all">
           <Image 
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/YNqMEWZ1PXT9OR5G/whatsapp-image-2026-02-19-at-13.21.20-1-jNdlYe8brAIAZp6c.jpeg" 
@@ -40,19 +47,22 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Exact Desktop Links */}
-        <div className="hidden md:flex items-center gap-10 text-[18px] font-bold">
+        {/* Links with Dark Blue Accent highlighting */}
+        <div className="hidden md:flex items-center gap-10 text-[16px] font-bold">
           {navLinks.map((link) => (
             <Link 
               key={link.name} 
               href={link.href} 
-              className={`transition-all relative py-1 hover:text-[#0d1b2a] ${
+              className={`transition-all relative py-1 ${
                 pathname === link.href 
-                  ? "text-[#0d1b2a] border-b-2 border-[#0d1b2a]" 
-                  : "text-[#4a4a4a]"
+                  ? "text-[#1e3a8a]" 
+                  : "text-zinc-600 hover:text-[#1e3a8a]"
               }`}
             >
               {link.name}
+              {pathname === link.href && (
+                <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#1e3a8a] rounded-full" />
+              )}
             </Link>
           ))}
         </div>
@@ -62,9 +72,9 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none"
         >
-          <div className={`w-6 h-0.5 bg-[#333333] transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <div className={`w-6 h-0.5 bg-[#333333] transition-all ${isOpen ? "opacity-0" : ""}`} />
-          <div className={`w-6 h-0.5 bg-[#333333] transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <div className={`w-6 h-0.5 bg-zinc-800 transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <div className={`w-6 h-0.5 bg-zinc-800 transition-all ${isOpen ? "opacity-0" : ""}`} />
+          <div className={`w-6 h-0.5 bg-zinc-800 transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
@@ -76,10 +86,10 @@ export default function Navbar() {
               key={link.name} 
               onClick={() => setIsOpen(false)} 
               href={link.href} 
-              className={`text-lg font-bold py-2 border-b border-zinc-50 transition-colors ${
+              className={`text-base font-bold py-2 border-b border-zinc-100 transition-colors ${
                 pathname === link.href 
-                  ? "text-[#1a56db]" 
-                  : "text-[#4a4a4a] hover:text-[#1a56db]"
+                  ? "text-[#1e3a8a]" 
+                  : "text-zinc-600 hover:text-[#1e3a8a]"
               }`}
             >
               {link.name}
