@@ -205,17 +205,14 @@ export default function QuantumConsole() {
   }, [activeTab]);
 
   return (
-    <section className="py-20 bg-[#040814] text-white relative overflow-hidden border-t border-slate-900">
+    <section className="py-12 md:py-20 bg-[#040814] text-white relative overflow-hidden border-t border-slate-900">
       {/* Background Glowing Nebula */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/5 to-purple-500/5 rounded-full blur-[140px] pointer-events-none z-0" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="text-center mb-16">
-          <div className="text-cyan-400 font-bold text-xs uppercase tracking-[0.25em] mb-4 flex items-center justify-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            06 // QUANTUM INFRASTRUCTURE
-          </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white">
+        <div className="text-center mb-8 md:mb-12">
+          {/* Badge removed per user request */}
+          <h2 className="text-2xl md:text-4xl font-black text-white">
             Alvion <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-fuchsia-400 drop-shadow-[0_0_15px_rgba(6,182,212,0.25)]">Quantum Console</span>
           </h2>
           <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto mt-4 font-light leading-relaxed">
@@ -257,7 +254,7 @@ export default function QuantumConsole() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as any)}
-                className={`w-full text-left p-6 sm:p-8 rounded-[28px] border transition-all duration-300 backdrop-blur-md cursor-pointer flex flex-col ${
+                className={`w-full text-left p-5 sm:p-6 rounded-[24px] border transition-all duration-300 backdrop-blur-md cursor-pointer flex flex-col ${
                   activeTab === tab.id
                     ? tab.activeBg
                     : `${tab.color} opacity-60 hover:opacity-100`
@@ -275,7 +272,7 @@ export default function QuantumConsole() {
           </div>
 
           {/* Right Column: Dynamic Canvas Monitor Frame */}
-          <div className="lg:col-span-8 bg-slate-900/40 rounded-[35px] border border-slate-800 backdrop-blur-md overflow-hidden flex flex-col items-center justify-center p-4 relative shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+          <div className="lg:col-span-8 bg-slate-900/40 rounded-[24px] border border-slate-800 backdrop-blur-md overflow-hidden flex flex-col items-center justify-center p-2 relative shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
             
             {/* Top diagnostic bar */}
             <div className="w-full flex items-center justify-between px-6 py-4 border-b border-slate-800/80 text-[10px] font-mono text-slate-500">
@@ -292,7 +289,7 @@ export default function QuantumConsole() {
             </div>
 
             {/* Bottom diagnostic parameters */}
-            <div className="w-full grid grid-cols-3 gap-4 border-t border-slate-800/80 p-6 text-center text-xs font-mono">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-slate-800/80 p-6 text-center text-xs font-mono">
               <div>
                 <span className="text-slate-500 block text-[9px] uppercase tracking-wider mb-1">Grid Latency</span>
                 <span className="text-cyan-400 font-bold text-sm">1.4ms</span>

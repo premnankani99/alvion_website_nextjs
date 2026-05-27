@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 
 import Navbar from "@/components/Navbar";
 import AICopilot from "@/components/AICopilot";
-
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   sender: "bot" | "user";
@@ -10,211 +10,138 @@ interface Message {
 export default function AICopilot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    {
-      sender: "bot",
-      text: "Hi there! I am Alvion AI Copilot. How can I help you transform your business today? 🚀",
-    },
+    { sender: "bot", text: "Hi there! I am Alvion AI Copilot. How can I help you transform your business today? 🚀" }
   ]);
   const [inputText, setInputText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
-  const [showNotification, setShowNotification] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement | null>(null);
+  
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Auto scroll to bottom
-  useEffect(() => {
+  // Auto-scroll function
+  const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isTyping]);
-
-  // Show a welcome notification bubble after 5 seconds to grab attention
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!isOpen) setShowNotification(true);
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [isOpen]);
-
-  const handleSendMessage = (text: string) => {
-    if (!text.trim()) return;
-
-    // Add user message
-    setMessages((prev) => [...prev, { sender: "user", text }]);
-    setInputText("");
-    setShowNotification(false);
-    setIsTyping(true);
-
-    // Simulate AI response
-    setTimeout(() => {
-      setIsTyping(false);
-      let replyText = "";
-      const query = text.toLowerCase();
-
-      if (query.includes("service") || query.includes("offer") || query.includes("work")) {
-        replyText = "We specialize in Appian Low-Code automation, robust Spring Boot Java backends, and highly creative React / React Native frontends! Check out our Services page for details.";
-      } else if (query.includes("job") || query.includes("career") || query.includes("apply") || query.includes("hiring")) {
-        replyText = "We have 6 active openings in Jaipur! We are looking for Appian Developers, React Native Developers, Associate Software Developers, Automation Testers, HR, and Interns. Head over to our Careers page to apply!";
-      } else if (query.includes("hire") || query.includes("contact") || query.includes("discuss") || query.includes("call")) {
-        replyText = "Great choice! Drop us a message on our Contact page or visit our headquarters in Jaipur. We will get back to you within 24 hours to schedule a deep dive discussion!";
-      } else if (query.includes("location") || query.includes("office") || query.includes("jaipur") || query.includes("address")) {
-        replyText = "Alvion Technologies is headquartered in Jawahar Nagar, Jaipur, Rajasthan. You can view our office address and interactive Google Maps layout on our Contact page!";
-      } else {
-        replyText = "That's a great question! For high-end enterprise solutions, we combine Appian, Java and React to speed up workflow automation. I highly recommend checking out our Services and Careers pages!";
-      }
-
-      setMessages((prev) => [...prev, { sender: "bot", text: replyText }]);
-    }, 1000);
   };
 
-  const handleOptionClick = (option: string) => {
-    handleSendMessage(option);
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages, isTyping]);
+
+  const handleSendMessage = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!inputText.trim()) return;
+
+    // 1. User ka message UI pe dikhao
+    setMessages((prev) => [...prev, { sender: "user", text: inputText }]);
+    const userMessage = inputText;
+    setInputText(""); // Input box khali kar do
+
+    // 2. Typing animation start
+    setIsTyping(true);
+
+    try {
+      // 3. Apna message Backend (route.ts) ko bhejo
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userMessage, history: messages }),
+      });
+
+      const data = await response.json();
+      
+      // 4. Backend se jo Gemini ka reply aaya, use dikhao aur typing hatao
+      setIsTyping(false);
+      setMessages((prev) => [...prev, { sender: "bot", text: data.reply }]);
+
+    } catch (error) {
+      setIsTyping(false);
+      setMessages((prev) => [...prev, { sender: "bot", text: "Oops! Backend se connect nahi ho pa raha." }]);
+    }
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50 font-sans">
-      <AnimatePresence>
-        {/* Chat window */}
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 50, scale: 0.9 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="w-[320px] sm:w-[380px] h-[500px] rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] bg-slate-900/95 border border-slate-700/50 backdrop-blur-xl flex flex-col overflow-hidden mb-6"
-          >
-            {/* Header */}
-            <div className="p-6 bg-gradient-to-r from-cyan-600/50 to-purple-600/50 border-b border-slate-700/50 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-xl animate-pulse">
-                  🤖
-                </div>
-                <div>
-                  <h3 className="font-bold text-white text-base">Alvion AI Copilot</h3>
-                  <p className="text-[11px] text-cyan-300 font-medium tracking-wide uppercase">Active Now</p>
+    <div className="fixed bottom-6 right-6 z-50 font-sans">
+      {isOpen && (
+        <div className="w-[340px] sm:w-[380px] h-[500px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden mb-4 border border-zinc-200">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-blue-700 to-blue-500 p-4 flex justify-between items-center text-white shadow-sm">
+            <div className="font-bold flex items-center gap-2">
+              <span className="text-xl">🤖</span> Alvion AI Copilot
+            </div>
+            <button onClick={() => setIsOpen(false)} className="text-white hover:text-gray-200 transition-colors">✕</button>
+          </div>
+
+          {/* Messages List */}
+          <div className="flex-grow p-4 overflow-y-auto bg-slate-50 space-y-4">
+            {messages.map((msg, idx) => (
+              <div key={idx} className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}>
+                <div className={`px-4 py-2.5 rounded-2xl max-w-[85%] text-sm ${
+                  msg.sender === "user" 
+                    ? "bg-blue-600 text-white rounded-br-none shadow-md" 
+                    : "bg-white border border-gray-200 text-gray-800 rounded-bl-none shadow-sm"
+                }`}>
+                  {msg.sender === "bot" ? (
+                    <div className="text-sm leading-relaxed break-words flex flex-col gap-2">
+                      <ReactMarkdown 
+                        components={{
+                          p: ({node, ...props}) => <p className="m-0" {...props} />,
+                          ul: ({node, ...props}) => <ul className="list-disc pl-4 m-0 space-y-1" {...props} />,
+                          ol: ({node, ...props}) => <ol className="list-decimal pl-4 m-0 space-y-1" {...props} />,
+                          li: ({node, ...props}) => <li className="m-0" {...props} />,
+                          strong: ({node, ...props}) => <strong className="font-bold text-gray-900" {...props} />,
+                          a: ({node, ...props}) => <a className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer" {...props} />
+                        }}
+                      >
+                        {msg.text}
+                      </ReactMarkdown>
+                    </div>
+                  ) : (
+                    <span className="leading-relaxed break-words">{msg.text}</span>
+                  )}
                 </div>
               </div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-slate-400 hover:text-white transition-colors p-2 text-xl"
-              >
-                ✕
-              </button>
-            </div>
-
-            {/* Message Area */}
-            <div className="flex-grow overflow-y-auto p-6 space-y-4 scrollbar-thin scrollbar-thumb-slate-800">
-              {messages.map((msg, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
-                >
-                  <div
-                    className={`max-w-[80%] px-5 py-3 rounded-[22px] text-sm leading-relaxed ${
-                      msg.sender === "user"
-                        ? "bg-cyan-500 text-white rounded-br-none shadow-[0_4px_15px_rgba(6,182,212,0.3)]"
-                        : "bg-slate-800/80 text-slate-100 rounded-bl-none border border-slate-700/50"
-                    }`}
-                  >
-                    {msg.text}
-                  </div>
-                </motion.div>
-              ))}
-
-              {/* Typing simulator */}
-              {isTyping && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="flex justify-start"
-                >
-                  <div className="bg-slate-800/80 text-slate-400 px-5 py-3 rounded-[22px] rounded-bl-none border border-slate-700/50 flex gap-1 items-center">
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
-                  </div>
-                </motion.div>
-              )}
-              <div ref={messagesEndRef} />
-            </div>
-
-            {/* Quick Action Suggestion Chips */}
-            {messages.length === 1 && !isTyping && (
-              <div className="px-6 py-2 flex flex-wrap gap-2">
-                {[
-                  "💡 View Services",
-                  "💼 Job Careers",
-                  "🤝 Hire Alvion",
-                  "📍 Office Location",
-                ].map((option, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleOptionClick(option.substring(2))}
-                    className="text-[12px] px-3.5 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 border border-slate-700/50 text-cyan-300 hover:text-white transition-all font-medium"
-                  >
-                    {option}
-                  </button>
-                ))}
+            ))}
+            
+            {/* Typing Animation */}
+            {isTyping && (
+              <div className="flex justify-start">
+                <div className="px-5 py-3.5 bg-white border border-gray-200 rounded-2xl rounded-bl-none shadow-sm flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"></span>
+                </div>
               </div>
             )}
+            
+            {/* Invisible div for auto-scrolling */}
+            <div ref={messagesEndRef} />
+          </div>
 
-            {/* Message Input Box */}
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleSendMessage(inputText);
-              }}
-              className="p-4 bg-slate-900 border-t border-slate-800 flex gap-2 items-center"
+          {/* Input Box */}
+          <form onSubmit={handleSendMessage} className="p-3 bg-white border-t border-gray-100 flex gap-2">
+            <input 
+              type="text" 
+              value={inputText}
+              onChange={(e) => setInputText(e.target.value)}
+              placeholder="Type your message..." 
+              className="flex-grow px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all text-black"
+            />
+            <button 
+              type="submit" 
+              disabled={!inputText.trim() || isTyping}
+              className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 hover:shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <input
-                type="text"
-                value={inputText}
-                onChange={(e) => setInputText(e.target.value)}
-                placeholder="Ask me anything about Alvion..."
-                className="flex-grow px-4 py-2.5 rounded-full bg-slate-800 text-white placeholder-slate-400 text-sm border border-slate-700/50 focus:outline-none focus:border-cyan-500 transition-colors"
-              />
-              <button
-                type="submit"
-                className="w-10 h-10 rounded-full bg-cyan-500 hover:bg-cyan-600 text-white flex items-center justify-center transition-colors shadow-lg shadow-cyan-500/20"
-              >
-                ✈️
-              </button>
-            </form>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              Send
+            </button>
+          </form>
+        </div>
+      )}
 
-      {/* Greeting Bubble Notification */}
-      <AnimatePresence>
-        {showNotification && !isOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: 50, scale: 0.8 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: 50, scale: 0.8 }}
-            className="absolute bottom-18 right-0 w-64 p-4 rounded-2xl bg-slate-800 border border-slate-700/50 shadow-2xl text-slate-100 text-xs leading-relaxed backdrop-blur-md cursor-pointer flex flex-col gap-2"
-            onClick={() => {
-              setIsOpen(true);
-              setShowNotification(false);
-            }}
-          >
-            <div className="font-bold text-cyan-400 flex items-center gap-1.5">
-              <span>🤖</span> Alvion AI Assistant
-            </div>
-            <p>Hey! Need help exploring our Appian, Java, or React solutions? Let's discuss! Click here to chat.</p>
-            <button className="self-end text-[10px] font-bold uppercase text-cyan-300 tracking-wider">Start Chat &rarr;</button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Floating launcher button */}
-      <button
-        onClick={() => {
-          setIsOpen(!isOpen);
-          setShowNotification(false);
-        }}
-        className="w-14 h-14 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-600 hover:scale-110 active:scale-95 text-white flex items-center justify-center shadow-[0_10px_30px_rgba(6,182,212,0.3)] transition-all cursor-pointer relative group"
+      {/* Floating Launcher Button */}
+      <button 
+        onClick={() => setIsOpen(!isOpen)} 
+        className="w-14 h-14 bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded-full flex items-center justify-center text-2xl shadow-[0_10px_25px_rgba(37,99,235,0.4)] hover:scale-105 hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] transition-all ml-auto block cursor-pointer"
       >
-        <div className="absolute inset-0 rounded-full bg-cyan-400 animate-ping opacity-25 group-hover:opacity-40" />
-        <span className="text-2xl relative z-10">{isOpen ? "✕" : "🤖"}</span>
+        {isOpen ? "✕" : "💬"}
       </button>
     </div>
   );
