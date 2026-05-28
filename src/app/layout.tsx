@@ -13,13 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alviontechnologies.netlify.app"),
   title: "Alvion Technologies | Top Appian & Software Development Company in Jaipur",
   description: "Alvion Technologies provides expert Appian low-code solutions, Java backend, React, and mobile app development. The leading IT company in Jaipur for digital transformation.",
   keywords: ["Appian development company Jaipur", "Low-code solutions", "Java backend development", "React Native app development", "IT company in Jaipur"],
   authors: [{ name: "Alvion Technologies" }],
   alternates: {
-    canonical: "https://alviontechnologies.com",
+    canonical: "/",
   },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport = {

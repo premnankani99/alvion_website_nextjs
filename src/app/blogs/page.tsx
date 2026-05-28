@@ -18,7 +18,7 @@ export default function BlogsPage() {
               fill
               className="object-cover"
               priority
-            />
+             sizes="100vw" />
             <div className="absolute inset-0 bg-[#070b19]/75 z-10" />
             {/* Ambient glows */}
             <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none z-10" />
@@ -58,7 +58,7 @@ export default function BlogsPage() {
                 fill
                 className="object-cover group-hover:scale-106 transition-transform duration-1000 z-10"
                 priority
-              />
+               sizes="100vw" />
             </div>
 
             {/* Text side */}
