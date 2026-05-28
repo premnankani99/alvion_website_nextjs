@@ -66,6 +66,88 @@
       "answer": "Appian is a powerful low-code automation platform that helps businesses build apps and workflows fast. We specialize in it!"
     }
   ],
+  "chatbotResponses": {
+    "services": {
+      "hi": "हम डिजिटल ट्रांसफॉर्मेशन (Digital Transformation) में विशेषज्ञ हैं! हमारी मुख्य सेवाएँ:\n\n- **Appian Low-Code Automation**\n- **Spring Boot Java Backend Development**\n- **React & React Native Frontend Apps**\n- **Quality Assurance & Automation Testing**\n\nअधिक जानकारी के लिए, हमारा Services पेज देखें।",
+      "hinglish": "Hum Digital Transformation me experts hain! Ye rahi hamari main services:\n\n- **Appian Low-Code Automation**\n- **Spring Boot Java Backend Development**\n- **React & React Native Frontend Apps**\n- **Quality Assurance & Automation Testing**\n\nAur details ke liye aap hamari Services page check kar sakte hain.",
+      "en": "We specialize in Digital Transformation! Here are our core services:\n\n- **Appian Low-Code Automation**\n- **Spring Boot Java Backend Development**\n- **React & React Native Frontend Apps**\n- **Quality Assurance & Automation Testing**\n\nFor more details, visit our Services page."
+    },
+    "contact": {
+      "hi": "आप हमसे **info@alviontechnologies.com** पर संपर्क कर सकते हैं।\n\nहमारा ऑफिस यहाँ स्थित है:\n📍 **3rd Floor Hotel Ananta Inn , Lal Kothi , Jaipur, Rajasthan**\n\nहमें आपकी मदद करने में खुशी होगी!",
+      "hinglish": "Aap humse **info@alviontechnologies.com** par contact kar sakte hain.\n\nHamara office yahan hai:\n📍 **3rd Floor Hotel Ananta Inn , Lal Kothi , Jaipur, Rajasthan**\n\nHum aapke message ka wait karenge!",
+      "en": "You can reach us at **info@alviontechnologies.com**.\n\nOur office is located at:\n📍 **3rd Floor Hotel Ananta Inn , Lal Kothi , Jaipur, Rajasthan**\n\nWe look forward to hearing from you!"
+    },
+    "about": {
+      "hi": "**Alvion Technologies**\n\nAlvion Technologies is a premier IT company specializing in Digital Transformation.\n\nहमारा मिशन आधुनिक तकनीक के माध्यम से व्यवसायों को आगे बढ़ाना है।",
+      "hinglish": "**Alvion Technologies**\n\nAlvion Technologies is a premier IT company specializing in Digital Transformation.\n\nHamara mission hai latest technology use karke businesses ko grow karna.",
+      "en": "**Alvion Technologies**\n\nAlvion Technologies is a premier IT company specializing in Digital Transformation.\n\nOur mission is to help organizations leverage technology to achieve sustainable growth and competitive advantage."
+    },
+    "jobs": {
+      "hi": "हम वर्तमान में निम्नलिखित पदों के लिए भर्ती कर रहे हैं:\n\n- **Sr. React Native Developer (3+ Years Exp)**\n- **Appian Developer (Fresher)**\n- **Java Spring Boot Backend Engineer (2 Years Exp)**\n\nआवेदन करने के लिए कृपया हमारे Careers पेज पर जाएँ!",
+      "hinglish": "Hum abhi in roles ke liye hiring kar rahe hain:\n\n- **Sr. React Native Developer (3+ Years Exp)**\n- **Appian Developer (Fresher)**\n- **Java Spring Boot Backend Engineer (2 Years Exp)**\n\nApply karne ke liye please hamari Careers page par jayein!",
+      "en": "We are currently hiring for the following roles:\n\n- **Sr. React Native Developer (3+ Years Exp)**\n- **Appian Developer (Fresher)**\n- **Java Spring Boot Backend Engineer (2 Years Exp)**\n\nPlease visit our Careers page to apply!"
+    },
+    "projects": {
+      "hi": "हमने विश्व स्तर पर 100+ प्रोजेक्ट्स सफलतापूर्वक पूरे किए हैं! यहाँ हमारे कुछ बेहतरीन केस स्टडीज हैं:\n\n- **FinTech Banking Portal**: We built a secure banking workflow using Appian and Java.\n- **Healthcare Mobile App**: A React Native application for patient management.\n- **Banking Case Study**: Securing financial futures with digital innovation.\n\nअधिक जानकारी के लिए हमारा Services पेज देखें।",
+      "hinglish": "Humne globally 100+ projects deliver kiye hain! Ye rahe hamare kuch top projects:\n\n- **FinTech Banking Portal**: We built a secure banking workflow using Appian and Java.\n- **Healthcare Mobile App**: A React Native application for patient management.\n- **Banking Case Study**: Securing financial futures with digital innovation.\n\nAur dekhne ke liye Services page par jayein.",
+      "en": "We have delivered 100+ projects globally! Here are some of our top case studies:\n\n- **FinTech Banking Portal**: We built a secure banking workflow using Appian and Java.\n- **Healthcare Mobile App**: A React Native application for patient management.\n- **Banking Case Study**: Securing financial futures with digital innovation.\n\nCheck out our Services page for more details."
+    },
+    "cost": {
+      "hi": "परियोजना की लागत आपकी सटीक आवश्यकताओं पर निर्भर करती है। कस्टमाइज़्ड कोटेशन (Quotation) के लिए कृपया हमसे संपर्क करें!",
+      "hinglish": "Project ka cost aapki requirements par depend karta hai. Customized quotation ke liye please humse contact karein!",
+      "en": "The cost depends on the project requirements. Please share your requirements and we will send a customized quotation."
+    },
+    "consultation": {
+      "hi": "हाँ! हम आपकी व्यावसायिक आवश्यकताओं को समझने के लिए 30 मिनट का निःशुल्क परामर्श (Free Consultation) प्रदान करते हैं। मीटिंग के लिए **info@alviontechnologies.com** पर ईमेल करें या **+91 97848-65841** पर कॉल करें।",
+      "hinglish": "Haan! Hum 30-minute ki free consultation call offer karte hain aapke business ko samajhne ke liye. Schedule karne ke liye **info@alviontechnologies.com** par email karein ya **+91 97848-65841** par call karein.",
+      "en": "Yes! We offer a free 30-minute consultation call to understand your business needs. Please email us at info@alviontechnologies.com or call us at **+91 97848-65841** to schedule a meeting."
+    },
+    "appian": {
+      "hi": "Appian एक शक्तिशाली लो-कोड (Low-code) ऑटोमेशन प्लेटफ़ॉर्म है जो व्यवसायों को तेज़ी से ऐप और वर्कफ़्लो बनाने में मदद करता है। हम Appian डेवलपमेंट में विशेषज्ञ हैं!",
+      "hinglish": "Appian ek zabardast low-code automation platform hai jisse apps aur workflows bahut fast bante hain. Hum Appian Development me specialize karte hain!",
+      "en": "Appian is a powerful low-code automation platform that helps businesses build apps and workflows fast. We specialize in Appian Development and Intelligent Automation!"
+    },
+    "react": {
+      "hi": "हम React और React Native का उपयोग करके बहुत तेज़ और सुंदर यूजर इंटरफेस (UI) और मोबाइल एप्लिकेशन बनाते हैं!",
+      "hinglish": "Hum React aur React Native use karke bahut fast aur sundar UI aur mobile apps banate hain!",
+      "en": "We build dynamic, fast, and gorgeous user interfaces and mobile applications using React and React Native!"
+    },
+    "java": {
+      "hi": "हम अत्यधिक ट्रैफ़िक को संभालने के लिए मजबूत और स्केलेबल जावा स्प्रिंग बूट (Java Spring Boot) बैकएंड विकसित करते हैं।",
+      "hinglish": "Hum Java Spring Boot me bahut strong aur scalable backend APIs banate hain jo high traffic handle kar sakte hain.",
+      "en": "We develop robust and scalable Java Spring Boot backends built for high-throughput transactional stability."
+    },
+    "greetings": {
+      "hi": "नमस्ते! मैं Alvion AI Copilot हूँ। मैं आपके व्यवसाय को आगे बढ़ाने में कैसे मदद कर सकता हूँ? 🚀\n\nआप मुझसे हमारी सेवाओं, नौकरियों, संपर्क विवरण के बारे में पूछ सकते हैं, या निःशुल्क परामर्श का अनुरोध कर सकते हैं!",
+      "hinglish": "Hello! Main Alvion AI Copilot hu. Main aapki business transform karne me kaise madad kar sakta hu? 🚀\n\nAap mujhse hamari services, jobs, ya contact details ke baare me puch sakte hain!",
+      "en": "Hello! I am Alvion AI Copilot. How can I help you transform your business today? 🚀\n\nYou can ask me about our services, jobs, contact details, or request a free consultation!"
+    },
+    "timings": {
+      "hi": "हमारे कार्यालय का समय है:\n📅 **सोमवार - शुक्रवार:** 10:00 AM - 8:00 PM\n🛑 **शनिवार - रविवार:** बंद\n\nआप हमें कभी भी info@alviontechnologies.com पर ईमेल कर सकते हैं।",
+      "hinglish": "Hamare office ki timings hain:\n📅 **Monday - Friday:** 10:00 AM - 8:00 PM\n🛑 **Saturday - Sunday:** Closed\n\nAap hume info@alviontechnologies.com par anytime email kar sakte hain.",
+      "en": "Our office hours are:\n📅 **Monday - Friday:** 10:00 AM - 8:00 PM\n🛑 **Saturday - Sunday:** Closed\n\nYou can email us anytime at info@alviontechnologies.com"
+    },
+    "founders": {
+      "hi": "Alvion Technologies की स्थापना तकनीकी विशेषज्ञों की एक टीम द्वारा की गई थी ताकि जटिल तकनीक को वास्तविक दुनिया की व्यावसायिक जरूरतों से जोड़ा जा सके।",
+      "hinglish": "Alvion Technologies ko tech experts ki ek team ne start kiya tha taaki complex technology ko businesses ke liye easy banaya ja sake.",
+      "en": "Alvion Technologies was founded by a team of visionary tech experts to bridge the gap between complex technology and real-world business needs. We are a team of dedicated professionals!"
+    },
+    "support": {
+      "hi": "क्या आपको कोई समस्या आ रही है या सहायता की आवश्यकता है? हम 24/7 सहायता प्रदान करते हैं। कृपया **info@alviontechnologies.com** पर संपर्क करें।",
+      "hinglish": "Kya aapko koi issue aa raha hai ya support chahiye? Hum 24/7 support provide karte hain. Please **info@alviontechnologies.com** par email karein.",
+      "en": "Are you facing an issue or need support? We provide 24/7 dedicated support with a 1-day response time. Please reach out to us at **info@alviontechnologies.com** with your query."
+    },
+    "techStack": {
+      "hi": "हम निम्नलिखित तकनीकों में काम करते हैं:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Cloud** (AWS, Azure, GCP)\n- **AI & ML**",
+      "hinglish": "Hum in technologies me kaam karte hain:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Cloud** (AWS, Azure, GCP)\n- **AI & ML**",
+      "en": "We master the following technologies:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Cloud** (AWS, Azure, GCP)\n- **AI & ML**"
+    },
+    "clients": {
+      "hi": "हमने 98% क्लाइंट संतुष्टि दर के साथ विश्व स्तर पर 100+ प्रोजेक्ट्स सफलतापूर्वक वितरित किए हैं! आप हमारे Services पेज पर विस्तृत केस स्टडीज पढ़ सकते हैं।",
+      "hinglish": "Humne 100+ projects successfully deliver kiye hain aur hamare clients 98% satisfied hain! Aap hamari website par Case studies padh sakte hain.",
+      "en": "We have successfully delivered 100+ projects globally with a 98% client satisfaction rate across Banking, Healthcare, Retail, and Manufacturing sectors. You can read our detailed Case Studies on our Services page!"
+    }
+  },
   "scrapedWebsitePages": {
     "home_page_data": "Innovative Software SolutionsAlleviate vision and accelerate innovation with our expert services.Get StartedAbout Alvion TechnologiesAt Alvion Technologies, we alleviate vision and accelerate innovation by delivering transformative digital solutions that empower businesses to move faster and smarter. We build scalable, high-performance applications tailored to evolving enterprise needs. Our approach blends strategic thinking, modern architecture, and seamless user experiences to turn complex challenges into streamlined solutions.Learn More100+Projects Delivered50+Happy Clients5+Years ExperienceOur MissionOur mission is to empower businesses with innovative software solutions that elevate productivity and fuel sustainable growth in today’s dynamic digital landscape. We strive to transform complex challenges into streamlined, efficient systems that enable smarter decision-making and faster execution.By combining advanced technology with strategic insight, we help organizations stay agile, competitive, and future-ready. Through continuous innovation and a commitment to excellence, we aim to create lasting value for every client we serve.Innovative Software SolutionsTransforming your vision into reality with cutting-edge technology, enterprise APIs, and expert low-code developers.⚡Appian DevelopmentStreamline processes with our Appian expertise for efficient low-code enterprise automation.→⚙️Java SolutionsRobust and scalable Java backends built for high-throughput transactional stability.→⚛️React ApplicationsBuild dynamic, fast, and gorgeous user interfaces with pixel-perfect micro-interactions.→Our ClientsOur Services[ APPIAN & AI ]Intelligent AutomationAutomate processes with AI-driven bots and orchestration to improve speed, accuracy and efficiency.Learn more →[ REACT & JAVA ]Development & ImplementationDesign, build and deploy secure, scalable applications tailored to your business and technology stack.Learn more →[ CLOUD & PLATFORM ]Application & Infra SupportEnsure reliability with proactive monitoring, incident management and ongoing platform support.Learn more →View MoreCase StudiesFINTECH SOLUTIONSFixed Deposit SystemDEPLOYED: SUCCESSCASE STUDYE-COMMERCE & IOTConsumer Electronics PortalDEPLOYED: SUCCESSCASE STUDYSUPPLY CHAINWarehouse Management SuiteDEPLOYED: SUCCESSCASE STUDYView MoreInnovate Your VisionTransforming your vision into reality with cutting-edge technology and expert solutions.Contact Us Today",
     "about_page_data": "Who We AreAlvion Technologies was founded on a powerful vision to bridge the gap between complex technology and real-world business needs.We specialize in custom software solutions, digital transformation, and innovative technology consulting.Our mission is to help organizations leverage technology to achieve sustainable growth and competitive advantage.What Makes Us DifferentClient FocusSolutions designed around your business goals.Agile DevelopmentFast delivery with continuous improvement.InnovationUsing the latest technologies to deliver value.Our Numbers100+Projects98%Client Satisfaction5+Years ExperienceVision & MissionVisionTo empower businesses through accessible and transformative technology solutions.MissionDeliver exceptional digital products that solve real business problems through innovation and collaboration.Our Core PillarsInnovationExploring modern technologies.PartnershipLong-term client relationships.ExcellenceDelivering the highest quality solutions.Technologies We MasterReactModern UI DevelopmentJavaEnterprise ApplicationsCloudAWS, Azure & GCPDevOpsCI/CD AutomationAI & MLIntelligent SystemsAppianLow-Code AutomationReady to Transform Your Business?Partner with Alvion Technologies and discover how the right technology solutions can accelerate your growth.Get In Touch",
