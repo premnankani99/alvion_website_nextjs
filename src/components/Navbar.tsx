@@ -42,6 +42,7 @@ export default function Navbar() {
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/YNqMEWZ1PXT9OR5G/whatsapp-image-2026-02-19-at-13.21.20-1-jNdlYe8brAIAZp6c.jpeg" 
             alt="Alvion Technologies logo" 
             fill
+            sizes="(max-width: 768px) 144px, 192px"
             className="object-contain"
             priority
           />

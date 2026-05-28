@@ -59,7 +59,7 @@ export default function DigitalMarketingExecutivePage() {
               fill
               className="object-cover"
               priority
-            />
+             sizes="100vw" />
             <div className="absolute inset-0 bg-[#070b19]/80 z-10" />
             <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none z-10" />
           </div>

@@ -128,6 +128,7 @@ export default function Home() {
                 fill 
                 sizes="100vw"
                 className="object-cover opacity-10"
+                priority
               />
               
               {/* Expanding glowing nebula circles */}

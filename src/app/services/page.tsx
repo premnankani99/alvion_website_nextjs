@@ -311,7 +311,7 @@ export default function ServicesPage() {
                   className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
                   {displayedStudies.map((study, index) => (
-                    <Link key={index} href={study.link} target="_blank">
+                    <Link key={index} href={study.link} target="_blank" rel="noopener noreferrer">
                       <motion.div
                         whileHover={{ y: -8 }}
                         className="group bg-white rounded-[24px] overflow-hidden border border-zinc-150 hover:border-blue-500/30 shadow-[0_4px_25px_rgba(0,0,0,0.005)] hover:shadow-[0_15px_35px_rgba(30,58,138,0.05)] transition-all duration-500 relative flex flex-col h-full"

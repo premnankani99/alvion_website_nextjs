@@ -17,7 +17,7 @@ export default function ContactPage() {
               fill
               className="object-cover"
               priority
-            />
+             sizes="100vw" />
             <div className="absolute inset-0 bg-[#070b19]/75 z-10" />
             {/* Ambient glows */}
             <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none z-10" />
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     alt="Alvion Workspace"
                     fill
                     className="object-cover group-hover:scale-106 transition-transform duration-1000 ease-out z-10"
-                  />
+                   sizes="100vw" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-slate-950/20 via-transparent to-transparent z-15 pointer-events-none" />
                   <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-out pointer-events-none z-25" />
                 </motion.div>
