@@ -101,7 +101,7 @@ export default function AICopilot() {
             className="mb-4 w-[360px] sm:w-[380px] h-[550px] sm:h-[600px] flex flex-col bg-white rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] overflow-hidden border border-slate-100/50"
           >
             {/* Header with interactive effects */}
-            <div className="bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 p-4 flex justify-between items-center text-white shadow-sm relative overflow-hidden group">
+            <div className="shrink-0 bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 p-4 flex justify-between items-center text-white shadow-sm relative overflow-hidden group">
               {/* Subtle animated scanline */}
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-white/10 to-transparent animate-[scan_2s_ease-in-out_infinite] group-hover:opacity-50 transition-opacity" />
 
