@@ -48,24 +48,27 @@ export default function AICopilot() {
     // 2. Typing animation start
     setIsTyping(true);
 
-    // --- NEW TIER 1: REGEX PATTERN MATCHING ---
-    const quickReply = parseIntent(userMessage);
-    if (quickReply) {
+    // --- INTENT ROUTER ---
+    const intentResult = parseIntent(userMessage);
+    if (intentResult.type === "LOCAL" && intentResult.response) {
       // Simulate slight delay so it feels natural
       setTimeout(() => {
         setIsTyping(false);
-        setMessages((prev) => [...prev, { sender: "bot", text: quickReply }]);
+        setMessages((prev) => [...prev, { sender: "bot", text: intentResult.response as string }]);
       }, 500);
       return; // Stop execution here, ZERO API COST!
     }
-    // --- END TIER 1 ---
 
     try {
       // 3. Apna message Backend (route.ts) ko bhejo (Gemini AI Fallback)
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage, history: messages }),
+        body: JSON.stringify({ 
+          message: userMessage, 
+          history: messages,
+          intentType: intentResult.type
+        }),
       });
 
       const data = await response.json();

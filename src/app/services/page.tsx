@@ -60,7 +60,7 @@ const services = [
 const caseStudies = [
   { title: "Banking", desc: "Securing financial futures with digital innovation.", image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=800&q=80", link: "/services/banking" },
   { title: "Insurance", desc: "Advanced risk management solutions.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800", link: "/services/insurance" },
-  { title: "Governance", desc: "Enhancing transparency in administration.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800", link: "#" },
+  { title: "Governance", desc: "Enhancing transparency in administration.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800", link: "/services/governance" },
   { title: "Retail", desc: "Transforming modern retail experiences.", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800", link: "#" },
   { title: "Real Estate", desc: "Smart property management solutions.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800", link: "#" },
   { title: "Healthcare", desc: "Empowering modern healthcare systems.", image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800", link: "#" }
