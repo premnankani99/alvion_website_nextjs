@@ -12,48 +12,54 @@ const services = [
     desc: "Automate processes with AI-driven bots and orchestration to improve speed, accuracy and efficiency.",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
     chip: "[ APPIAN & AI ]",
-    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50"
+    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50",
+    link: "/services/intelligent-automation"
   },
   {
     title: "Development & Implementation",
     desc: "Design, build and deploy secure, scalable applications tailored to your business and technology stack.",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800",
     chip: "[ REACT & JAVA ]",
-    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50"
+    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50",
+    link: "/services/development-and-implementation"
   },
   {
     title: "Application & Infra Support",
     desc: "Ensure reliability with proactive monitoring, incident management and ongoing platform support.",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
     chip: "[ CLOUD & PLATFORM ]",
-    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50"
+    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50",
+    link: "/services/application-and-infra-support"
   },
   {
     title: "Training",
     desc: "Upskill business and IT teams with structured programs focused on tools, platforms and best practices.",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
     chip: "[ SKILLS & UPSKILLING ]",
-    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50"
+    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50",
+    link: "/services/training"
   },
   {
     title: "Quality Engineering & Assurance",
     desc: "Implement robust test strategies and automation to increase release quality and reduce production risk.",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
     chip: "[ TESTING & QA ]",
-    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50"
+    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50",
+    link: "/services/quality-engineering-and-assurance"
   },
   {
     title: "Consulting",
     desc: "Align technology initiatives with business goals through strategy, roadmaps and operating model design.",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
     chip: "[ STRATEGY & ADVISORY ]",
-    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50"
+    chipColor: "bg-blue-50 text-[#1e3a8a] border-blue-200/50",
+    link: "/services/consulting"
   }
 ];
 
 const caseStudies = [
-  { title: "Banking", desc: "Securing financial futures with digital innovation.", image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=800&q=80", link: "https://alviontechnologies.com/banking/" },
-  { title: "Insurance", desc: "Advanced risk management solutions.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800", link: "#" },
+  { title: "Banking", desc: "Securing financial futures with digital innovation.", image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=800&q=80", link: "/services/banking" },
+  { title: "Insurance", desc: "Advanced risk management solutions.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800", link: "/services/insurance" },
   { title: "Governance", desc: "Enhancing transparency in administration.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800", link: "#" },
   { title: "Retail", desc: "Transforming modern retail experiences.", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800", link: "#" },
   { title: "Real Estate", desc: "Smart property management solutions.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800", link: "#" },
@@ -115,9 +121,9 @@ export default function ServicesPage() {
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
           <div className="container mx-auto px-6 md:px-12 relative z-10">
-            <div className="max-w-[95%] mx-auto flex flex-col lg:flex-row-reverse items-center gap-16">
+            <div className="max-w-[95%] mx-auto flex flex-col lg:flex-row-reverse items-start gap-16">
 
-              <div className="lg:w-1/2 flex flex-col items-start">
+              <div className="lg:w-1/2 flex flex-col items-start pt-4 lg:pt-8">
                 {/* Badge removed per user request */}
 
                 {/* Title */}
@@ -158,16 +164,28 @@ export default function ServicesPage() {
                   Our specialized service teams at Alvion Technologies are dedicated to accelerating your digital transformation. From robust low-code implementations to full-stack engineering and dedicated quality assurance, we provide the strategic guidance and technical firepower needed to scale your enterprise seamlessly.
                 </motion.p>
 
-                {/* Button */}
-                <motion.button
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
-                  transition={{ duration: 0.16, delay: 0.04, type: "spring", bounce: 0.1 }}
-                  className="px-8 py-3 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-bold rounded-full hover:shadow-[0_10px_25px_rgba(30,58,138,0.25)] hover:scale-105 transition-all duration-300 text-sm mb-12 uppercase tracking-wider"
-                >
-                  Learn More
-                </motion.button>
+                {/* Stats Row */}
+                <div className="flex flex-wrap gap-4 sm:gap-6 w-full mt-2">
+                  {[
+                    { val: "100+", label: "Projects Delivered", startX: -50, delay: 0.05 },
+                    { val: "50+", label: "Happy Clients", startX: 0, delay: 0.06 },
+                    { val: "5+", label: "Years Experience", startX: 50, delay: 0.07 }
+                  ].map((stat, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, x: stat.startX, y: 20 }}
+                      whileInView={{ opacity: 1, x: 0, y: 0 }}
+                      viewport={{ once: false, amount: 0.15 }}
+                      transition={{ duration: 0.2, delay: stat.delay, type: "spring", bounce: 0.1 }}
+                      whileHover={{ y: -8, scale: 1.05 }}
+                      className="flex-1 min-w-[140px] px-5 py-4 rounded-[16px] bg-white border border-zinc-100/80 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_10px_35px_rgba(30,58,138,0.06)] flex flex-col items-center text-center cursor-default transition-all duration-300"
+                    >
+                      <span className="text-[24px] font-black text-transparent bg-clip-text bg-gradient-to-br from-zinc-950 to-[#1e3a8a]">{stat.val}</span>
+                      <p className="text-zinc-500 text-[10px] font-semibold tracking-widest mt-1 uppercase">{stat.label}</p>
+                    </motion.div>
+                  ))}
+                </div>
+
               </div>
 
               {/* Left Column image container & Stats */}
@@ -189,27 +207,6 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-tr from-slate-950/20 via-transparent to-transparent z-15 pointer-events-none" />
                 </motion.div>
 
-                {/* Stats Row */}
-                <div className="flex flex-wrap gap-4 sm:gap-6 w-full">
-                  {[
-                    { val: "100+", label: "Projects Delivered", startX: -50, delay: 0.05 },
-                    { val: "50+", label: "Happy Clients", startX: 0, delay: 0.06 },
-                    { val: "5+", label: "Years Experience", startX: 50, delay: 0.07 }
-                  ].map((stat, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, x: stat.startX, y: 20 }}
-                      whileInView={{ opacity: 1, x: 0, y: 0 }}
-                      viewport={{ once: false, amount: 0.15 }}
-                      transition={{ duration: 0.2, delay: stat.delay, type: "spring", bounce: 0.1 }}
-                      whileHover={{ y: -8, scale: 1.05 }}
-                      className="flex-1 min-w-[140px] px-5 py-4 rounded-[16px] bg-white border border-zinc-100/80 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_10px_35px_rgba(30,58,138,0.06)] flex flex-col items-center text-center cursor-default transition-all duration-300"
-                    >
-                      <span className="text-[24px] font-black text-transparent bg-clip-text bg-gradient-to-br from-zinc-950 to-[#1e3a8a]">{stat.val}</span>
-                      <p className="text-zinc-500 text-[10px] font-semibold tracking-widest mt-1 uppercase">{stat.label}</p>
-                    </motion.div>
-                  ))}
-                </div>
               </div>
 
             </div>
@@ -240,41 +237,51 @@ export default function ServicesPage() {
 
             {/* Staggered dynamic cards grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-[95%] mx-auto">
-              {services.map((service, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: (index % 3 === 0 ? -60 : index % 3 === 2 ? 60 : 0), y: 40 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
-                  transition={{ duration: 0.2, delay: (index % 3) * 0.1, type: "spring", bounce: 0.1 }}
-                  className="group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 hover:rotate-1 hover:skew-x-1 hover:shadow-[0_15px_35px_rgba(30,58,138,0.08)] hover:border-blue-500/30 transition-all duration-500"
-                >
-                  {/* Image container */}
-                  <div className="relative aspect-video overflow-hidden">
-                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-out pointer-events-none z-20" />
-                    <Image src={service.image} alt={service.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-106 transition-transform duration-1000 ease-out z-10" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent opacity-40 z-15" />
+              {services.map((service, index) => {
+                const CardContent = (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: (index % 3 === 0 ? -60 : index % 3 === 2 ? 60 : 0), y: 40 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    viewport={{ once: false, amount: 0.15 }}
+                    transition={{ duration: 0.2, delay: (index % 3) * 0.1, type: "spring", bounce: 0.1 }}
+                    className="group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 hover:rotate-1 hover:skew-x-1 hover:shadow-[0_15px_35px_rgba(30,58,138,0.08)] hover:border-blue-500/30 transition-all duration-500"
+                  >
+                    {/* Image container */}
+                    <div className="relative aspect-video overflow-hidden">
+                      <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-out pointer-events-none z-20" />
+                      <Image src={service.image} alt={service.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-106 transition-transform duration-1000 ease-out z-10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent opacity-40 z-15" />
 
-                    {/* Badge on image */}
-                    <div className={`absolute top-4 right-4 px-3 py-1 text-[9px] font-black uppercase border rounded-md tracking-wider z-20 backdrop-blur-md ${service.chipColor}`}>
-                      {service.chip}
+                      {/* Badge on image */}
+                      <div className={`absolute top-4 right-4 px-3 py-1 text-[9px] font-black uppercase border rounded-md tracking-wider z-20 backdrop-blur-md ${service.chipColor}`}>
+                        {service.chip}
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Card Body */}
-                  <div className="p-5 md:p-8 flex flex-col flex-grow text-left">
-                    <h4 className="text-[18px] md:text-xl font-bold text-black mb-3 group-hover:text-[#1e3a8a] transition-colors">
-                      {service.title}
-                    </h4>
-                    <p className="text-zinc-500 text-sm leading-relaxed mb-6 flex-grow font-normal">
-                      {service.desc}
-                    </p>
-                    <span className="mt-auto text-[#1e3a8a] font-bold text-xs flex items-center gap-2 group-hover:gap-3 transition-all uppercase tracking-wider">
-                      Learn more &rarr;
-                    </span>
-                  </div>
-                </motion.div>
-              ))}
+                    {/* Card Body */}
+                    <div className="p-5 md:p-8 flex flex-col flex-grow text-left">
+                      <h4 className="text-[18px] md:text-xl font-bold text-black mb-3 group-hover:text-[#1e3a8a] transition-colors">
+                        {service.title}
+                      </h4>
+                      <p className="text-zinc-500 text-sm leading-relaxed mb-6 flex-grow font-normal">
+                        {service.desc}
+                      </p>
+                      <span className="mt-auto text-[#1e3a8a] font-bold text-xs flex items-center gap-2 group-hover:gap-3 transition-all uppercase tracking-wider">
+                        {service.link ? "Learn more \u2192" : ""}
+                      </span>
+                    </div>
+                  </motion.div>
+                );
+
+                return service.link ? (
+                  <Link key={index} href={service.link}>
+                    {CardContent}
+                  </Link>
+                ) : (
+                  <div key={index}>{CardContent}</div>
+                );
+              })}
             </div>
 
           </div>

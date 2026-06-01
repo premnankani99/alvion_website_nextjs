@@ -17,6 +17,18 @@ export function parseIntent(query: string): string | null {
   const responses = (companyData as any).chatbotResponses;
   if (!responses) return null;
 
+  // GLOBAL STRICTNESS: If the query is very long (more than 10 words), it's likely a complex question (like a blog query).
+  // Skip simple keyword matching so it goes directly to the AI/Fallback for a proper response.
+  const wordCount = normalizedQuery.split(/\s+/).length;
+  if (wordCount > 10) {
+    return null; // Force fallback to AI
+  }
+
+  // Bypass local matching for market research / top company queries
+  if (/\b(best|top|list|companies in|company in|who is the best|which company)\b/i.test(normalizedQuery)) {
+    return null; // Let the AI answer this genuinely
+  }
+
   // 1. SERVICES INTENT
   if (/(services|what do you do|kya karte ho|kaam kya hai|offerings|kya banate ho|what can you build|what are your services|your expertise|tumhara kaam|software development|app development|web development|solutions)/i.test(normalizedQuery)) {
     return responses.services[lang];
@@ -53,14 +65,17 @@ export function parseIntent(query: string): string | null {
   }
 
   // 8. SPECIFIC TECHNOLOGIES (Appian, React, Java)
-  if (/(appian|low code|automation|bpm|process automation)/i.test(normalizedQuery)) {
-    return responses.appian[lang];
-  }
-  if (/(react|react native|frontend|mobile app|ui|ux|ios app|android app)/i.test(normalizedQuery)) {
-    return responses.react[lang];
-  }
-  if (/(java|spring boot|backend|api|server|database)/i.test(normalizedQuery)) {
-    return responses.java[lang];
+  // Only trigger tech intents if the query is relatively short (e.g., less than 6 words) or explicitly asks about our tech stack
+  if (wordCount <= 6 || /(do you use|your tech|expertise in|hire)/i.test(normalizedQuery)) {
+    if (/\b(appian|low[- ]code|automation|bpm)\b/i.test(normalizedQuery)) {
+      return responses.appian[lang];
+    }
+    if (/\b(react|reactjs|react native|frontend|mobile app|ui|ux|ios|android)\b/i.test(normalizedQuery)) {
+      return responses.react[lang];
+    }
+    if (/\b(java|spring boot|backend|api|server|database)\b/i.test(normalizedQuery)) {
+      return responses.java[lang];
+    }
   }
 
   // 9. GREETINGS

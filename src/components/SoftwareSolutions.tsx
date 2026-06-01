@@ -94,10 +94,6 @@ export default function SoftwareSolutions() {
                 {service.description}
               </p>
 
-              {/* Interactive arrow transition */}
-              <div className="mt-8 pt-4 border-t border-zinc-100 flex items-center justify-end text-[11px] font-semibold text-[#1e3a8a] tracking-wider uppercase">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
-              </div>
             </motion.div>
           ))}
         </div>
