@@ -50,12 +50,12 @@ export default function CagrCalculator() {
                 <input 
                   type="number" 
                   value={initialValue} 
-                  onChange={(e) => setInitialValue(e.target.value)}
+                  onChange={(e) => setInitialValue(Number(e.target.value))}
                   className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none mb-1"
                 />
                 <input 
                   type="range" min="1000" max="10000000" step="1000"
-                  value={initialValue} onChange={(e) => setInitialValue(e.target.value)}
+                  value={initialValue} onChange={(e) => setInitialValue(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -65,12 +65,12 @@ export default function CagrCalculator() {
                 <input 
                   type="number" 
                   value={finalValue} 
-                  onChange={(e) => setFinalValue(e.target.value)}
+                  onChange={(e) => setFinalValue(Number(e.target.value))}
                   className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none mb-1"
                 />
                 <input 
                   type="range" min="1000" max="100000000" step="1000"
-                  value={finalValue} onChange={(e) => setFinalValue(e.target.value)}
+                  value={finalValue} onChange={(e) => setFinalValue(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -80,12 +80,12 @@ export default function CagrCalculator() {
                 <input 
                   type="number" 
                   value={years} 
-                  onChange={(e) => setYears(e.target.value)}
+                  onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none mb-1"
                 />
                 <input 
                   type="range" min="1" max="40" step="1"
-                  value={years} onChange={(e) => setYears(e.target.value)}
+                  value={years} onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>

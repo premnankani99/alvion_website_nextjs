@@ -59,14 +59,14 @@ export default function SipCalculator() {
                 <input 
                   type="number" 
                   value={investment} 
-                  onChange={(e) => setInvestment(e.target.value)}
+                  onChange={(e) => setInvestment(Number(e.target.value))}
                   className="w-full md:w-1/2 border border-gray-300 rounded-md p-2 text-sm text-center mb-3"
                 />
                 <input 
                   type="range" 
                   min="500" max="100000" step="500"
                   value={investment} 
-                  onChange={(e) => setInvestment(e.target.value)}
+                  onChange={(e) => setInvestment(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -76,14 +76,14 @@ export default function SipCalculator() {
                 <input 
                   type="number" 
                   value={returnRate} 
-                  onChange={(e) => setReturnRate(e.target.value)}
+                  onChange={(e) => setReturnRate(Number(e.target.value))}
                   className="w-full md:w-1/2 border border-gray-300 rounded-md p-2 text-sm text-center mb-3"
                 />
                 <input 
                   type="range" 
                   min="1" max="30" step="1"
                   value={returnRate} 
-                  onChange={(e) => setReturnRate(e.target.value)}
+                  onChange={(e) => setReturnRate(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -93,14 +93,14 @@ export default function SipCalculator() {
                 <input 
                   type="number" 
                   value={years} 
-                  onChange={(e) => setYears(e.target.value)}
+                  onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full md:w-1/2 border border-gray-300 rounded-md p-2 text-sm text-center mb-3"
                 />
                 <input 
                   type="range" 
                   min="1" max="40" step="1"
                   value={years} 
-                  onChange={(e) => setYears(e.target.value)}
+                  onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -110,14 +110,14 @@ export default function SipCalculator() {
                 <input 
                   type="number" 
                   value={months} 
-                  onChange={(e) => setMonths(e.target.value)}
+                  onChange={(e) => setMonths(Number(e.target.value))}
                   className="w-full md:w-1/2 border border-gray-300 rounded-md p-2 text-sm text-center mb-3"
                 />
                 <input 
                   type="range" 
                   min="0" max="11" step="1"
                   value={months} 
-                  onChange={(e) => setMonths(e.target.value)}
+                  onChange={(e) => setMonths(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>

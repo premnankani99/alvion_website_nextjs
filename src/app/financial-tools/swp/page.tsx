@@ -62,7 +62,7 @@ export default function SwpCalculator() {
                   <input 
                     type="number" 
                     value={investment} 
-                    onChange={(e) => setInvestment(e.target.value)}
+                    onChange={(e) => setInvestment(Number(e.target.value))}
                     className="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
                   />
                 </div>
@@ -72,7 +72,7 @@ export default function SwpCalculator() {
                   <input 
                     type="number" 
                     value={withdrawal} 
-                    onChange={(e) => setWithdrawal(e.target.value)}
+                    onChange={(e) => setWithdrawal(Number(e.target.value))}
                     className="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
                   />
                 </div>
@@ -82,7 +82,7 @@ export default function SwpCalculator() {
                   <input 
                     type="number" 
                     value={returnRate} 
-                    onChange={(e) => setReturnRate(e.target.value)}
+                    onChange={(e) => setReturnRate(Number(e.target.value))}
                     className="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
                   />
                 </div>
@@ -92,7 +92,7 @@ export default function SwpCalculator() {
                   <input 
                     type="number" 
                     value={years} 
-                    onChange={(e) => setYears(e.target.value)}
+                    onChange={(e) => setYears(Number(e.target.value))}
                     className="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
                   />
                 </div>

@@ -67,7 +67,7 @@ export default function StepUpSipCalculator() {
                   <input 
                     type="number" 
                     value={initialSip} 
-                    onChange={(e) => setInitialSip(e.target.value)}
+                    onChange={(e) => setInitialSip(Number(e.target.value))}
                     className="w-full p-2 text-sm focus:outline-none"
                   />
                 </div>
@@ -80,7 +80,7 @@ export default function StepUpSipCalculator() {
                   <input 
                     type="number" 
                     value={returnRate} 
-                    onChange={(e) => setReturnRate(e.target.value)}
+                    onChange={(e) => setReturnRate(Number(e.target.value))}
                     className="w-full p-2 text-sm focus:outline-none"
                   />
                 </div>
@@ -93,7 +93,7 @@ export default function StepUpSipCalculator() {
                   <input 
                     type="number" 
                     value={stepUpPercent} 
-                    onChange={(e) => setStepUpPercent(e.target.value)}
+                    onChange={(e) => setStepUpPercent(Number(e.target.value))}
                     className="w-full p-2 text-sm focus:outline-none"
                   />
                 </div>
@@ -104,7 +104,7 @@ export default function StepUpSipCalculator() {
                 <input 
                   type="number" 
                   value={years} 
-                  onChange={(e) => setYears(e.target.value)}
+                  onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none"
                 />
               </div>
@@ -114,7 +114,7 @@ export default function StepUpSipCalculator() {
                 <input 
                   type="number" 
                   value={months} 
-                  onChange={(e) => setMonths(e.target.value)}
+                  onChange={(e) => setMonths(Number(e.target.value))}
                   className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none"
                 />
               </div>

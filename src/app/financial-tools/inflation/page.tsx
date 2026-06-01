@@ -52,7 +52,7 @@ export default function InflationCalculator() {
                   <input 
                     type="number" 
                     value={initialAmount} 
-                    onChange={(e) => setInitialAmount(e.target.value)}
+                    onChange={(e) => setInitialAmount(Number(e.target.value))}
                     className="w-full p-2 text-sm focus:outline-none"
                   />
                 </div>
@@ -65,7 +65,7 @@ export default function InflationCalculator() {
                   <input 
                     type="number" 
                     value={inflationRate} 
-                    onChange={(e) => setInflationRate(e.target.value)}
+                    onChange={(e) => setInflationRate(Number(e.target.value))}
                     className="w-full p-2 text-sm focus:outline-none"
                   />
                 </div>
@@ -76,7 +76,7 @@ export default function InflationCalculator() {
                 <input 
                   type="number" 
                   value={years} 
-                  onChange={(e) => setYears(e.target.value)}
+                  onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none"
                 />
               </div>

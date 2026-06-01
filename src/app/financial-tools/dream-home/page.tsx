@@ -74,13 +74,13 @@ export default function DreamHomeCalculator() {
                   <input 
                     type="number" 
                     value={presentCost} 
-                    onChange={(e) => setPresentCost(e.target.value)}
+                    onChange={(e) => setPresentCost(Number(e.target.value))}
                     className="border border-gray-300 rounded p-1 text-sm text-right w-32 focus:outline-none"
                   />
                 </div>
                 <input 
                   type="range" min="1000000" max="100000000" step="100000"
-                  value={presentCost} onChange={(e) => setPresentCost(e.target.value)}
+                  value={presentCost} onChange={(e) => setPresentCost(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -91,13 +91,13 @@ export default function DreamHomeCalculator() {
                   <input 
                     type="number" 
                     value={years} 
-                    onChange={(e) => setYears(e.target.value)}
+                    onChange={(e) => setYears(Number(e.target.value))}
                     className="border border-gray-300 rounded p-1 text-sm text-right w-32 focus:outline-none"
                   />
                 </div>
                 <input 
                   type="range" min="1" max="30" step="1"
-                  value={years} onChange={(e) => setYears(e.target.value)}
+                  value={years} onChange={(e) => setYears(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -108,13 +108,13 @@ export default function DreamHomeCalculator() {
                   <input 
                     type="number" 
                     value={inflationRate} 
-                    onChange={(e) => setInflationRate(e.target.value)}
+                    onChange={(e) => setInflationRate(Number(e.target.value))}
                     className="border border-gray-300 rounded p-1 text-sm text-right w-32 focus:outline-none"
                   />
                 </div>
                 <input 
                   type="range" min="1" max="15" step="0.5"
-                  value={inflationRate} onChange={(e) => setInflationRate(e.target.value)}
+                  value={inflationRate} onChange={(e) => setInflationRate(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -125,13 +125,13 @@ export default function DreamHomeCalculator() {
                   <input 
                     type="number" 
                     value={savedAmount} 
-                    onChange={(e) => setSavedAmount(e.target.value)}
+                    onChange={(e) => setSavedAmount(Number(e.target.value))}
                     className="border border-gray-300 rounded p-1 text-sm text-right w-32 focus:outline-none"
                   />
                 </div>
                 <input 
                   type="range" min="0" max="50000000" step="10000"
-                  value={savedAmount} onChange={(e) => setSavedAmount(e.target.value)}
+                  value={savedAmount} onChange={(e) => setSavedAmount(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
@@ -142,13 +142,13 @@ export default function DreamHomeCalculator() {
                   <input 
                     type="number" 
                     value={returnRate} 
-                    onChange={(e) => setReturnRate(e.target.value)}
+                    onChange={(e) => setReturnRate(Number(e.target.value))}
                     className="border border-gray-300 rounded p-1 text-sm text-right w-32 focus:outline-none"
                   />
                 </div>
                 <input 
                   type="range" min="1" max="30" step="0.5"
-                  value={returnRate} onChange={(e) => setReturnRate(e.target.value)}
+                  value={returnRate} onChange={(e) => setReturnRate(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
               </div>
