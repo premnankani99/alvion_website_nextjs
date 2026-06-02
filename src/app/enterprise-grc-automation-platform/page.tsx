@@ -29,11 +29,11 @@ export default function EnterpriseGRCPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/services/governance" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-[#8b5cf6]">Enterprise GRC Automation Platform</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -61,28 +61,28 @@ export default function EnterpriseGRCPage() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Client Overview</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
                 A large enterprise operating across multiple geographies faced increasing regulatory scrutiny and governance challenges. Risk assessments, compliance tracking, and audit activities were managed through spreadsheets and siloed systems, limiting visibility and increasing operational risk.
               </p>
             </section>
 
-            <section id="challenge" className="mb-12">
+            <section id="challenge" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Challenge</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
                 The organization struggled with fragmented risk registers, manual compliance reporting, delayed audit preparation, and lack of traceability across governance processes. Leadership lacked real-time insight into risk exposure and compliance status, increasing regulatory and operational risks.
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Solution</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
                 An enterprise-grade GRC Automation Platform was implemented using Appian to centralize governance, risk, and compliance processes. The solution enabled automated risk assessments, compliance tracking, audit workflows, and case-based issue remediation with complete transparency and audit readiness.
               </p>
             </section>
 
-            <section id="result" className="mb-12">
+            <section id="result" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-6">Result</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white p-6 rounded-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-gray-100 flex flex-col items-center justify-center min-h-[140px] text-center">
@@ -103,7 +103,7 @@ export default function EnterpriseGRCPage() {
               </p>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-6">Technology Stack</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base mb-6">
                 The GRC platform was built using secure, scalable, and enterprise-ready Appian capabilities:

@@ -35,11 +35,11 @@ export default function ConsumerElectronicsPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-20 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/#case-studies" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-blue-500">Dealer Management System</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -72,7 +72,7 @@ export default function ConsumerElectronicsPage() {
           {/* Main Content */}
           <div className="lg:w-2/4">
             
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Project Overview</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 The Dealer Management System (DMS) is a centralized platform designed to streamline dealer operations including product orders, service coordination, and billing management.
@@ -85,7 +85,7 @@ export default function ConsumerElectronicsPage() {
               </p>
             </section>
 
-            <section id="challenge" className="mb-12">
+            <section id="challenge" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Challenge</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 Many dealer networks rely on manual processes and disconnected tools to manage product orders, installations, and billing.
@@ -98,7 +98,7 @@ export default function ConsumerElectronicsPage() {
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Solution</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 A unified Dealer Management Portal was developed to digitize dealer operations and centralize workflow management.
@@ -111,7 +111,7 @@ export default function ConsumerElectronicsPage() {
               </p>
             </section>
 
-            <section id="features" className="mb-12">
+            <section id="features" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Features</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100">Dealer Order Management</div>
@@ -123,7 +123,7 @@ export default function ConsumerElectronicsPage() {
               </div>
             </section>
 
-            <section id="impact" className="mb-12">
+            <section id="impact" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Business Impact</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[200px]">
@@ -141,7 +141,7 @@ export default function ConsumerElectronicsPage() {
               </div>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Technology Stack</h2>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian</span>

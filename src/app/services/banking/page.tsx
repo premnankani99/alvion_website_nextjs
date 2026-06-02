@@ -40,7 +40,11 @@ export default function BankingPage() {
       <Navbar />
       <div className="bg-[#fcfcfc] min-h-screen pt-32 pb-20">
         <div className="container mx-auto px-6 md:px-12 max-w-6xl">
-          
+          <div className="pt-2 mb-6">
+            <Link href="/services#case-studies" className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest">
+              &larr; Back to Services
+            </Link>
+          </div>
           <h1 className="text-5xl font-bold text-center text-[#111827] mb-16 tracking-tight">
             Banking
           </h1>

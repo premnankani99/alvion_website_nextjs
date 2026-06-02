@@ -29,11 +29,11 @@ export default function RegulatoryCompliancePage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/services/governance" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-[#8b5cf6]">Regulatory Compliance Management System</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -61,28 +61,28 @@ export default function RegulatoryCompliancePage() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Client Overview</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
                 A regulated financial enterprise operating across multiple regions needed a unified system to manage regulatory obligations, compliance reporting, and internal controls. Frequent regulatory changes and manual tracking created operational risk and audit challenges.
               </p>
             </section>
 
-            <section id="challenge" className="mb-12">
+            <section id="challenge" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Challenge</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
                 Compliance activities were managed using spreadsheets, emails, and siloed tools. Tracking regulatory requirements, mapping controls, and preparing audit evidence was time-consuming and error-prone, increasing the risk of non-compliance.
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Solution</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
                 A centralized Regulatory Compliance Management System was implemented using Appian. The platform automated regulatory intake, compliance workflows, control assessments, evidence management, and approval cycles with full traceability.
               </p>
             </section>
 
-            <section id="result" className="mb-12">
+            <section id="result" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-6">Result</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white p-6 rounded-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-gray-100 flex flex-col items-center justify-center min-h-[140px] text-center">
@@ -103,7 +103,7 @@ export default function RegulatoryCompliancePage() {
               </p>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-[#6b21a8] mb-6">Technology Stack</h2>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base mb-6">
                 The platform was built using Appian&apos;s secure and scalable low-code architecture:

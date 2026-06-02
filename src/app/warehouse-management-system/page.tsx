@@ -35,11 +35,11 @@ export default function WarehouseManagementPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-20 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/#case-studies" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-blue-500">Warehouse Management System</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -72,7 +72,7 @@ export default function WarehouseManagementPage() {
           {/* Main Content */}
           <div className="lg:w-2/4">
             
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Overview</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 A leading eCommerce fulfilment and 3PL logistics provider operating across Australia and New Zealand required a digital system to manage warehouse operations, inventory, and order processing across multiple distribution centres.
@@ -85,7 +85,7 @@ export default function WarehouseManagementPage() {
               </p>
             </section>
 
-            <section id="problem" className="mb-12">
+            <section id="problem" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Problem</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 The client handled large volumes of eCommerce orders across multiple warehouses and required a centralized platform to manage inventory and order fulfilment operations.
@@ -98,7 +98,7 @@ export default function WarehouseManagementPage() {
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Solution</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 We developed a custom Warehouse Management System consisting of a centralized web portal for warehouse operations and a mobile application for warehouse staff.
@@ -111,7 +111,7 @@ export default function WarehouseManagementPage() {
               </p>
             </section>
 
-            <section id="modules" className="mb-12">
+            <section id="modules" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Functional Modules</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100">Inventory Management</div>
@@ -123,7 +123,7 @@ export default function WarehouseManagementPage() {
               </div>
             </section>
 
-            <section id="outcomes" className="mb-12">
+            <section id="outcomes" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Outcomes</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[200px]">
@@ -141,7 +141,7 @@ export default function WarehouseManagementPage() {
               </div>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Technologies Used</h2>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian</span>

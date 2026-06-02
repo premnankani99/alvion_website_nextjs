@@ -30,11 +30,11 @@ export default function CaseManagementPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/services/insurance" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-blue-500">Case Management System</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -62,28 +62,28 @@ export default function CaseManagementPage() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Client Overview</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 A large enterprise organization required a centralized system to manage complex, long-running business cases involving multiple teams, documents, approvals, and regulatory checkpoints. Existing processes lacked visibility, traceability, and consistency, leading to operational delays and compliance risks.
               </p>
             </section>
 
-            <section id="challenge" className="mb-12">
+            <section id="challenge" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Challenge</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 Business cases were handled through emails, spreadsheets, and siloed applications. There was no unified view of case status, no standard workflow, and limited audit history. Teams struggled with SLA breaches, manual follow-ups, and inconsistent decision-making across departments.
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Solution</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 An enterprise-grade Case Management Platform was built using Appian to orchestrate end-to-end case lifecycles. The solution enabled dynamic case creation, document management, role-based task assignment, ad-hoc actions, and real-time tracking across all case stages with complete auditability.
               </p>
             </section>
 
-            <section id="result" className="mb-12">
+            <section id="result" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-6">Result</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[140px]">
@@ -104,7 +104,7 @@ export default function CaseManagementPage() {
               </p>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Technology Stack</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base mb-6">
                 The solution was implemented using Appian&apos;s enterprise low-code capabilities:

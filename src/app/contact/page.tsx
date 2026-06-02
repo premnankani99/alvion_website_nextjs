@@ -119,7 +119,7 @@ export default function ContactPage() {
         </section>
 
         {/* 3. GET IN TOUCH FORM */}
-        <section id="contact-form" className="py-12 md:py-20 bg-[#fafbfc] border-y border-zinc-200/60 relative">
+        <section id="contact-form" className="py-12 md:py-20 bg-[#fafbfc] border-y border-zinc-200/60 relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[140px] pointer-events-none z-0" />
 
           <div className="container mx-auto px-6 max-w-[95%] lg:max-w-4xl relative z-10">

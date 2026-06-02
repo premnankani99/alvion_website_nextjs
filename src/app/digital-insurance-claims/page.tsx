@@ -30,11 +30,11 @@ export default function DigitalInsuranceClaimsPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/services/insurance" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-blue-500">Insurance Claims Automation Platform</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -62,28 +62,28 @@ export default function DigitalInsuranceClaimsPage() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Client Overview</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 A leading insurance provider handling high volumes of motor and health insurance claims was facing operational delays, manual verification challenges, and limited visibility across claim lifecycles. The organization needed a centralized digital platform to streamline claims processing while ensuring compliance and faster customer settlements.
               </p>
             </section>
 
-            <section id="challenge" className="mb-12">
+            <section id="challenge" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Challenge</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 Claims were processed through emails, spreadsheets, and disconnected systems, resulting in long settlement cycles, frequent follow-ups, and inconsistent decision-making. Manual document verification and lack of SLA tracking led to customer dissatisfaction and operational inefficiencies.
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Solution</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 An end-to-end Insurance Claims Automation Platform was built using Appian to digitize and orchestrate the complete claims lifecycle. The solution enabled digital claim intake, document management, rule-based claim validation, automated task routing, and real-time dashboards for claims processing.
               </p>
             </section>
 
-            <section id="result" className="mb-12">
+            <section id="result" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-purple-800 mb-6">Result</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[140px]">
@@ -104,7 +104,7 @@ export default function DigitalInsuranceClaimsPage() {
               </p>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Technology Stack</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base mb-6">
                 The solution was built using secure, scalable, and enterprise-grade technologies:

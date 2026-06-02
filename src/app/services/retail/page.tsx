@@ -3,24 +3,40 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
-const governanceCaseStudies = [
+const retailCaseStudies = [
   {
-    title: "Enterprise GRC Automation Platform",
+    title: "Omnichannel Retail Transformation & Intelligent Inventory Modernization",
     desc: "",
+    category: "RETAIL",
     date: "11/19/2025 · 1 min read",
-    image: "https://images.unsplash.com/photo-1752697589029-0fd0ce96a395?auto=format&fit=crop&w=3600&h=2160", 
-    link: "/enterprise-grc-automation-platform"
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=3600&h=2160", 
+    link: "/omnichannel-retail-transformation-and-intelligent-inventory-modernization"
   },
   {
-    title: "Regulatory Compliance Management System",
+    title: "Smart Grocery Operations & FMCG Supply Chain Transformation",
     desc: "",
+    category: "RETAIL",
     date: "11/19/2025 · 1 min read",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=3600&h=2160",
-    link: "/regulatory-compliance-management-system"
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=3600&h=2160",
+    link: "/smart-grocery-operations-and-fmcg-supply-chain-transformation"
+  },
+  {
+    title: "CONSUMER ELECTRONICS BRAND",
+    desc: "",
+    date: "17/01/2026 · 1 min read",
+    image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=3600&h=2160",
+    link: "/consumer-electronics-brand"
+  },
+  {
+    title: "WAREHOUSE MANAGEMENT SYSTEM",
+    desc: "",
+    date: "17/01/2026 · 1 min read",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a0a?auto=format&fit=crop&w=3600&h=2160",
+    link: "/warehouse-management-system"
   }
 ];
 
-export default function GovernancePage() {
+export default function RetailPage() {
   return (
     <>
       <Navbar />
@@ -32,11 +48,11 @@ export default function GovernancePage() {
             </Link>
           </div>
           <h1 className="text-5xl font-bold text-center text-[#111827] mb-16 tracking-tight">
-            Governance
+            Retail
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mb-20">
-            {governanceCaseStudies.map((study, index) => (
+            {retailCaseStudies.map((study, index) => (
               <Link key={index} href={study.link} className="flex flex-col group cursor-pointer">
                 <div className="relative w-full aspect-[1.5/1] overflow-hidden mb-6 bg-gray-100">
                   <Image 

@@ -61,9 +61,9 @@ const caseStudies = [
   { title: "Banking", desc: "Securing financial futures with digital innovation.", image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=800&q=80", link: "/services/banking" },
   { title: "Insurance", desc: "Advanced risk management solutions.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800", link: "/services/insurance" },
   { title: "Governance", desc: "Enhancing transparency in administration.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800", link: "/services/governance" },
-  { title: "Retail", desc: "Transforming modern retail experiences.", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800", link: "#" },
-  { title: "Real Estate", desc: "Smart property management solutions.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800", link: "#" },
-  { title: "Healthcare", desc: "Empowering modern healthcare systems.", image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800", link: "#" }
+  { title: "Retail", desc: "Transforming modern retail experiences.", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800", link: "/services/retail" },
+  { title: "Real Estate", desc: "Smart property management solutions.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800", link: "/services/real-estate" },
+  { title: "Healthcare", desc: "Empowering modern healthcare systems.", image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800", link: "/services/healthcare" }
 ];
 
 export default function ServicesPage() {
@@ -74,7 +74,6 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Navbar />
       <div className="bg-white pt-20">
 
         {/* 1. TOP HERO BANNER */}
@@ -275,7 +274,7 @@ export default function ServicesPage() {
                 );
 
                 return service.link ? (
-                  <Link key={index} href={service.link}>
+                  <Link key={index} href={service.link} prefetch={false}>
                     {CardContent}
                   </Link>
                 ) : (
@@ -288,7 +287,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 4. CASE STUDIES */}
-        <section className="py-12 md:py-20 bg-[#fafbfc] border-t border-zinc-200/60 overflow-hidden relative">
+        <section id="case-studies" className="py-12 md:py-20 bg-[#fafbfc] border-t border-zinc-200/60 overflow-hidden relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
           <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -318,7 +317,7 @@ export default function ServicesPage() {
                   className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
                   {displayedStudies.map((study, index) => (
-                    <Link key={index} href={study.link} target="_blank" rel="noopener noreferrer">
+                    <a key={index} href={study.link} target="_blank" rel="noopener noreferrer">
                       <motion.div
                         whileHover={{ y: -8 }}
                         className="group bg-white rounded-[24px] overflow-hidden border border-zinc-150 hover:border-blue-500/30 shadow-[0_4px_25px_rgba(0,0,0,0.005)] hover:shadow-[0_15px_35px_rgba(30,58,138,0.05)] transition-all duration-500 relative flex flex-col h-full"
@@ -335,7 +334,7 @@ export default function ServicesPage() {
                           <span className="mt-auto text-[#1e3a8a] font-bold text-xs uppercase tracking-wider">Explore Link &rarr;</span>
                         </div>
                       </motion.div>
-                    </Link>
+                    </a>
                   ))}
                 </motion.div>
               </AnimatePresence>

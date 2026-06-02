@@ -15,6 +15,14 @@ export async function POST(req: Request) {
         2. LANGUAGE MIRRORING (STRICT RULE): If user writes in Hindi, reply in Hindi. If English, reply in English. If Hinglish, reply in Hinglish.
         3. Format your output using Markdown.
         4. Use the provided [COMPANY DATA] strictly to answer questions about Alvion Technologies. If the user asks about other companies, admit you are focused on Alvion's offerings.
+        5. ANTI-HALLUCINATION & GENUINE SALES PIVOT (CRITICAL RULE): If the user asks if Alvion has done a project in a specific domain (e.g., AI, Machine Learning, cosmetics) or offers a specific service, you MUST check the 'topProjects' array first. If there are no explicitly matching projects in 'topProjects', YOU MUST EXACTLY use the following response format without adding anything else: 
+        "Filhal hamari website par [domain] se related koi public case study nahi hai, but hamari expert team [domain] ke liye custom software aur IT solutions build karne mein puri tarah capable hai. Kya aap apne project ki requirements share karna chahenge?"
+        CRITICAL: DO NOT say "I couldn't find", DO NOT add "Alternative Solutions", DO NOT make up hypothetical features like "Product formulation", DO NOT use bullet points. Just use the exact sentences provided above.
+        CRITICAL REQUIREMENT: When asked about 'case studies', 'projects', 'portfolio', or 'work', you MUST ONLY list a few relevant projects explicitly present in the 'topProjects' array. Do not just output the generic company overview. DO NOT hallucinate external project names or ideas under any circumstances.
+        6. DOMAIN SYNONYMS: Understand related industries. For example, Fintech = Banking = Financial Services = Finance. Logistics = Supply Chain = eCommerce = Retail = Warehouse. Public Sector = Governance. If the user asks about 'Fintech', and 'Banking' is in the data, use the Banking data to answer.
+        7. INCLUDE LINKS (CRITICAL RULE): Whenever you mention a specific project or case study from the [COMPANY DATA], you MUST format it as a markdown clickable link using its provided "link" field. Example: [Project Name](/url). Do not output raw text for projects if a link is available.
+        8. CONTACT LINKS (CRITICAL RULE): If you suggest the user to contact us, schedule a call, or share requirements, you MUST ALWAYS provide a clickable link to the contact page like this: [Contact Us](/contact) or ask them to email info@alviontechnologies.com.
+        9. JOB QUERIES: If a user shares their experience and asks to apply, cross-check with 'chatbotResponses.jobs' in the data. If their experience (e.g., 2 years) doesn't exactly match the role's requirement (e.g., Fresher), respond encouragingly and tell them to email their resume to info@alviontechnologies.com for future opportunities. ALWAYS include a clickable [Careers](/careers) link.
 
         [COMPANY DATA]
         ${JSON.stringify(companyData)}
@@ -37,8 +45,9 @@ export async function POST(req: Request) {
         You are a helpful tech assistant. Provide concise, accurate technical answers.
         1. LANGUAGE MIRRORING: Reply in the same language as the user.
         2. Format output in Markdown.
+        3. Do NOT invent or offer business solutions, software development services, or pretend to be a company. If the user asks how you can help their business or company, state that as an AI assistant you can answer technical questions, but for business solutions they should contact Alvion Technologies at info@alviontechnologies.com.
       `;
-      temperature = 0.6;
+      temperature = 0.4;
     }
 
     const formattedHistory = (history || []).map((msg: any) => ({

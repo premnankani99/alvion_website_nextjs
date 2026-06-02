@@ -30,11 +30,11 @@ export default function FixedDepositPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/services/banking" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-blue-500">Fixed Deposit Integration</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -66,7 +66,7 @@ export default function FixedDepositPage() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Overview</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 A digital banking platform wanted to expand its financial product offerings by enabling customers to open Fixed Deposits (FDs) directly from their mobile application.
@@ -79,7 +79,7 @@ export default function FixedDepositPage() {
               </p>
             </section>
 
-            <section id="problem" className="mb-12">
+            <section id="problem" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Problem</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 The client&apos;s mobile banking application lacked investment products beyond basic savings accounts and payments. Customers had to visit external banking portals or physical branches to open Fixed Deposits, resulting in a fragmented user experience.
@@ -89,7 +89,7 @@ export default function FixedDepositPage() {
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Solution</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
                 We integrated a third-party Fixed Deposit SDK into the financial mobile application, enabling customers to browse FD products from multiple partner banks.
@@ -102,7 +102,7 @@ export default function FixedDepositPage() {
               </p>
             </section>
 
-            <section id="modules" className="mb-12">
+            <section id="modules" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Functional Modules</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">FD Plan Discovery & Comparison</div>
@@ -114,7 +114,7 @@ export default function FixedDepositPage() {
               </div>
             </section>
 
-            <section id="outcomes" className="mb-12">
+            <section id="outcomes" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Outcomes</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[160px]">
@@ -132,7 +132,7 @@ export default function FixedDepositPage() {
               </div>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Technologies Used</h2>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Flutter</span>

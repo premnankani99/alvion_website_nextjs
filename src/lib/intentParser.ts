@@ -52,9 +52,27 @@ export function parseIntent(query: string): IntentResult {
     return { type: "LOCAL", response: responses.timings[lang] };
   }
 
-  // 7. SPECIFIC COMPANY QUERIES
-  // Any specific reference to Alvion or their portfolio
-  if (/(alvion|your services|what do you do|kaam kya hai|offerings|kya banate ho|what can you build|your expertise|tumhara kaam|about|who are you|kaun ho tum|company details|profile|alvion kya hai|projects|portfolio|case studies|clients|customers|reviews|kiske sath kaam kiya|founder|ceo|owner|maalik)/i.test(normalizedQuery)) {
+  // 7. SERVICES INTENT (Local)
+  if (/(services|what do you do|kya karte ho|kaam kya hai|offerings|kya banate ho|what can you build|what are your services|software development|app development|web development|solutions)/i.test(normalizedQuery)) {
+    return { type: "LOCAL", response: responses.services[lang] };
+  }
+
+  // 8. ABOUT/PROFILE INTENT (Local)
+  if (/\b(about us|about alvion|about your company|who are you|kaun ho tum|company details|company profile|alvion kya hai|tell me about your company|company introduction|company background|company history)\b/i.test(normalizedQuery) || normalizedQuery === "about") {
+    return { type: "LOCAL", response: responses.about[lang] };
+  }
+
+  // 9. CAREERS & JOBS INTENT (Local)
+  if (/(jobs|careers|hiring|vacancy|openings|naukri|job hai|fresher|internship|apply|looking for a job|current openings|career opportunities|recruitment)/i.test(normalizedQuery)) {
+    if (/\d/.test(normalizedQuery) || normalizedQuery.split(/\s+/).length > 6 || /(experience|exp|years|yrs|resume|cv)/i.test(normalizedQuery)) {
+      return { type: "COMPANY_QUERY" };
+    }
+    return { type: "LOCAL", response: responses.jobs[lang] };
+  }
+
+  // 10. SPECIFIC COMPANY QUERIES (Dynamic AI)
+  // E.g., specific projects, portfolios, founders, clients
+  if (/(alvion|avion|your expertise|tumhara kaam|project|projects|portfolio|case study|case studies|work|your work|clients|customers|reviews|kiske sath kaam kiya|founder|ceo|owner|maalik|how can you help|how you can help|help my|my company|my business|build for me|build a)/i.test(normalizedQuery)) {
     return { type: "COMPANY_QUERY" };
   }
 

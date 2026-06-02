@@ -30,11 +30,11 @@ export default function LoanAutomationPage() {
     <>
       <Navbar />
       <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-        {/* Breadcrumb */}
-        <div className="container mx-auto px-6 md:px-12 py-6 text-sm text-zinc-500 flex gap-2">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link> &gt; 
-          <Link href="/services/banking" className="hover:text-blue-500 transition-colors">Case Studies</Link> &gt; 
-          <span className="text-blue-500">Loan Automation System</span>
+                {/* Back Button */}
+        <div className="container mx-auto px-6 md:px-12 py-6">
+          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
+            &larr; Back
+          </button>
         </div>
 
         {/* Title Section */}
@@ -66,21 +66,21 @@ export default function LoanAutomationPage() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            <section id="overview" className="mb-12">
+            <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Client Overview</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 A mid-sized banking institution offering personal, home, and SME loans was experiencing delays in loan processing due to manual documentation, fragmented approval workflows, and lack of real-time visibility. The bank aimed to digitize the end-to-end loan lifecycle while ensuring compliance and audit readiness.
               </p>
             </section>
 
-            <section id="challenge" className="mb-12">
+            <section id="challenge" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Challenge</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
                 Loan applications were processed through emails and spreadsheets, resulting in long turnaround times, high error rates, and poor customer experience. Credit, risk, and compliance teams worked in silos, making approvals slow and difficult to track. Regulatory reporting and audit trails required significant manual effort.
               </p>
             </section>
 
-            <section id="solution" className="mb-12">
+            <section id="solution" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Solution</h2>
               <p className="text-zinc-600 leading-relaxed text-sm md:text-base mb-4">
                 An enterprise-grade Loan Automation System was implemented using Appian as the core workflow and orchestration platform.
@@ -90,7 +90,7 @@ export default function LoanAutomationPage() {
               </p>
             </section>
 
-            <section id="result" className="mb-12">
+            <section id="result" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Outcomes</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[160px]">
@@ -111,7 +111,7 @@ export default function LoanAutomationPage() {
               </p>
             </section>
 
-            <section id="technologies">
+            <section id="technologies" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Technologies Used</h2>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian Low-Code Platform</span>

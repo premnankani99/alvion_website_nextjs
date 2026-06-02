@@ -15,36 +15,84 @@
   ],
   "topProjects": [
     {
-      "name": "FinTech Banking Portal",
-      "description": "We built a secure banking workflow using Appian and Java."
+      "name": "Fix Deposit (Banking)",
+      "description": "Secure banking workflow.",
+      "link": "/fixed-diposit"
     },
     {
-      "name": "Healthcare Mobile App",
-      "description": "A React Native application for patient management."
+      "name": "Bill Payment In Telecom (Banking / Telecom)",
+      "description": "Telecom bill payment management.",
+      "link": "/bill-payment"
     },
     {
-      "name": "Banking Case Study",
-      "description": "Securing financial futures with digital innovation."
+      "name": "LOAN AUTOMATION SYSTEM (Banking)",
+      "description": "Automated loan processing and management system.",
+      "link": "/loan-automation"
     },
     {
-      "name": "Insurance Case Study",
-      "description": "Advanced risk management solutions."
+      "name": "BANKING APPROVAL MANAGEMENT SYSTEM (Banking)",
+      "description": "Streamlined approval workflows for banking operations.",
+      "link": "/banking-approval"
     },
     {
-      "name": "Governance Case Study",
-      "description": "Enhancing transparency in administration."
+      "name": "Case Management System (Insurance)",
+      "description": "Comprehensive case management for insurance.",
+      "link": "/case-management"
     },
     {
-      "name": "Retail Case Study",
-      "description": "Transforming modern retail experiences."
+      "name": "Digital Insurance Claims Management Platform (Insurance)",
+      "description": "End-to-end digital claims management platform.",
+      "link": "/digital-insurance-claims"
     },
     {
-      "name": "Real Estate Case Study",
-      "description": "Smart property management solutions."
+      "name": "Enterprise GRC Automation Platform (Governance)",
+      "description": "Centralized governance, risk, and compliance processes.",
+      "link": "/enterprise-grc-automation-platform"
     },
     {
-      "name": "Healthcare Case Study",
-      "description": "Empowering modern healthcare systems."
+      "name": "Regulatory Compliance Management System (Governance)",
+      "description": "Automated regulatory intake and compliance workflows.",
+      "link": "/regulatory-compliance-management-system"
+    },
+    {
+      "name": "Smart Property Management Platform (Real Estate / Property)",
+      "description": "Comprehensive platform for property management operations.",
+      "link": "/smart-property-management-platform"
+    },
+    {
+      "name": "Unified Property Operations Platform (Real Estate / Property)",
+      "description": "Unified platform to manage real estate operations and tenant relations.",
+      "link": "/unified-property-operations-platform"
+    },
+    {
+      "name": "Omnichannel Retail Transformation & Intelligent Inventory Modernization (Retail)",
+      "description": "Modernizing inventory operations and creating an omnichannel retail experience.",
+      "link": "/omnichannel-retail-transformation-and-intelligent-inventory-modernization"
+    },
+    {
+      "name": "Smart Grocery Operations & FMCG Supply Chain Transformation (Retail / FMCG)",
+      "description": "Transforming grocery operations and supply chain management.",
+      "link": "/smart-grocery-operations-and-fmcg-supply-chain-transformation"
+    },
+    {
+      "name": "Consumer Electronics Brand (Retail / Electronics)",
+      "description": "Retail & distribution platform for managing dealers and service networks.",
+      "link": "/consumer-electronics-brand"
+    },
+    {
+      "name": "Warehouse Management System (Retail / Logistics)",
+      "description": "Scalable logistics, inventory and eCommerce fulfilment platform.",
+      "link": "/warehouse-management-system"
+    },
+    {
+      "name": "Healthcare Workflow Automation (Healthcare / Medical)",
+      "description": "Modernizing healthcare delivery and patient management operations.",
+      "link": "/healthcare-workflow-automation"
+    },
+    {
+      "name": "Medical Inventory Management System (Healthcare / Medical)",
+      "description": "Automating and managing medical inventory operations.",
+      "link": "/medical-inventory-management-system"
     }
   ],
   "contactEmail": "info@alviontechnologies.com",
@@ -138,9 +186,9 @@
       "en": "Are you facing an issue or need support? We provide 24/7 dedicated support with a 1-day response time. Please reach out to us at **info@alviontechnologies.com** with your query."
     },
     "techStack": {
-      "hi": "हम निम्नलिखित तकनीकों में काम करते हैं:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Cloud** (AWS, Azure, GCP)\n- **AI & ML**",
-      "hinglish": "Hum in technologies me kaam karte hain:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Cloud** (AWS, Azure, GCP)\n- **AI & ML**",
-      "en": "We master the following technologies:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Cloud** (AWS, Azure, GCP)\n- **AI & ML**"
+      "hi": "हम निम्नलिखित तकनीकों में काम करते हैं:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Quality Assurance & Automation Testing**",
+      "hinglish": "Hum in technologies me kaam karte hain:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Quality Assurance & Automation Testing**",
+      "en": "We master the following technologies:\n- **Appian** (Low-Code Automation)\n- **React & React Native** (Modern UI & Mobile)\n- **Java Spring Boot** (Enterprise Backend)\n- **Quality Assurance & Automation Testing**"
     },
     "clients": {
       "hi": "हमने 98% क्लाइंट संतुष्टि दर के साथ विश्व स्तर पर 100+ प्रोजेक्ट्स सफलतापूर्वक पूरे किए हैं। हमारे कुछ प्रमुख क्लाइंट्स हैं:\n- Bow and Tie by Gauranki\n- Globe Realty\n- Cluvio\n- Realty Gurukul\n- Landmark Developer\n- Elite Class\n- Welmont\n- Guru Mantraa Classes\n- GR\n- Protonze Men's Wear\n- Hotel Ananta\n- The Coffee Circle\n- I-Kart Optics\n- Cake Planet & More\n- Royal Touch Beauty Salon",
