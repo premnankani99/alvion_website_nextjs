@@ -93,7 +93,7 @@ export default function AICopilot() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 font-sans flex flex-col items-end">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[100] font-sans flex flex-col items-end">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -101,7 +101,7 @@ export default function AICopilot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="flex flex-col bg-white overflow-hidden border border-slate-100/50 z-50 fixed bottom-0 left-0 w-full h-[85vh] rounded-t-[28px] rounded-b-none shadow-[0_-10px_40px_rgba(0,0,0,0.1)] sm:relative sm:bottom-auto sm:left-auto sm:w-[400px] sm:h-[600px] sm:max-h-[700px] sm:rounded-2xl sm:mb-4 sm:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)]"
+            className="flex flex-col bg-white overflow-hidden border border-slate-100/50 z-[100] fixed bottom-0 left-0 w-full h-[85vh] rounded-t-[28px] rounded-b-none shadow-[0_-10px_40px_rgba(0,0,0,0.1)] sm:relative sm:bottom-auto sm:left-auto sm:w-[400px] sm:h-[560px] sm:max-h-[calc(100vh-140px)] sm:rounded-2xl sm:mb-4 sm:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)]"
           >
             {/* Header with interactive effects */}
             <div className="shrink-0 bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 p-4 flex justify-between items-center text-white shadow-sm relative overflow-hidden group">
