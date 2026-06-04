@@ -243,7 +243,6 @@ export default function LandmaarkCaseStudy() {
                           fill 
                           className="object-contain"
                           unoptimized={true}
-                          style={{ imageRendering: 'high-quality', WebkitFontSmoothing: 'antialiased' }}
                         />
                       </div>
                     </div>
