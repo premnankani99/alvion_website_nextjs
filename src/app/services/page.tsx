@@ -93,12 +93,12 @@ export default function ServicesPage() {
             <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none z-10" />
           </div>
 
-          <div className="container mx-auto px-6 md:px-12 relative z-20 text-center flex flex-col items-center">
+          <div className="container max-w-7xl mx-auto px-6 md:px-12 relative z-20 text-center flex flex-col items-center">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-              className="text-3xl md:text-[52px] font-black text-white tracking-tight leading-tight"
+              transition={{ duration: 0.28, delay: 0.04 }}
+              className="text-3xl md:text-5xl font-black text-white mb-6 tracking-tight drop-shadow-md"
             >
               Enterprise <span className="text-[#3b82f6] drop-shadow-[0_0_15px_rgba(30,58,138,0.3)]">Services</span>
             </motion.h1>
@@ -228,14 +228,14 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
-                className="text-2xl md:text-4xl font-black text-black"
+                className="text-2xl md:text-3xl font-black text-black"
               >
                 Our <span className="text-[#1e3a8a] drop-shadow-[0_2px_8px_rgba(30,58,138,0.05)]">Enterprise Services</span>
               </motion.h3>
             </div>
 
             {/* Staggered dynamic cards grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-[95%] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-7xl mx-auto">
               {services.map((service, index) => {
                 const CardContent = (
                   <motion.div
@@ -259,8 +259,8 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Card Body */}
-                    <div className="p-5 md:p-8 flex flex-col flex-grow text-left">
-                      <h4 className="text-[18px] md:text-xl font-bold text-black mb-3 group-hover:text-[#1e3a8a] transition-colors">
+                    <div className="p-4 md:p-6 flex flex-col flex-grow text-left">
+                      <h4 className="text-base md:text-lg font-bold text-black mb-2 group-hover:text-[#1e3a8a] transition-colors">
                         {service.title}
                       </h4>
                       <p className="text-zinc-500 text-sm leading-relaxed mb-6 flex-grow font-normal">
@@ -299,14 +299,14 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
-                className="text-2xl md:text-4xl font-black text-black"
+                className="text-2xl md:text-3xl font-black text-black"
               >
                 Case <span className="text-[#1e3a8a] drop-shadow-[0_2px_8px_rgba(30,58,138,0.05)]">Studies</span>
               </motion.h3>
             </div>
 
             {/* Snappy Sliding cards container */}
-            <div className="relative max-w-[95%] mx-auto mb-10">
+            <div className="relative max-w-7xl mx-auto mb-10">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentPage}
@@ -314,7 +314,7 @@ export default function ServicesPage() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -30 }}
                   transition={{ duration: 0.14, ease: "easeOut" }}
-                  className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                  className="grid grid-cols-1 md:grid-cols-3 gap-6"
                 >
                   {displayedStudies.map((study, index) => (
                     <a key={index} href={study.link} target="_blank" rel="noopener noreferrer">
@@ -328,8 +328,8 @@ export default function ServicesPage() {
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent opacity-40 z-15" />
                         </div>
 
-                        <div className="p-5 md:p-8 flex flex-col flex-grow text-left">
-                          <h4 className="text-[18px] md:text-xl font-bold text-black mb-2 group-hover:text-[#1e3a8a] transition-colors">{study.title}</h4>
+                        <div className="p-4 md:p-6 flex flex-col flex-grow text-left">
+                          <h4 className="text-base md:text-lg font-bold text-black mb-2 group-hover:text-[#1e3a8a] transition-colors">{study.title}</h4>
                           <p className="text-zinc-500 text-sm leading-relaxed mb-4">{study.desc}</p>
                           <span className="mt-auto text-[#1e3a8a] font-bold text-xs uppercase tracking-wider">Explore Link &rarr;</span>
                         </div>

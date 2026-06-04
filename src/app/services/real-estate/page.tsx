@@ -5,6 +5,13 @@ import Link from "next/link";
 
 const realEstateCaseStudies = [
   {
+    title: "Landmaark Developer",
+    desc: "Digital ecosystem for property sales and brokers.",
+    date: "06/04/2026 · 3 min read",
+    image: "/case-studies/landmaark/thumbnail.png", 
+    link: "/landmaark-developer"
+  },
+  {
     title: "Smart Property Management Platform",
     desc: "",
     date: "11/19/2025 · 1 min read",
@@ -31,11 +38,11 @@ export default function RealEstatePage() {
               &larr; Back to Services
             </Link>
           </div>
-          <h1 className="text-5xl font-bold text-center text-[#111827] mb-16 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-center text-[#111827] mb-16 tracking-tight">
             Real Estate
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-16 mb-20">
             {realEstateCaseStudies.map((study, index) => (
               <Link key={index} href={study.link} className="flex flex-col group cursor-pointer">
                 <div className="relative w-full aspect-[1.5/1] overflow-hidden mb-6 bg-gray-100">

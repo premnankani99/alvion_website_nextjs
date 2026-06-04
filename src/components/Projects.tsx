@@ -30,6 +30,15 @@ const caseStudies = [
     startX: 100,
     startY: 0,
     delay: 0.06
+  },
+  {
+    title: "Landmaark Developer Platform",
+    image: "/case-studies/landmaark/thumbnail.png",
+    category: "PROPTECH",
+    link: "/landmaark-developer",
+    startX: 0,
+    startY: -80,
+    delay: 0.08
   }
 ];
 
@@ -51,14 +60,14 @@ export default function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
-            className="text-2xl md:text-4xl font-black text-black"
+            className="text-2xl md:text-3xl font-black text-black"
           >
             <span className="text-[#1e3a8a] drop-shadow-[0_2px_8px_rgba(30,58,138,0.05)]">Case Studies</span>
           </motion.h3>
         </div>
 
         {/* Staggered Sliding Scroll Reveal Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-[95%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-7xl mx-auto">
           {caseStudies.map((study, index) => (
             <Link href={study.link} key={index} className="block h-full">
               <motion.div 
@@ -87,8 +96,8 @@ export default function Projects() {
                 </div>
 
                 {/* Card Footer Text */}
-                <div className="p-5 md:p-8 flex flex-col flex-grow text-left">
-                  <h4 className="text-[18px] md:text-xl font-bold text-black mb-6 group-hover:text-[#1e3a8a] transition-colors">
+                <div className="p-4 md:p-6 flex flex-col flex-grow text-left">
+                  <h4 className="text-base md:text-lg font-bold text-black mb-4 group-hover:text-[#1e3a8a] transition-colors">
                     {study.title}
                   </h4>
                   

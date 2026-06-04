@@ -41,7 +41,7 @@ export default function Home() {
                initial={{ opacity: 0, y: 30 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.32, delay: 0.04 }}
-               className="text-3xl md:text-[52px] font-extrabold text-white mb-6 tracking-tight leading-tight"
+               className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight"
             >
               Innovative <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-blue-400 drop-shadow-[0_0_15px_rgba(30,58,138,0.3)]">Software Solutions</span>
             </motion.h1>
@@ -49,7 +49,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.32, delay: 0.12 }}
-              className="text-lg md:text-xl text-zinc-100 max-w-3xl mx-auto mb-12 font-light leading-relaxed opacity-95"
+              className="text-base md:text-lg text-zinc-100 max-w-3xl mx-auto mb-12 font-light leading-relaxed opacity-95"
             >
               Alleviate vision and accelerate innovation with our expert services.
             </motion.p>
@@ -96,10 +96,10 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
               transition={{ duration: 0.32, delay: 0.04 }}
-              className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-center max-w-[95%] mx-auto"
+              className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-center max-w-6xl mx-auto"
             >
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((num) => (
-                <div key={num} className="h-32 bg-white rounded-[24px] border border-zinc-100 shadow-[0_4px_15px_rgba(0,0,0,0.005)] hover:border-blue-500/30 hover:shadow-[0_10px_35px_rgba(30,58,138,0.08)] hover:scale-102 transition-all duration-300 cursor-pointer overflow-hidden group flex items-center justify-center p-6">
+                <div key={num} className="h-24 md:h-28 bg-white rounded-[24px] border border-zinc-100 shadow-[0_4px_15px_rgba(0,0,0,0.005)] hover:border-blue-500/30 hover:shadow-[0_10px_35px_rgba(30,58,138,0.08)] hover:scale-102 transition-all duration-300 cursor-pointer overflow-hidden group flex items-center justify-center p-4 md:p-6">
                   <motion.img 
                     src={`/clients/${num}.avif`} 
                     alt={`Client Logo ${num}`} 
