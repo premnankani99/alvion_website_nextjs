@@ -171,16 +171,30 @@ export default function LandmaarkCaseStudy() {
               </div>
             </section>
 
+            {/* Technologies Section in Middle Column */}
             <section id="technologies" className="scroll-mt-32 pb-8">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Technologies Used</h2>
-              <div className="flex flex-wrap gap-3">
-                  <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">React.js & Next.js</span>
-                  <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Tailwind CSS</span>
-                  <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Node.js API</span>
-                  <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">MySQL / PostgreSQL</span>
-                  <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Role-Based Auth</span>
-                  <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Cloud Hosting</span>
+              
+              {/* Pastel Boxes matching the screenshot style */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-10 justify-items-center">
+                {[
+                  { name: "HTML5", icon: "https://cdn.simpleicons.org/html5/E34F26", bg: "bg-orange-50/60" },
+                  { name: "CSS3", icon: "data:image/png;base64,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", bg: "bg-blue-50/60" },
+                  { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E", bg: "bg-yellow-50/60" },
+                  { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933", bg: "bg-green-50/60" },
+                  { name: "Express", icon: "https://cdn.simpleicons.org/express/000000", bg: "bg-slate-100/60" },
+                  { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1", bg: "bg-blue-50/60" },
+                  { name: "cPanel", icon: "https://cdn.simpleicons.org/cpanel/FF6C2C", bg: "bg-orange-50/60" },
+                  { name: "ngrok", icon: "https://cdn.simpleicons.org/ngrok/1F1E37", bg: "bg-slate-100/60" },
+                ].map((tech, idx) => (
+                  <div key={idx} className={`flex flex-col items-center justify-center p-4 rounded-xl w-[120px] h-[105px] ${tech.bg} border-0 shadow-sm hover:scale-105 transition-transform duration-300`}>
+                    <img src={tech.icon} alt={tech.name} className="w-12 h-12 mb-2 object-contain" />
+                    <span className="font-bold text-gray-800 text-xs text-center">{tech.name}</span>
+                  </div>
+                ))}
               </div>
+
+
             </section>
 
           </div>
