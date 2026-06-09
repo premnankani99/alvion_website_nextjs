@@ -20,7 +20,7 @@ export default function LandmaarkCaseStudy() {
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + sliderImages.length) % sliderImages.length);
   };
-  
+
   // Ref for the image slider
   const sliderRef = useRef<HTMLDivElement>(null);
 
@@ -28,7 +28,7 @@ export default function LandmaarkCaseStudy() {
     const handleScroll = () => {
       const sections = ["overview", "problem", "solution", "modules", "outcomes", "technologies", "previews"];
       let current = "overview";
-      
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -51,12 +51,12 @@ export default function LandmaarkCaseStudy() {
   return (
     <>
       <Navbar />
-      
-      <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col font-sans">
-        
+
+      <div className="bg-[#fbfcfd] pt-20 md:pt-24 min-h-screen text-[#0d1b2a] flex flex-col font-sans">
+
         {/* Back Button */}
-        <div className="container mx-auto px-6 md:px-12 py-6">
-          <button 
+        <div className="container mx-auto px-6 md:px-12 pt-4 pb-2">
+          <button
             onClick={(e) => {
               e.preventDefault();
               const ref = typeof document !== 'undefined' ? document.referrer : '';
@@ -71,7 +71,7 @@ export default function LandmaarkCaseStudy() {
               } else {
                 router.push('/#case-studies');
               }
-            }} 
+            }}
             className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer"
           >
             &larr; Back
@@ -85,8 +85,8 @@ export default function LandmaarkCaseStudy() {
         </div>
 
         {/* Main Content Layout */}
-        <div className="container mx-auto px-6 md:px-12 pb-20 flex flex-col lg:flex-row gap-12">
-          
+        <div className="container mx-auto px-6 md:px-12 pb-8 flex flex-col lg:flex-row gap-12">
+
           {/* Sidebar Metadata */}
           <aside className="lg:w-1/4">
             <div className="bg-zinc-100 p-8 rounded-lg sticky top-28">
@@ -107,7 +107,7 @@ export default function LandmaarkCaseStudy() {
 
           {/* Main Content */}
           <div className="lg:w-2/4">
-            
+
             <section id="overview" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-4">Overview</h2>
               <p className="text-zinc-600 leading-relaxed mb-4 text-sm md:text-base">
@@ -143,38 +143,81 @@ export default function LandmaarkCaseStudy() {
 
             <section id="modules" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Key Functional Modules</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">Smart Broker Dashboard</div>
-                <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">Live Property Inventory</div>
-                <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">Multi-Level Referral Network</div>
-                <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">Automated Visit Booking</div>
-                <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">Commission Tracker</div>
-                <div className="bg-white p-4 rounded-md shadow-sm text-sm border border-zinc-100 flex items-center justify-center text-center">Marketing Asset Hub</div>
+              <style dangerouslySetInnerHTML={{
+                __html: `
+                .v2-wrapper { background: transparent; padding: 0; }
+                .v2-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 0.85rem; }
+                @media (min-width: 768px) { .v2-grid { grid-template-columns: repeat(2, 1fr); } }
+                .v2-card { 
+                    background: #ffffff;
+                    border: 1px solid #e2e8f0;
+                    border-radius: 10px;
+                    padding: 0.85rem 1.1rem;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+                .v2-card:hover { 
+                    background: #ffffff; 
+                    border-color: #bfdbfe; 
+                    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12); 
+                    transform: translateY(-2px);
+                }
+                .v2-number {
+                    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 1.35rem;
+                    font-weight: 800;
+                    margin-right: 0.85rem;
+                    font-family: 'Montserrat', sans-serif;
+                    min-width: 32px; text-align: left; flex-shrink: 0;
+                }
+                .v2-text { color: #1e293b; font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+              `}} />
+              <div className="v2-wrapper">
+                <div className="v2-grid">
+                  {[
+                    { num: "01", title: "Smart Broker Dashboard" },
+                    { num: "02", title: "Live Property Inventory" },
+                    { num: "03", title: "Multi-Level Referral Network" },
+                    { num: "04", title: "Automated Visit Booking" },
+                    { num: "05", title: "Commission Tracker" },
+                    { num: "06", title: "Marketing Asset Hub" }
+                  ].map((item, idx) => (
+                    <div key={idx} className="v2-card">
+                      <div className="v2-number">{item.num}</div>
+                      <div className="v2-text">{item.title}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
 
             <section id="outcomes" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Business Outcomes</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[160px]">
-                  <h3 className="text-3xl font-bold text-blue-500 mb-4">100%</h3>
-                  <p className="text-sm text-zinc-500">Digital Inventory Management</p>
+                <div className="bg-white p-4 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[120px]">
+                  <h3 className="text-2xl font-bold text-blue-500 mb-2">100%</h3>
+                  <p className="text-xs text-zinc-500">Digital Inventory Management</p>
                 </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[160px]">
-                  <h3 className="text-3xl font-bold text-blue-500 mb-4">Faster</h3>
-                  <p className="text-sm text-zinc-500">Sales & Visit Bookings</p>
+                <div className="bg-white p-4 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[120px]">
+                  <h3 className="text-2xl font-bold text-blue-500 mb-2">Faster</h3>
+                  <p className="text-xs text-zinc-500">Sales & Visit Bookings</p>
                 </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[160px]">
-                  <h3 className="text-3xl font-bold text-blue-500 mb-4">Full</h3>
-                  <p className="text-sm text-zinc-500">Real-time Visibility</p>
+                <div className="bg-white p-4 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[120px]">
+                  <h3 className="text-2xl font-bold text-blue-500 mb-2">Full</h3>
+                  <p className="text-xs text-zinc-500">Real-time Visibility</p>
                 </div>
               </div>
             </section>
 
             {/* Technologies Section in Middle Column */}
-            <section id="technologies" className="scroll-mt-32 pb-8">
+            <section id="technologies" className="scroll-mt-32 mb-12">
               <h2 className="text-2xl font-bold text-blue-500 mb-6">Technologies Used</h2>
-              
+
               {/* Pastel Boxes matching the screenshot style */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-10 justify-items-center">
                 {[
@@ -187,9 +230,9 @@ export default function LandmaarkCaseStudy() {
                   { name: "cPanel", icon: "https://cdn.simpleicons.org/cpanel/FF6C2C", bg: "bg-orange-50/60" },
                   { name: "ngrok", icon: "https://cdn.simpleicons.org/ngrok/1F1E37", bg: "bg-slate-100/60" },
                 ].map((tech, idx) => (
-                  <div key={idx} className={`flex flex-col items-center justify-center p-4 rounded-xl w-[120px] h-[105px] ${tech.bg} border-0 shadow-sm hover:scale-105 transition-transform duration-300`}>
-                    <img src={tech.icon} alt={tech.name} className="w-12 h-12 mb-2 object-contain" />
-                    <span className="font-bold text-gray-800 text-xs text-center">{tech.name}</span>
+                  <div key={idx} className={`flex flex-col items-center justify-center p-3 rounded-xl w-[100px] h-[90px] ${tech.bg} border-0 shadow-sm hover:scale-105 transition-transform duration-300`}>
+                    <img src={tech.icon} alt={tech.name} className="w-10 h-10 mb-2 object-contain" />
+                    <span className="font-bold text-gray-800 text-[10px] sm:text-xs text-center">{tech.name}</span>
                   </div>
                 ))}
               </div>
@@ -208,9 +251,8 @@ export default function LandmaarkCaseStudy() {
                   onClick={() => {
                     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className={`text-left text-sm transition-colors ${
-                    activeSection === section ? "text-blue-500 font-bold border-l-2 border-blue-500 -ml-[26px] pl-[26px]" : "text-zinc-500 hover:text-[#1e3a8a]"
-                  }`}
+                  className={`text-left text-sm transition-colors ${activeSection === section ? "text-blue-500 font-bold border-l-2 border-blue-500 -ml-[26px] pl-[26px]" : "text-zinc-500 hover:text-[#1e3a8a]"
+                    }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -221,15 +263,15 @@ export default function LandmaarkCaseStudy() {
         </div>
 
         {/* --- Image Slider Section --- */}
-        <div id="previews" className="w-full bg-white py-20 border-t border-gray-100 overflow-hidden">
-          <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-10 text-center">
+        <div id="previews" className="w-full bg-white pt-10 pb-16 border-t border-gray-100 overflow-hidden">
+          <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-8 text-center">
             <h2 className="text-3xl font-bold text-blue-600 mb-4">Platform Previews</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">Explore the custom dashboard interfaces designed specifically for brokers and administrators.</p>
           </div>
-          
+
           <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pb-10">
             <div className="relative w-full overflow-hidden border border-gray-200/50 rounded-2xl bg-zinc-50/50 py-8 px-4 shadow-inner flex flex-col items-center">
-              
+
               <div className="relative w-full h-[460px] md:h-[630px] flex justify-center items-center perspective-[1000px]">
                 {sliderImages.map((src, idx) => {
                   let offset = idx - currentImageIndex;
@@ -237,10 +279,10 @@ export default function LandmaarkCaseStudy() {
                   if (offset > Math.floor(sliderImages.length / 2)) offset -= sliderImages.length;
 
                   const isVisible = Math.abs(offset) <= 2;
-                  
+
                   return (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="absolute transition-all duration-500 ease-in-out cursor-pointer"
                       style={{
                         transform: `translateX(${offset * 65}%) scale(${1 - Math.abs(offset) * 0.15})`,
@@ -251,10 +293,10 @@ export default function LandmaarkCaseStudy() {
                       onClick={() => setCurrentImageIndex(idx)}
                     >
                       <div className="w-[240px] md:w-[330px] h-[420px] md:h-[580px] rounded-xl overflow-hidden shadow-xl bg-white border border-gray-100 ring-1 ring-black/5">
-                        <Image 
-                          src={src} 
+                        <Image
+                          src={src}
                           alt={`Landmaark Platform Preview ${idx + 1}`}
-                          fill 
+                          fill
                           className="object-contain"
                           unoptimized={true}
                         />
@@ -263,32 +305,31 @@ export default function LandmaarkCaseStudy() {
                   );
                 })}
               </div>
-              
+
               {/* Left Arrow */}
-              <button 
+              <button
                 onClick={prevImage}
                 className="absolute left-4 md:left-12 top-1/2 -translate-y-1/2 bg-white hover:bg-zinc-100 text-blue-600 p-3 md:p-4 rounded-full shadow-lg transition-all z-40 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
               </button>
-              
+
               {/* Right Arrow */}
-              <button 
+              <button
                 onClick={nextImage}
                 className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 bg-white hover:bg-zinc-100 text-blue-600 p-3 md:p-4 rounded-full shadow-lg transition-all z-40 border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
               </button>
-              
+
               {/* Indicators */}
               <div className="mt-8 flex justify-center gap-2 z-10 flex-wrap px-4">
                 {sliderImages.map((_, idx) => (
                   <button
                     key={idx}
                     onClick={() => setCurrentImageIndex(idx)}
-                    className={`h-2.5 rounded-full transition-all ${
-                      currentImageIndex === idx ? "bg-blue-600 w-8" : "bg-gray-300 hover:bg-gray-400 w-2.5"
-                    }`}
+                    className={`h-2.5 rounded-full transition-all ${currentImageIndex === idx ? "bg-blue-600 w-8" : "bg-gray-300 hover:bg-gray-400 w-2.5"
+                      }`}
                   />
                 ))}
               </div>

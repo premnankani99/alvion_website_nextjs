@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Variations - Key Functional Modules</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Inter:400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles */
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f3f4f6; color: #1f2937; padding: 2rem; }
+        .main-header { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: #1e293b; margin-bottom: 1rem; }
+        .main-desc { text-align: center; color: #64748b; margin-bottom: 4rem; font-size: 1.1rem; }
+        .variation-container { max-width: 1100px; margin: 0 auto 5rem; padding: 3rem; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .variation-title { text-align: center; font-family: 'Montserrat', sans-serif; color: #3b82f6; margin-bottom: 3rem; font-size: 2rem; font-weight: 700; border-bottom: 2px dashed #e2e8f0; padding-bottom: 1rem; }
+
+        /* =======================================================
+           VARIATION 1: Modern Enterprise Grid (Soft Shadows)
+           ======================================================= */
+        .v1-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .v1-card { 
+            background: #ffffff; 
+            border: 1px solid #f1f5f9; 
+            border-radius: 12px; 
+            padding: 1.5rem; 
+            display: flex; 
+            align-items: center; 
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+        .v1-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.1); 
+            border-color: #bfdbfe; 
+        }
+        .v1-number { 
+            width: 44px; height: 44px; 
+            background: #eff6ff; color: #2563eb; 
+            border-radius: 10px; 
+            display: flex; justify-content: center; align-items: center; 
+            font-weight: 700; font-size: 1.25rem; margin-right: 1.25rem; flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        .v1-card:hover .v1-number {
+            background: #2563eb; color: white;
+        }
+        .v1-text { font-weight: 600; font-size: 1.1rem; color: #1e293b; }
+
+
+        /* =======================================================
+           VARIATION 2: Dark Mode Glassmorphism
+           ======================================================= */
+        .v2-wrapper { background: #0f172a; padding: 4rem 3rem; border-radius: 20px; margin: -3rem; }
+        .v2-title { color: #ffffff; border-color: rgba(255,255,255,0.1); }
+        .v2-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .v2-card { 
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .v2-card:hover { 
+            background: rgba(255, 255, 255, 0.08); 
+            border-color: rgba(96, 165, 250, 0.5); 
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); 
+            transform: scale(1.02);
+        }
+        .v2-number {
+            background: linear-gradient(135deg, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-right: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            width: 40px; text-align: center;
+        }
+        .v2-text { color: #f8fafc; font-weight: 500; font-size: 1.15rem; letter-spacing: 0.5px; }
+
+
+        /* =======================================================
+           VARIATION 3: Vertical Timeline Style
+           ======================================================= */
+        .v3-timeline { position: relative; max-width: 600px; margin: 0 auto; padding: 2rem 0; }
+        .v3-timeline::before { content: ''; position: absolute; left: 24px; top: 0; bottom: 0; width: 3px; background: #e2e8f0; border-radius: 3px; }
+        .v3-item { position: relative; display: flex; align-items: center; margin-bottom: 2.5rem; cursor: pointer; }
+        .v3-item:last-child { margin-bottom: 0; }
+        .v3-dot { 
+            width: 50px; height: 50px; 
+            background: white; border: 4px solid #e2e8f0; 
+            border-radius: 50%; z-index: 1; 
+            display: flex; justify-content: center; align-items: center; 
+            font-weight: bold; color: #64748b; font-size: 1.2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 0 6px white;
+        }
+        .v3-item:hover .v3-dot { 
+            background: #3b82f6; border-color: #3b82f6; color: white; 
+            transform: scale(1.1); box-shadow: 0 0 0 6px rgba(59,130,246,0.1); 
+        }
+        .v3-content { 
+            margin-left: 2rem; padding: 1.25rem 1.5rem; 
+            background: white; border-radius: 12px; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); 
+            border: 1px solid #f1f5f9;
+            flex-grow: 1; font-weight: 600; font-size: 1.1rem; color: #334155;
+            transition: all 0.3s ease;
+        }
+        .v3-item:hover .v3-content { 
+            transform: translateX(10px); 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); 
+            border-left: 5px solid #3b82f6; 
+            color: #0f172a;
+        }
+
+
+        /* =======================================================
+           VARIATION 4: Vibrant Gradient Bento Box
+           ======================================================= */
+        .v4-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .v4-card { 
+            border-radius: 20px; padding: 2rem; color: white; 
+            display: flex; flex-direction: column; justify-content: space-between;
+            min-height: 180px; transition: all 0.3s ease; cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .v4-card:hover { transform: translateY(-8px) scale(1.02); z-index: 10; box-shadow: 0 20px 30px rgba(0,0,0,0.15); }
+        .v4-card:nth-child(1) { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+        .v4-card:nth-child(2) { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
+        .v4-card:nth-child(3) { background: linear-gradient(135deg, #0ea5e9, #38bdf8); }
+        .v4-card:nth-child(4) { background: linear-gradient(135deg, #14b8a6, #2dd4bf); }
+        .v4-card:nth-child(5) { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+        .v4-card:nth-child(6) { background: linear-gradient(135deg, #ef4444, #f87171); }
+
+        .v4-number { font-size: 3rem; font-weight: 800; font-family: 'Montserrat', sans-serif; opacity: 0.4; line-height: 1; }
+        .v4-text { font-size: 1.4rem; font-weight: 700; line-height: 1.3; font-family: 'Montserrat', sans-serif; margin-top: 1.5rem; }
+
+
+        /* =======================================================
+           VARIATION 5: Floating Minimal Badges
+           ======================================================= */
+        .v5-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; max-width: 900px; margin: 0 auto; }
+        .v5-badge { 
+            display: inline-flex; align-items: center; 
+            background: white; border: 1px solid #e2e8f0; border-radius: 9999px; 
+            padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        .v5-badge:hover { 
+            border-color: #3b82f6; 
+            box-shadow: 0 10px 25px -5px rgba(59,130,246,0.25); 
+            transform: translateY(-4px); 
+        }
+        .v5-icon { 
+            width: 40px; height: 40px; border-radius: 50%; 
+            background: #3b82f6; color: white; 
+            display: flex; justify-content: center; align-items: center; 
+            margin-right: 1rem; font-weight: 700; font-size: 1.1rem;
+            box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
+        }
+        .v5-text { font-weight: 600; color: #334155; font-size: 1.05rem; }
+
+        /* =======================================================
+           VARIATION 6: Left Side Color Ribbon
+           ======================================================= */
+        .v6-grid { display: flex; flex-direction: column; gap: 1.5rem; max-width: 650px; margin: 0 auto; }
+        .v6-card { 
+            position: relative;
+            background: #ffffff; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 8px; 
+            padding: 1.5rem 1.5rem 1.5rem 4rem; 
+            display: flex; 
+            align-items: center; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .v6-card:hover { transform: translateX(10px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .v6-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 1.25rem;
+            background: linear-gradient(to bottom, var(--c1), var(--c2));
+        }
+        .v6-number { 
+            width: 44px; height: 44px; 
+            background: var(--c1); color: white; 
+            border-radius: 50%; 
+            display: flex; justify-content: center; align-items: center; 
+            font-weight: 700; font-size: 1.2rem; 
+            position: absolute; left: 0.5rem;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+        }
+        .v6-text { font-weight: 600; font-size: 1.2rem; color: #1e293b; }
+
+        /* =======================================================
+           VARIATION 7: Neobrutalism (Trendy & Bold)
+           ======================================================= */
+        .v7-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; }
+        .v7-card { 
+            background: #ffffff; 
+            border: 3px solid #0f172a; 
+            border-radius: 12px; 
+            padding: 1.5rem; 
+            display: flex; 
+            align-items: center; 
+            box-shadow: 6px 6px 0px var(--c1);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .v7-card:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0px var(--c1); }
+        .v7-number { 
+            width: 48px; height: 48px; 
+            background: var(--c1); color: #0f172a; 
+            border: 3px solid #0f172a;
+            border-radius: 50%; 
+            display: flex; justify-content: center; align-items: center; 
+            font-weight: 800; font-size: 1.5rem; margin-right: 1.25rem; flex-shrink: 0;
+        }
+        .v7-text { font-weight: 700; font-size: 1.2rem; color: #0f172a; }
+
+        /* =======================================================
+           VARIATION 8: Outline Wireframe Style
+           ======================================================= */
+        .v8-list { display: flex; flex-direction: column; gap: 1rem; max-width: 700px; margin: 0 auto; }
+        .v8-card { 
+            background: transparent; 
+            border: 2px solid var(--c1); 
+            border-radius: 100px; 
+            padding: 1rem 2.5rem; 
+            display: flex; 
+            align-items: center; 
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .v8-card:hover { background: var(--c1); color: white; transform: scale(1.02); }
+        .v8-number { 
+            color: var(--c1); 
+            font-weight: 800; font-size: 1.5rem; margin-right: 1.5rem; flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        .v8-card:hover .v8-number { color: white; }
+        .v8-text { font-weight: 600; font-size: 1.2rem; color: #1e293b; transition: all 0.3s ease; }
+        .v8-card:hover .v8-text { color: white; }
+
+        /* =======================================================
+           VARIATION 9: Pastel Color Blocks
+           ======================================================= */
+        .v9-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .v9-card { 
+            background: var(--bg-color); 
+            border-radius: 16px; 
+            padding: 2rem; 
+            display: flex; 
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .v9-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .v9-header { display: flex; align-items: center; }
+        .v9-number { 
+            width: 48px; height: 48px; 
+            background: white; color: var(--c1); 
+            border-radius: 12px; 
+            display: flex; justify-content: center; align-items: center; 
+            font-weight: 800; font-size: 1.4rem; margin-right: 1.25rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .v9-text { font-weight: 700; font-size: 1.25rem; color: #1e293b; }
+
+        /* =======================================================
+           VARIATION 10: Elegant Underline Minimal
+           ======================================================= */
+        .v10-list { display: flex; flex-direction: column; gap: 2rem; max-width: 700px; margin: 0 auto; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .v10-item { 
+            display: flex; align-items: baseline; 
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #f1f5f9;
+            position: relative;
+            cursor: pointer;
+        }
+        .v10-item::after {
+            content: ''; position: absolute; left: 0; bottom: -3px; height: 3px;
+            width: 0%; background: linear-gradient(to right, var(--c1), var(--c2));
+            transition: width 0.4s ease;
+        }
+        .v10-item:hover::after { width: 40%; }
+        .v10-number { color: var(--c1); font-weight: 800; font-size: 1.5rem; margin-right: 1.5rem; width: 30px; font-family: 'Montserrat', sans-serif;}
+        .v10-text { font-weight: 600; font-size: 1.25rem; color: #0f172a; }
+    </style>
+</head>  
+<body>
+
+    <h1 class="main-header">UI Variations Showcase</h1>
+    <p class="main-desc">Present these 5 creative variations to your Sir for selection.</p>
+
+    <!-- Variation 1 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 1: Modern Enterprise Grid</h2>
+        <div class="v1-grid">
+            <div class="v1-card"><div class="v1-number">1</div><div class="v1-text">Smart Broker Dashboard</div></div>
+            <div class="v1-card"><div class="v1-number">2</div><div class="v1-text">Live Property Inventory</div></div>
+            <div class="v1-card"><div class="v1-number">3</div><div class="v1-text">Multi-Level Referral Network</div></div>
+            <div class="v1-card"><div class="v1-number">4</div><div class="v1-text">Automated Visit Booking</div></div>
+            <div class="v1-card"><div class="v1-number">5</div><div class="v1-text">Commission Tracker</div></div>
+            <div class="v1-card"><div class="v1-number">6</div><div class="v1-text">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+    <!-- Variation 2 -->
+    <div class="variation-container" style="background: transparent; box-shadow: none;">
+        <div class="v2-wrapper">
+            <h2 class="variation-title v2-title">Option 2: Dark Mode Glassmorphism</h2>
+            <div class="v2-grid">
+                <div class="v2-card"><div class="v2-number">01</div><div class="v2-text">Smart Broker Dashboard</div></div>
+                <div class="v2-card"><div class="v2-number">02</div><div class="v2-text">Live Property Inventory</div></div>
+                <div class="v2-card"><div class="v2-number">03</div><div class="v2-text">Multi-Level Referral Network</div></div>
+                <div class="v2-card"><div class="v2-number">04</div><div class="v2-text">Automated Visit Booking</div></div>
+                <div class="v2-card"><div class="v2-number">05</div><div class="v2-text">Commission Tracker</div></div>
+                <div class="v2-card"><div class="v2-number">06</div><div class="v2-text">Marketing Asset Hub</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Variation 3 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 3: Vertical Step Timeline</h2>
+        <div class="v3-timeline">
+            <div class="v3-item"><div class="v3-dot">1</div><div class="v3-content">Smart Broker Dashboard</div></div>
+            <div class="v3-item"><div class="v3-dot">2</div><div class="v3-content">Live Property Inventory</div></div>
+            <div class="v3-item"><div class="v3-dot">3</div><div class="v3-content">Multi-Level Referral Network</div></div>
+            <div class="v3-item"><div class="v3-dot">4</div><div class="v3-content">Automated Visit Booking</div></div>
+            <div class="v3-item"><div class="v3-dot">5</div><div class="v3-content">Commission Tracker</div></div>
+            <div class="v3-item"><div class="v3-dot">6</div><div class="v3-content">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+    <!-- Variation 4 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 4: Vibrant Gradient Bento Box</h2>
+        <div class="v4-grid">
+            <div class="v4-card"><div class="v4-number">01</div><div class="v4-text">Smart Broker Dashboard</div></div>
+            <div class="v4-card"><div class="v4-number">02</div><div class="v4-text">Live Property Inventory</div></div>
+            <div class="v4-card"><div class="v4-number">03</div><div class="v4-text">Multi-Level Referral Network</div></div>
+            <div class="v4-card"><div class="v4-number">04</div><div class="v4-text">Automated Visit Booking</div></div>
+            <div class="v4-card"><div class="v4-number">05</div><div class="v4-text">Commission Tracker</div></div>
+            <div class="v4-card"><div class="v4-number">06</div><div class="v4-text">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+    <!-- Variation 5 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 5: Floating Minimal Badges</h2>
+        <div class="v5-container">
+            <div class="v5-badge"><div class="v5-icon">1</div><div class="v5-text">Smart Broker Dashboard</div></div>
+            <div class="v5-badge"><div class="v5-icon">2</div><div class="v5-text">Live Property Inventory</div></div>
+            <div class="v5-badge"><div class="v5-icon">3</div><div class="v5-text">Multi-Level Referral Network</div></div>
+            <div class="v5-badge"><div class="v5-icon">4</div><div class="v5-text">Automated Visit Booking</div></div>
+            <div class="v5-badge"><div class="v5-icon">5</div><div class="v5-text">Commission Tracker</div></div>
+            <div class="v5-badge"><div class="v5-icon">6</div><div class="v5-text">Marketing Asset Hub</div></div>
+    <!-- Variation 6 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 6: Colored Side Ribbon Layout</h2>
+        <div class="v6-grid">
+            <div class="v6-card" style="--c1: #ef4444; --c2: #f87171;"><div class="v6-number">1</div><div class="v6-text">Smart Broker Dashboard</div></div>
+            <div class="v6-card" style="--c1: #f97316; --c2: #fb923c;"><div class="v6-number">2</div><div class="v6-text">Live Property Inventory</div></div>
+            <div class="v6-card" style="--c1: #eab308; --c2: #facc15;"><div class="v6-number">3</div><div class="v6-text">Multi-Level Referral Network</div></div>
+            <div class="v6-card" style="--c1: #22c55e; --c2: #4ade80;"><div class="v6-number">4</div><div class="v6-text">Automated Visit Booking</div></div>
+            <div class="v6-card" style="--c1: #3b82f6; --c2: #60a5fa;"><div class="v6-number">5</div><div class="v6-text">Commission Tracker</div></div>
+            <div class="v6-card" style="--c1: #a855f7; --c2: #c084fc;"><div class="v6-number">6</div><div class="v6-text">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+    <!-- Variation 7 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 7: Neobrutalism (Trendy & Bold)</h2>
+        <div class="v7-grid">
+            <div class="v7-card" style="--c1: #fca5a5;"><div class="v7-number">1</div><div class="v7-text">Smart Broker Dashboard</div></div>
+            <div class="v7-card" style="--c1: #fdba74;"><div class="v7-number">2</div><div class="v7-text">Live Property Inventory</div></div>
+            <div class="v7-card" style="--c1: #fde047;"><div class="v7-number">3</div><div class="v7-text">Multi-Level Referral Network</div></div>
+            <div class="v7-card" style="--c1: #86efac;"><div class="v7-number">4</div><div class="v7-text">Automated Visit Booking</div></div>
+            <div class="v7-card" style="--c1: #93c5fd;"><div class="v7-number">5</div><div class="v7-text">Commission Tracker</div></div>
+            <div class="v7-card" style="--c1: #d8b4fe;"><div class="v7-number">6</div><div class="v7-text">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+    <!-- Variation 8 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 8: Outline Wireframe Style</h2>
+        <div class="v8-list">
+            <div class="v8-card" style="--c1: #ef4444;"><div class="v8-number">01</div><div class="v8-text">Smart Broker Dashboard</div></div>
+            <div class="v8-card" style="--c1: #f97316;"><div class="v8-number">02</div><div class="v8-text">Live Property Inventory</div></div>
+            <div class="v8-card" style="--c1: #eab308;"><div class="v8-number">03</div><div class="v8-text">Multi-Level Referral Network</div></div>
+            <div class="v8-card" style="--c1: #22c55e;"><div class="v8-number">04</div><div class="v8-text">Automated Visit Booking</div></div>
+            <div class="v8-card" style="--c1: #3b82f6;"><div class="v8-number">05</div><div class="v8-text">Commission Tracker</div></div>
+            <div class="v8-card" style="--c1: #a855f7;"><div class="v8-number">06</div><div class="v8-text">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+    <!-- Variation 9 -->
+    <div class="variation-container">
+        <h2 class="variation-title">Option 9: Pastel Color Blocks</h2>
+        <div class="v9-grid">
+            <div class="v9-card" style="--bg-color: #fee2e2; --c1: #ef4444;"><div class="v9-header"><div class="v9-number">1</div><div class="v9-text">Smart Broker Dashboard</div></div></div>
+            <div class="v9-card" style="--bg-color: #ffedd5; --c1: #f97316;"><div class="v9-header"><div class="v9-number">2</div><div class="v9-text">Live Property Inventory</div></div></div>
+            <div class="v9-card" style="--bg-color: #fef9c3; --c1: #eab308;"><div class="v9-header"><div class="v9-number">3</div><div class="v9-text">Multi-Level Referral Network</div></div></div>
+            <div class="v9-card" style="--bg-color: #dcfce7; --c1: #22c55e;"><div class="v9-header"><div class="v9-number">4</div><div class="v9-text">Automated Visit Booking</div></div></div>
+            <div class="v9-card" style="--bg-color: #dbeafe; --c1: #3b82f6;"><div class="v9-header"><div class="v9-number">5</div><div class="v9-text">Commission Tracker</div></div></div>
+            <div class="v9-card" style="--bg-color: #f3e8ff; --c1: #a855f7;"><div class="v9-header"><div class="v9-number">6</div><div class="v9-text">Marketing Asset Hub</div></div></div>
+        </div>
+    </div>
+
+    <!-- Variation 10 -->
+    <div class="variation-container" style="background: transparent; box-shadow: none;">
+        <h2 class="variation-title">Option 10: Elegant Underline Minimal</h2>
+        <div class="v10-list">
+            <div class="v10-item" style="--c1: #ef4444; --c2: #f87171;"><div class="v10-number">01</div><div class="v10-text">Smart Broker Dashboard</div></div>
+            <div class="v10-item" style="--c1: #f97316; --c2: #fb923c;"><div class="v10-number">02</div><div class="v10-text">Live Property Inventory</div></div>
+            <div class="v10-item" style="--c1: #eab308; --c2: #facc15;"><div class="v10-number">03</div><div class="v10-text">Multi-Level Referral Network</div></div>
+            <div class="v10-item" style="--c1: #22c55e; --c2: #4ade80;"><div class="v10-number">04</div><div class="v10-text">Automated Visit Booking</div></div>
+            <div class="v10-item" style="--c1: #3b82f6; --c2: #60a5fa;"><div class="v10-number">05</div><div class="v10-text">Commission Tracker</div></div>
+            <div class="v10-item" style="--c1: #a855f7; --c2: #c084fc;"><div class="v10-number">06</div><div class="v10-text">Marketing Asset Hub</div></div>
+        </div>
+    </div>
+
+</body>
+</html>
