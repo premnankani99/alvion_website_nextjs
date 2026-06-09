@@ -12,6 +12,33 @@ export default function LandmaarkCaseStudy() {
   const sliderImages = Array.from({ length: 10 }, (_, i) => `/case-studies/landmaark/slider-${i + 1}.png`);
   const [activeSection, setActiveSection] = useState("overview");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showSummary, setShowSummary] = useState(false);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
+
+  const summaryText = " Landmaark Developer is a comprehensive real estate management platform designed to digitize property sales, broker operations, and customer visit management. The solution includes dedicated Admin and Broker portals, enabling real-time property access, visit booking, referral network management, and commission tracking. By automating key workflows and centralizing operations, the platform improved efficiency, increased sales visibility, and streamlined the entire real estate sales process.";
+
+  useEffect(() => {
+    if (showSummary) {
+      setDisplayedText("");
+      setIsTyping(true);
+      let currentIndex = 0;
+      const interval = setInterval(() => {
+        if (currentIndex < summaryText.length - 1) {
+          setDisplayedText(prev => prev + summaryText[currentIndex]);
+          currentIndex++;
+        } else {
+          setDisplayedText(summaryText);
+          setIsTyping(false);
+          clearInterval(interval);
+        }
+      }, 30);
+      return () => clearInterval(interval);
+    } else {
+      setDisplayedText("");
+      setIsTyping(false);
+    }
+  }, [showSummary]);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % sliderImages.length);
@@ -79,9 +106,12 @@ export default function LandmaarkCaseStudy() {
         </div>
 
         {/* Title Section */}
-        <div className="container mx-auto px-6 md:px-12 text-center pb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-blue-500 mb-4 tracking-tight">Landmaark Developer</h1>
-          <p className="text-zinc-500 text-lg">Building a Digital Ecosystem for Property Sales, Broker Networks, and Lead Conversion</p>
+        <div className="container mx-auto px-6 md:px-12 pb-12 relative">
+          <div className="text-center w-full max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-5xl font-bold text-blue-500 mb-4 tracking-tight">Landmaark Developer</h1>
+            <p className="text-zinc-500 text-lg mb-8">Building a Digital Ecosystem for Property Sales, Broker Networks, and Lead Conversion</p>
+          </div>
+          {/* Chatbot button removed from here */}
         </div>
 
         {/* Main Content Layout */}
@@ -338,6 +368,51 @@ export default function LandmaarkCaseStudy() {
         </div>
 
         <Footer />
+
+        {/* Chatbot Floating Button (Placed above normal chatbot area) */}
+        <div className="fixed bottom-24 right-[56px] translate-x-1/2 z-50 flex flex-col items-center">
+          {showSummary && (
+            <motion.div 
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.95 }}
+              className="absolute bottom-20 right-0 w-[340px] md:w-[400px] bg-white border border-gray-200 rounded-2xl shadow-2xl overflow-hidden flex flex-col text-left"
+            >
+              <div className="bg-blue-600 text-white p-4 flex justify-between items-center">
+                <div className="flex items-center gap-2">
+                  <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></div>
+                  <h3 className="font-bold text-sm">Alvion AI Assistant</h3>
+                </div>
+                <button onClick={() => setShowSummary(false)} className="text-white hover:text-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+              </div>
+              <div className="p-5 bg-gray-50/50">
+                <div className="bg-white p-4 rounded-xl rounded-tl-sm shadow-sm border border-gray-100 text-sm text-gray-700 leading-relaxed min-h-[120px]">
+                  {displayedText}
+                  {isTyping && <span className="inline-block w-1.5 h-4 ml-1 bg-blue-500 animate-pulse align-middle"></span>}
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          <button
+            onClick={() => setShowSummary(!showSummary)}
+            className="relative group flex flex-col items-center justify-center focus:outline-none"
+          >
+            {/* Ping animation behind button */}
+            {!showSummary && <div className="absolute top-0 w-12 h-12 bg-purple-500 rounded-full animate-ping opacity-30 -z-10"></div>}
+            
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-fuchsia-600 text-white rounded-full flex items-center justify-center shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-1 hover:scale-105 border-2 border-white">
+              {showSummary ? (
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-pulse"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M3 5h4"/></svg>
+              )}
+            </div>
+            {!showSummary && <span className="mt-1.5 text-[10px] font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full shadow-sm tracking-wide uppercase border border-purple-100">Summarize</span>}
+          </button>
+        </div>
       </div>
     </>
   );
