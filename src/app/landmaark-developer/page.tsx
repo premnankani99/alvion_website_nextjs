@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function LandmaarkCaseStudy() {
   const router = useRouter();
-  const sliderImages = Array.from({ length: 15 }, (_, i) => `/case-studies/landmaark/slider-${i + 1}.jpg`);
+  const sliderImages = Array.from({ length: 10 }, (_, i) => `/case-studies/landmaark/slider-${i + 1}.png`);
   const [activeSection, setActiveSection] = useState("overview");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
