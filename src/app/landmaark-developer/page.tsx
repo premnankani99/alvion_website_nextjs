@@ -16,7 +16,7 @@ export default function LandmaarkCaseStudy() {
   const [displayedText, setDisplayedText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
-  const summaryText = " Landmaark Developer is a comprehensive real estate management platform designed to digitize property sales, broker operations, and customer visit management. The solution includes dedicated Admin and Broker portals, enabling real-time property access, visit booking, referral network management, and commission tracking. By automating key workflows and centralizing operations, the platform improved efficiency, increased sales visibility, and streamlined the entire real estate sales process.";
+  const summaryText = `  •  Centralized Admin and Broker management system.\n•  Digital property and project management.\n•  Easy visit booking and referral tracking.\n•  Real-time commission and earnings monitoring.\n•  Faster sales operations and workflow management.\n•  Improved transparency across the platform.\n•  Complete digital real estate ecosystem.`;
 
   useEffect(() => {
     if (showSummary) {
@@ -376,7 +376,7 @@ export default function LandmaarkCaseStudy() {
               initial={{ opacity: 0, y: 20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.95 }}
-              className="absolute bottom-20 right-0 w-[340px] md:w-[400px] bg-white border border-gray-200 rounded-2xl shadow-2xl overflow-hidden flex flex-col text-left"
+              className="absolute bottom-20 -right-4 sm:right-0 w-[calc(100vw-40px)] sm:w-[340px] md:w-[400px] max-w-[400px] bg-white border border-gray-200 rounded-2xl shadow-2xl overflow-hidden flex flex-col text-left origin-bottom-right"
             >
               <div className="bg-blue-600 text-white p-4 flex justify-between items-center">
                 <div className="flex items-center gap-2">
@@ -388,7 +388,7 @@ export default function LandmaarkCaseStudy() {
                 </button>
               </div>
               <div className="p-5 bg-gray-50/50">
-                <div className="bg-white p-4 rounded-xl rounded-tl-sm shadow-sm border border-gray-100 text-sm text-gray-700 leading-relaxed min-h-[120px]">
+                <div className="bg-white p-4 rounded-xl rounded-tl-sm shadow-sm border border-gray-100 text-sm text-gray-700 leading-relaxed min-h-[120px] whitespace-pre-line">
                   {displayedText}
                   {isTyping && <span className="inline-block w-1.5 h-4 ml-1 bg-blue-500 animate-pulse align-middle"></span>}
                 </div>

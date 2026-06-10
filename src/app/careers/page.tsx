@@ -135,7 +135,7 @@ export default function CareersPage() {
                   </h2>
                   <p className="text-zinc-500 text-base md:text-lg mb-10 font-normal">Innovate with Purpose. Grow with Passion. Build the Future Together.</p>
 
-                  <div className="space-y-6">
+                  <div className="grid grid-cols-1 auto-rows-fr gap-4 md:gap-6 w-full">
                     {perks.map((perk, i) => (
                       <motion.div
                         key={i}
@@ -144,12 +144,12 @@ export default function CareersPage() {
                         viewport={{ once: false, amount: 0.1 }}
                         transition={{ duration: 0.18, delay: i * 0.03, type: "spring", bounce: 0.1 }}
                         whileHover={{ x: 8 }}
-                        className="flex gap-6 p-5 md:p-6 bg-[#fcfdfe] rounded-[16px] border border-zinc-150 hover:bg-white hover:border-blue-500/20 hover:shadow-[0_10px_35px_rgba(30,58,138,0.05)] transition-all duration-300"
+                        className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-[#fcfdfe] rounded-[16px] border border-zinc-150 hover:bg-white hover:border-blue-500/20 hover:shadow-[0_10px_35px_rgba(30,58,138,0.05)] transition-all duration-300 h-full"
                       >
-                        <div className="text-3xl flex items-center justify-center p-2 bg-blue-50/50 rounded-xl">{perk.icon}</div>
+                        <div className="text-2xl md:text-3xl flex items-center justify-center p-3 bg-blue-50/50 rounded-xl shrink-0">{perk.icon}</div>
                         <div>
-                          <h4 className="font-bold text-black text-lg mb-2">{perk.title}</h4>
-                          <p className="text-zinc-500 text-sm leading-relaxed">{perk.desc}</p>
+                          <h4 className="font-bold text-black text-base md:text-lg mb-1 md:mb-2">{perk.title}</h4>
+                          <p className="text-zinc-500 text-[13px] md:text-sm leading-relaxed">{perk.desc}</p>
                         </div>
                       </motion.div>
                     ))}

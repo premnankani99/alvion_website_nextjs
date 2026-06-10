@@ -10,7 +10,7 @@ export default function BlogsPage() {
       <div className="bg-[#fbfcfd] min-h-screen flex flex-col pt-20">
 
         {/* 1. HERO SECTION */}
-        <section className="relative h-[250px] md:h-[350px] w-full flex items-center justify-center overflow-hidden">
+        <section className="relative h-[160px] md:h-[350px] w-full flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
               src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
