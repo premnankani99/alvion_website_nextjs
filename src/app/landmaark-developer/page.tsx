@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 import landmaarkData from "@/data/landmaark.json";
+import { CaseStudyData } from "@/types/case-study";
 
 export default function LandmaarkCaseStudy() {
   const sliderImages = Array.from({ length: 10 }, (_, i) => `/case-studies/landmaark/slider-${i + 1}.png`);
@@ -91,5 +92,5 @@ export default function LandmaarkCaseStudy() {
     </div>
   );
 
-  return <CaseStudyTemplate data={landmaarkData} customPreviews={customPreviews} />;
+  return <CaseStudyTemplate data={landmaarkData as CaseStudyData} customPreviews={customPreviews} />;
 }
