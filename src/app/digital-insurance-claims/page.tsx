@@ -1,146 +1,82 @@
-"use client";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import { CaseStudyData } from "@/types/case-study";
 
 export default function DigitalInsuranceClaimsPage() {
-  const [activeSection, setActiveSection] = useState("overview");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["overview", "challenge", "solution", "result", "technologies"];
-      let current = "overview";
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 150) current = section;
-        }
+  const pageData: CaseStudyData = {
+    id: "digital-insurance-claims",
+    title: "Digital Insurance Claims Platform",
+    description: "Insurance Claims Process Automation",
+    industry: "Insurance",
+    projectType: "Claims Process Automation",
+    platform: "Appian Low-Code Platform",
+    overview: [
+      "A leading insurance provider was overwhelmed by the high volume of motor and health claims, causing severe operational delays and damaging their reputation for timely payouts.",
+      "They needed a centralized, intelligent digital platform to streamline claims processing, reduce fraudulent claims through better data validation, and accelerate settlements."
+    ],
+    problemIntro: "Manual verification and disconnected legacy systems severely impacted claims efficiency.",
+    problems: [
+      { title: "Long Settlement Cycles", desc: "Inefficient routing resulted in incredibly long cycles and frustrated customers." },
+      { title: "High Fraud Risk", desc: "Manual document review made it difficult to detect duplicate or altered claims." },
+      { title: "No SLA Tracking", desc: "Absence of automated tracking led to operational blind spots and regulatory fines." }
+    ],
+    solution: [
+      "An end-to-end Claims Automation Platform was deployed using Appian to digitize and orchestrate the complete claims lifecycle from initial intake to final payout.",
+      "The solution integrated intelligent rule-based validation, automated task routing, and comprehensive dashboards to ensure claims teams focused purely on exception handling."
+    ],
+    modules: [
+      { num: "01", title: "Omnichannel Intake Portal" },
+      { num: "02", title: "Rule-Based Claim Validation" },
+      { num: "03", title: "Automated Task Routing" },
+      { num: "04", title: "Evidence Management" },
+      { num: "05", title: "SLA Auto-Escalations" },
+      { num: "06", title: "Real-Time Adjuster Dashboards" }
+    ],
+    outcomes: [
+      { value: "65%", label: "Faster Settlements" },
+      { value: "50%", label: "Reduction in Manual Effort" },
+      { value: "30%", label: "Drop in Fraudulent Payouts" }
+    ],
+    technologies: [
+      "Appian Case Management", "Process Models", "Data Fabric", "Business Rules",
+      "SLA Timers", "Document Management", "Core Insurance APIs", "Fraud API",
+      "PostgreSQL", "Audit Logging"
+    ].map(name => ({ name, icon: "", bg: "" })),
+    sliderImages: [],
+    summaryText: "",
+    kpiStats: [
+      {
+        title: "Settlement Time",
+        value: "65%",
+        trend: "65%",
+        trendDirection: "down",
+        sparklineData: [120, 100, 80, 60, 55, 45, 40, 35],
+        sparklineColor: "#9c27b0",
+        iconType: "clock"
+      },
+      {
+        title: "Manual Effort",
+        value: "50%",
+        trend: "50%",
+        trendDirection: "down",
+        sparklineData: [90, 85, 75, 65, 55, 50, 45],
+        sparklineColor: "#ff9800",
+        iconType: "document"
+      },
+      {
+        title: "Claim Traceability",
+        value: "100%",
+        trend: "45%",
+        trendDirection: "up",
+        sparklineData: [55, 60, 75, 85, 95, 100, 100],
+        sparklineColor: "#ffeb3b",
+        iconType: "heart"
       }
-      setActiveSection(current);
-    };
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    ],
+    conclusion: [
+      "The fully digital platform completely transformed the client's operational capabilities, enabling adjusters to focus on high-value investigation and customer support.",
+      "The robust tracking and automated communication pipelines dramatically improved customer satisfaction while delivering a staggering 65% improvement in settlement speeds."
+    ]
+  };
 
-  return (
-    <>
-      <Navbar />
-      <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-                {/* Back Button */}
-        <div className="container mx-auto px-6 md:px-12 py-6">
-          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
-            &larr; Back
-          </button>
-        </div>
-
-        {/* Title Section */}
-        <div className="container mx-auto px-6 md:px-12 text-center pb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-black mb-4 tracking-tight">Digital Insurance Claims Management Platform</h1>
-          <p className="text-zinc-500 text-lg uppercase tracking-wider">INSURANCE</p>
-        </div>
-
-        {/* Main Content Layout */}
-        <div className="container mx-auto px-6 md:px-12 pb-20 flex flex-col lg:flex-row gap-12">
-          
-          {/* Sidebar */}
-          <aside className="lg:w-1/4">
-            <div className="bg-[#f5f6f8] p-8 rounded-lg sticky top-28">
-              <div className="mb-8">
-                <h3 className="font-bold text-purple-800 mb-2 text-sm">Industry:</h3>
-                <p className="text-sm text-zinc-800">Insurance</p>
-              </div>
-              <div className="mb-8">
-                <h3 className="font-bold text-purple-800 mb-2 text-sm">Project Type:</h3>
-                <p className="text-sm text-zinc-800 leading-relaxed">Claims Process Automation</p>
-              </div>
-            </div>
-          </aside>
-
-          {/* Main Content */}
-          <div className="lg:w-2/4">
-            <section id="overview" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-purple-800 mb-4">Client Overview</h2>
-              <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
-                A leading insurance provider handling high volumes of motor and health insurance claims was facing operational delays, manual verification challenges, and limited visibility across claim lifecycles. The organization needed a centralized digital platform to streamline claims processing while ensuring compliance and faster customer settlements.
-              </p>
-            </section>
-
-            <section id="challenge" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-purple-800 mb-4">Challenge</h2>
-              <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
-                Claims were processed through emails, spreadsheets, and disconnected systems, resulting in long settlement cycles, frequent follow-ups, and inconsistent decision-making. Manual document verification and lack of SLA tracking led to customer dissatisfaction and operational inefficiencies.
-              </p>
-            </section>
-
-            <section id="solution" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-purple-800 mb-4">Solution</h2>
-              <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
-                An end-to-end Insurance Claims Automation Platform was built using Appian to digitize and orchestrate the complete claims lifecycle. The solution enabled digital claim intake, document management, rule-based claim validation, automated task routing, and real-time dashboards for claims processing.
-              </p>
-            </section>
-
-            <section id="result" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-purple-800 mb-6">Result</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[140px]">
-                  <h3 className="text-4xl font-bold text-blue-600 mb-2">65%</h3>
-                  <p className="text-sm text-zinc-500">Faster Claim Settlement</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[140px]">
-                  <h3 className="text-4xl font-bold text-blue-600 mb-2">50%</h3>
-                  <p className="text-sm text-zinc-500">Reduction in Manual Effort</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-zinc-100 flex flex-col items-center justify-center min-h-[140px]">
-                  <h3 className="text-4xl font-bold text-blue-600 mb-2">100%</h3>
-                  <p className="text-sm text-zinc-500">Claim Traceability</p>
-                </div>
-              </div>
-              <p className="text-zinc-600 leading-relaxed text-sm md:text-base">
-                The automated platform significantly reduced claim processing time, improved accuracy, and enhanced customer satisfaction. Standardized workflows, audit trails, and SLA monitoring ensured regulatory compliance while enabling claims teams to focus on exception handling and value-driven tasks.
-              </p>
-            </section>
-
-            <section id="technologies" className="scroll-mt-32">
-              <h2 className="text-2xl font-bold text-purple-800 mb-4">Technology Stack</h2>
-              <p className="text-zinc-600 leading-relaxed text-sm md:text-base mb-6">
-                The solution was built using secure, scalable, and enterprise-grade technologies:
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian Low-Code Platform</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian Process Models</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian Records & Data Fabric</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">SAIL Interfaces (Dynamic UI)</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Appian Case Management</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Business Rules Engine</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">SLA Monitoring & Escalations</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Document Management</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">REST API Integrations</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Core Insurance System Integration</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">PostgreSQL / Oracle Database</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Role-Based Access Control</span>
-                <span className="px-4 py-2 bg-white rounded-full text-xs border border-zinc-200">Audit Logs & Compliance Tracking</span>
-              </div>
-            </section>
-          </div>
-
-          {/* Right Navigation */}
-          <aside className="hidden lg:block lg:w-1/4">
-            <div className="sticky top-28 border-l-2 border-purple-800 pl-4 flex flex-col gap-4">
-              <a href="#overview" className={`text-sm ${activeSection === 'overview' ? 'text-purple-800 font-bold' : 'text-zinc-800 hover:text-purple-600'}`}>Client Overview</a>
-              <a href="#challenge" className={`text-sm ${activeSection === 'challenge' ? 'text-purple-800 font-bold' : 'text-zinc-800 hover:text-purple-600'}`}>Challenge</a>
-              <a href="#solution" className={`text-sm ${activeSection === 'solution' ? 'text-purple-800 font-bold' : 'text-zinc-800 hover:text-purple-600'}`}>Solution</a>
-              <a href="#result" className={`text-sm ${activeSection === 'result' ? 'text-purple-800 font-bold' : 'text-zinc-800 hover:text-purple-600'}`}>Result</a>
-              <a href="#technologies" className={`text-sm ${activeSection === 'technologies' ? 'text-purple-800 font-bold' : 'text-zinc-800 hover:text-purple-600'}`}>Tech Stack</a>
-            </div>
-          </aside>
-
-        </div>
-        <Footer />
-      </div>
-    </>
-  );
+  return <CaseStudyTemplate data={pageData} />;
 }

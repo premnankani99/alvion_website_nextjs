@@ -1,148 +1,82 @@
-"use client";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
+import { CaseStudyData } from "@/types/case-study";
 
 export default function EnterpriseGRCPage() {
-  const [activeSection, setActiveSection] = useState("overview");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["overview", "challenge", "solution", "result", "technologies"];
-      let current = "overview";
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 150) current = section;
-        }
+  const pageData: CaseStudyData = {
+    id: "enterprise-grc-automation-platform",
+    title: "Enterprise GRC Platform",
+    description: "Governance, Risk & Compliance Automation",
+    industry: "Banking & Financial Services",
+    projectType: "GRC Automation",
+    platform: "Appian Low-Code Platform",
+    overview: [
+      "A large multinational enterprise faced intense regulatory scrutiny and governance challenges, managing complex compliance laws through fragile spreadsheets and siloed systems.",
+      "They required a centralized, highly secure platform to limit operational risk, improve global visibility, and ensure proactive compliance with rapidly shifting regulations."
+    ],
+    problemIntro: "Fragmented risk registers and delayed audit preparations exposed the firm to severe liabilities.",
+    problems: [
+      { title: "Fragmented Risk Registers", desc: "Compliance tracking was scattered across tools, leading to inaccurate reporting." },
+      { title: "Audit Fatigue", desc: "Gathering evidence for internal and external audits was incredibly manual and slow." },
+      { title: "No Executive Visibility", desc: "Leadership lacked real-time insight into the enterprise-wide risk posture." }
+    ],
+    solution: [
+      "An enterprise-grade GRC Automation Platform was deployed using Appian to centralize governance, automate risk assessments, and establish continuous compliance tracking.",
+      "By connecting data across the entire organization, the platform provided a single, unquestionable source of truth, complete with real-time executive risk dashboards."
+    ],
+    modules: [
+      { num: "01", title: "Automated Risk Assessments" },
+      { num: "02", title: "Continuous Compliance Tracking" },
+      { num: "03", title: "Dynamic Audit Workflows" },
+      { num: "04", title: "Issue Remediation Engine" },
+      { num: "05", title: "Centralized Policy Hub" },
+      { num: "06", title: "Executive GRC Dashboards" }
+    ],
+    outcomes: [
+      { value: "50%", label: "Faster Audit Cycles" },
+      { value: "60%", label: "Less Manual Effort" },
+      { value: "100%", label: "Risk Traceability" }
+    ],
+    technologies: [
+      "Appian Records", "Process Models", "SAIL Interfaces", "Role-Based Access",
+      "Audit Logging", "Document Vault", "REST API", "PostgreSQL",
+      "Automated Alerts", "Data Fabric"
+    ].map(name => ({ name, icon: "", bg: "" })),
+    sliderImages: [],
+    summaryText: "",
+    kpiStats: [
+      {
+        title: "Audit Prep Time",
+        value: "50%",
+        trend: "50%",
+        trendDirection: "down",
+        sparklineData: [80, 75, 70, 60, 50, 45, 40],
+        sparklineColor: "#9c27b0",
+        iconType: "clock"
+      },
+      {
+        title: "Manual Effort",
+        value: "60%",
+        trend: "60%",
+        trendDirection: "down",
+        sparklineData: [90, 85, 75, 60, 45, 40, 36],
+        sparklineColor: "#ff9800",
+        iconType: "document"
+      },
+      {
+        title: "Risk Visibility",
+        value: "100%",
+        trend: "80%",
+        trendDirection: "up",
+        sparklineData: [20, 30, 45, 65, 80, 90, 100],
+        sparklineColor: "#ffeb3b",
+        iconType: "heart"
       }
-      setActiveSection(current);
-    };
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    ],
+    conclusion: [
+      "The platform marked a monumental shift from reactive firefighting to proactive risk management, slashing audit prep times and vastly reducing the manual compliance burden.",
+      "The executive team gained transparent, real-time control over the company's risk posture, allowing effortless scaling of compliance frameworks to meet future demands."
+    ]
+  };
 
-  return (
-    <>
-      <Navbar />
-      <div className="bg-[#fbfcfd] pt-28 min-h-screen text-[#0d1b2a] flex flex-col">
-                {/* Back Button */}
-        <div className="container mx-auto px-6 md:px-12 py-6">
-          <button onClick={() => window.history.back()} className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-[#1e3a8a] transition-colors uppercase tracking-widest cursor-pointer">
-            &larr; Back
-          </button>
-        </div>
-
-        {/* Title Section */}
-        <div className="container mx-auto px-6 md:px-12 text-center pb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#0d1b2a] mb-4 tracking-tight">Enterprise GRC Automation Platform</h1>
-          <p className="text-zinc-500 text-sm tracking-[0.2em] uppercase">GOVERNANCE</p>
-        </div>
-
-        {/* Main Content Layout */}
-        <div className="container mx-auto px-6 md:px-12 pb-20 flex flex-col lg:flex-row gap-12">
-          
-          {/* Sidebar */}
-          <aside className="lg:w-1/4">
-            <div className="bg-purple-50/50 border border-purple-100 p-8 rounded-lg sticky top-28">
-              <div className="mb-8">
-                <h3 className="font-bold text-[#6b21a8] mb-2 text-sm">Industry:</h3>
-                <p className="text-sm text-zinc-700">Banking & Financial Services</p>
-              </div>
-              <div className="mb-8">
-                <h3 className="font-bold text-[#6b21a8] mb-2 text-sm">Project Type:</h3>
-                <p className="text-sm text-zinc-700 leading-relaxed">Governance, Risk & Compliance Automation</p>
-              </div>
-            </div>
-          </aside>
-
-          {/* Main Content */}
-          <div className="lg:w-2/4">
-            <section id="overview" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Client Overview</h2>
-              <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
-                A large enterprise operating across multiple geographies faced increasing regulatory scrutiny and governance challenges. Risk assessments, compliance tracking, and audit activities were managed through spreadsheets and siloed systems, limiting visibility and increasing operational risk.
-              </p>
-            </section>
-
-            <section id="challenge" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Challenge</h2>
-              <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
-                The organization struggled with fragmented risk registers, manual compliance reporting, delayed audit preparation, and lack of traceability across governance processes. Leadership lacked real-time insight into risk exposure and compliance status, increasing regulatory and operational risks.
-              </p>
-            </section>
-
-            <section id="solution" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-[#6b21a8] mb-4">Solution</h2>
-              <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
-                An enterprise-grade GRC Automation Platform was implemented using Appian to centralize governance, risk, and compliance processes. The solution enabled automated risk assessments, compliance tracking, audit workflows, and case-based issue remediation with complete transparency and audit readiness.
-              </p>
-            </section>
-
-            <section id="result" className="scroll-mt-32 mb-12">
-              <h2 className="text-2xl font-bold text-[#6b21a8] mb-6">Result</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-white p-6 rounded-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-gray-100 flex flex-col items-center justify-center min-h-[140px] text-center">
-                  <h3 className="text-4xl font-black text-[#1d4ed8] mb-3">50%</h3>
-                  <p className="text-xs text-zinc-500 font-medium tracking-wide">Faster Audit Cycles</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-gray-100 flex flex-col items-center justify-center min-h-[140px] text-center">
-                  <h3 className="text-4xl font-black text-[#1d4ed8] mb-3">60%</h3>
-                  <p className="text-xs text-zinc-500 font-medium tracking-wide">Reduction in Manual Effort</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-gray-100 flex flex-col items-center justify-center min-h-[140px] text-center">
-                  <h3 className="text-4xl font-black text-[#1d4ed8] mb-3">100%</h3>
-                  <p className="text-xs text-zinc-500 font-medium tracking-wide">Risk & Compliance Traceability</p>
-                </div>
-              </div>
-              <p className="text-zinc-700 leading-relaxed text-sm md:text-base">
-                The platform significantly improved audit readiness, reduced compliance risks, and enabled proactive risk mitigation. Automated workflows and real-time dashboards empowered leadership with actionable insights while ensuring regulatory adherence.
-              </p>
-            </section>
-
-            <section id="technologies" className="scroll-mt-32">
-              <h2 className="text-2xl font-bold text-[#6b21a8] mb-6">Technology Stack</h2>
-              <p className="text-zinc-700 leading-relaxed text-sm md:text-base mb-6">
-                The GRC platform was built using secure, scalable, and enterprise-ready Appian capabilities:
-              </p>
-              <div className="flex flex-wrap gap-4">
-                {[
-                  "Appian Low-Code Platform",
-                  "Appian Case Management",
-                  "Appian Records & Data Fabric",
-                  "Process Models & Business Rules",
-                  "SAIL Dynamic Interfaces",
-                  "Role-Based Access Control",
-                  "Audit Trails & Compliance Logging",
-                  "Document Management",
-                  "REST API Integrations",
-                  "Enterprise Database (PostgreSQL / Oracle)"
-                ].map((tech, idx) => (
-                  <span key={idx} className="px-5 py-2.5 bg-white rounded-full text-[13px] border border-gray-200 text-gray-700 shadow-sm">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </section>
-          </div>
-
-          {/* Right Navigation */}
-          <aside className="hidden lg:block lg:w-1/4">
-            <div className="sticky top-28 border-l-2 border-[#6b21a8] pl-4 flex flex-col gap-5">
-              <a href="#overview" className={`text-sm ${activeSection === 'overview' ? 'text-[#6b21a8] font-bold' : 'text-zinc-600 hover:text-[#6b21a8]'}`}>Client Overview</a>
-              <a href="#challenge" className={`text-sm ${activeSection === 'challenge' ? 'text-[#6b21a8] font-bold' : 'text-zinc-600 hover:text-[#6b21a8]'}`}>Challenge</a>
-              <a href="#solution" className={`text-sm ${activeSection === 'solution' ? 'text-[#6b21a8] font-bold' : 'text-zinc-600 hover:text-[#6b21a8]'}`}>Solution</a>
-              <a href="#result" className={`text-sm ${activeSection === 'result' ? 'text-[#6b21a8] font-bold' : 'text-zinc-600 hover:text-[#6b21a8]'}`}>Result</a>
-              <a href="#technologies" className={`text-sm ${activeSection === 'technologies' ? 'text-[#6b21a8] font-bold' : 'text-zinc-600 hover:text-[#6b21a8]'}`}>Tech Stack</a>
-            </div>
-          </aside>
-
-        </div>
-        <Footer />
-      </div>
-    </>
-  );
+  return <CaseStudyTemplate data={pageData} />;
 }

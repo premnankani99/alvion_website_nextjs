@@ -5,20 +5,28 @@ import Link from "next/link";
 
 const healthcareCaseStudies = [
   {
-    title: "Healthcare Workflow Automation",
-    desc: "",
+    title: "CareFirst Hospitals",
+    desc: "AI-Powered Hospital Digital Transformation with real-time KPI tracking.",
     category: "HEALTHCARE",
-    date: "11/19/2025 · 1 min read",
+    date: "Latest · 4 min read",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=3600&h=2160",
+    link: "/services/healthcare/carefirst"
+  },
+  {
+    title: "Healthcare Workflow Automation",
+    desc: "Centralized digital orchestration layer to unify disparate processes.",
+    category: "HEALTHCARE",
+    date: "Latest · 4 min read",
     image: "https://images.unsplash.com/photo-1666886573531-48d2e3c2b684?auto=format&fit=crop&w=3600&h=2160", 
-    link: "/healthcare-workflow-automation"
+    link: "/services/healthcare/healthcare-workflow-automation"
   },
   {
     title: "Medical Inventory Management System",
-    desc: "",
+    desc: "Automating inventory tracking, procurement, and supplier coordination.",
     category: "HEALTHCARE",
-    date: "11/19/2025 · 1 min read",
+    date: "Latest · 4 min read",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=3600&h=2160",
-    link: "/medical-inventory-management-system"
+    link: "/services/healthcare/medical-inventory-management-system"
   }
 ];
 

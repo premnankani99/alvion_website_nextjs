@@ -1,0 +1,56 @@
+{
+  "id": "healthsync-pro",
+  "title": "HealthSync Pro",
+  "description": "A centralized digital platform to streamline patient care. Manage staff, schedule appointments and keep an eye on how things're going at all locations.",
+  "industry": "Healthcare",
+  "projectType": "Website and Mobile App",
+  "platform": "Web & Mobile Application (Admin, Doctor, and Patient Portals)",
+  "overview": [
+    "A large healthcare network required a centralized digital platform to streamline patient care. They wanted to manage their staff, schedule appointments and keep an eye on how thingsre going at all their locations.",
+    "We made a website and mobile app for them. This system has three parts: one for the people in charge one for the doctors and one for the patients. It helps the doctors and staff get the information they need schedule appointments and work together from one place."
+  ],
+  "problemIntro": "Before we helped them HealthSync Pro had some problems.",
+  "problems": [
+    { "title": "Scattered Information", "desc": "They had information all over the place: in Excel files and old systems." },
+    { "title": "Excessive Paperwork", "desc": "The staff spent much time doing paperwork so they had less time to care for patients." },
+    { "title": "Long Wait Times", "desc": "Patients had to wait a time to see a doctor and some doctors had too many patients to see." },
+    { "title": "Poor Visibility", "desc": "The people in charge did not know what was going on at all the locations." }
+  ],
+  "solution": [
+    "Our team engineered a comprehensive healthcare management ecosystem that provides secure, role-based portals for administrators, clinical staff, and patients, effectively digitizing the entire care continuum.",
+    "Through intuitive, real-time dashboards, administrators achieve total operational oversight. Meanwhile, physicians are equipped to instantly retrieve patient histories, streamline clinical documentation, and leverage AI-driven insights—drastically minimizing administrative burdens and maximizing patient care time.",
+    "Additionally, patients are empowered to effortlessly schedule appointments, review their medical records, and interact with their healthcare providers from any device, 24/7."
+  ],
+  "modules": [
+    { "num": "01", "title": "Centralized Cloud Platform" },
+    { "num": "02", "title": "Automated Appointment Scheduling" },
+    { "num": "03", "title": "Admin Task Automation" },
+    { "num": "04", "title": "Billing Process Automation" },
+    { "num": "05", "title": "Real-time Dashboard" },
+    { "num": "06", "title": "Multi-device Patient Engagement" },
+    { "num": "07", "title": "Patient Record AI Summarizer" },
+    { "num": "08", "title": "Insurance Navigator AI" },
+    { "num": "09", "title": "Digital Medical Records Access" },
+    { "num": "10", "title": "Smart Bed & Rounds Predictor" }
+  ],
+  "outcomes": [
+    { "value": "100%", "label": "of records are now digital" },
+    { "value": "Faster", "label": "Appointments are faster and wait times are shorter" },
+    { "value": "Full", "label": "The people, in charge can see what is going on at all locations" }
+  ],
+  "technologies": [
+    { "name": "HTML5", "icon": "https://cdn.simpleicons.org/html5/E34F26", "bg": "bg-orange-50/60" },
+    { "name": "CSS3", "icon": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg", "bg": "bg-blue-50/60" },
+    { "name": "JavaScript", "icon": "https://cdn.simpleicons.org/javascript/F7DF1E", "bg": "bg-yellow-50/60" },
+    { "name": "React.js", "icon": "https://cdn.simpleicons.org/react/61DAFB", "bg": "bg-blue-50/60" },
+    { "name": "Node.js", "icon": "https://cdn.simpleicons.org/nodedotjs/339933", "bg": "bg-green-50/60" },
+    { "name": "Express", "icon": "https://cdn.simpleicons.org/express/000000", "bg": "bg-slate-100/60" },
+    { "name": "MariaDB", "icon": "https://cdn.simpleicons.org/mariadb/003545", "bg": "bg-blue-50/60" },
+    { "name": "MySQL", "icon": "https://cdn.simpleicons.org/mysql/4479A1", "bg": "bg-blue-50/60" },
+    { "name": "AWS", "icon": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", "bg": "bg-orange-50/60" },
+    { "name": "cPanel", "icon": "https://cdn.simpleicons.org/cpanel/FF6C2C", "bg": "bg-orange-50/60" },
+    { "name": "Appian", "icon": "https://cdn.simpleicons.org/appian/00529A", "bg": "bg-blue-100/60" }
+  ],
+  "sliderImages": [],
+  "summaryText": ""
+}

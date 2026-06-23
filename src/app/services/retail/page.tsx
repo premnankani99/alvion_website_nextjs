@@ -10,7 +10,7 @@ const retailCaseStudies = [
     category: "RETAIL",
     date: "11/19/2025 · 1 min read",
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=3600&h=2160", 
-    link: "/omnichannel-retail-transformation-and-intelligent-inventory-modernization"
+    link: "/omnichannel-retail-transformation"
   },
   {
     title: "Smart Grocery Operations & FMCG Supply Chain Transformation",
@@ -18,7 +18,7 @@ const retailCaseStudies = [
     category: "RETAIL",
     date: "11/19/2025 · 1 min read",
     image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=3600&h=2160",
-    link: "/smart-grocery-operations-and-fmcg-supply-chain-transformation"
+    link: "/smart-grocery-operations"
   },
   {
     title: "CONSUMER ELECTRONICS BRAND",
@@ -31,7 +31,7 @@ const retailCaseStudies = [
     title: "WAREHOUSE MANAGEMENT SYSTEM",
     desc: "",
     date: "17/01/2026 · 1 min read",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a0a?auto=format&fit=crop&w=3600&h=2160",
+    image: "/warehouse-banner.jpg",
     link: "/warehouse-management-system"
   }
 ];
