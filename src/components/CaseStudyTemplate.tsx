@@ -16,16 +16,17 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
   const [isTyping, setIsTyping] = useState(false);
 
   useEffect(() => {
-    if (showSummary && data.summaryText) {
+    const textToType = data.summaryText;
+    if (showSummary && textToType) {
       setDisplayedText("");
       setIsTyping(true);
       let currentIndex = 0;
       const interval = setInterval(() => {
-        if (currentIndex < data.summaryText.length - 1) {
-          setDisplayedText(prev => prev + data.summaryText[currentIndex]);
+        if (currentIndex < textToType.length - 1) {
+          setDisplayedText(prev => prev + textToType[currentIndex]);
           currentIndex++;
         } else {
-          setDisplayedText(data.summaryText);
+          setDisplayedText(textToType);
           setIsTyping(false);
           clearInterval(interval);
         }
