@@ -43,9 +43,9 @@ export interface CaseStudyData {
   modules: CaseStudyModule[];
   outcomes: CaseStudyOutcome[];
   technologies: CaseStudyTechnology[];
-  sliderImages: string[];
+  sliderImages?: string[];
   bannerImage?: string;
-  summaryText: string;
+  summaryText?: string;
   kpiCharts?: string[]; // Legacy image charts
   kpiStats?: CaseStudyKPI[]; // New UI cards
   conclusion?: string[];
