@@ -114,7 +114,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 2. ABOUT SECTION */}
-        <section className="py-12 md:py-20 relative overflow-hidden bg-[#fbfcfd]">
+        <section className="py-10 md:py-16 relative overflow-hidden bg-[#fbfcfd]">
           {/* Ambient background glows */}
           <div className="absolute top-10 left-10 w-96 h-96 bg-zinc-950/5 rounded-full blur-[100px] pointer-events-none z-0" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
@@ -213,7 +213,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 3. OUR SERVICES GRID */}
-        <section className="py-12 md:py-20 bg-white relative overflow-hidden">
+        <section className="py-10 md:py-16 bg-white relative overflow-hidden">
           <div className="absolute top-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-zinc-950/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
@@ -287,7 +287,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 4. CASE STUDIES */}
-        <section id="case-studies" className="py-12 md:py-20 bg-[#fafbfc] border-t border-zinc-200/60 overflow-hidden relative">
+        <section id="case-studies" className="py-10 md:py-16 bg-[#fafbfc] border-t border-zinc-200/60 overflow-hidden relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
           <div className="container mx-auto px-6 md:px-12 relative z-10">

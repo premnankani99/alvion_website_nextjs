@@ -86,7 +86,7 @@ export default function HRExecutivePage() {
         </section>
 
         {/* DETAILS SECTION */}
-        <section className="py-12 md:py-20 bg-[#fafbfc] flex-grow">
+        <section className="py-10 md:py-16 bg-[#fafbfc] flex-grow">
           <div className="container mx-auto px-6 md:px-12 max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               
@@ -189,7 +189,7 @@ export default function HRExecutivePage() {
         </section>
 
         {/* WHAT WE OFFER */}
-        <section className="py-12 md:py-20 bg-white border-t border-zinc-100 relative overflow-hidden">
+        <section className="py-10 md:py-16 bg-white border-t border-zinc-100 relative overflow-hidden">
           <div className="container mx-auto px-6 md:px-12 max-w-6xl">
             <h2 className="text-2xl md:text-3xl font-black text-black text-center mb-12">
               What We Offer at <span className="text-[#1e3a8a]">Alvion Technologies</span>

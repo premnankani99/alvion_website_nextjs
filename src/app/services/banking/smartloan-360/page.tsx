@@ -59,7 +59,7 @@ export default function SmartLoanCaseStudy() {
       },
       {
         title: "Admin Workload",
-        value: "40%",
+        value: "1.2 Hrs",
         trend: "40%",
         trendDirection: "down",
         sparklineData: [80, 75, 78, 65, 60, 55, 45, 42, 40],

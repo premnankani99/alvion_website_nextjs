@@ -147,7 +147,7 @@ export default function CaseStudyClassicSidebarTemplate({ data }: { data: CaseSt
                                             <span>{kpi.title}</span>
                                         </div>
                                         <div className="text-3xl font-bold text-slate-800 mb-1">{kpi.value}</div>
-                                        <div className="text-emerald-500 text-sm font-bold flex items-center gap-1">
+                                        <div className="text-sm font-bold flex items-center gap-1" style={{ color: isDown ? '#ef4444' : '#10b981' }}>
                                             {isDown ? (
                                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
                                             ) : (

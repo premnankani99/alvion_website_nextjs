@@ -66,7 +66,7 @@ export default function UnifiedPropertyOperationsPage() {
     kpiStats: [
       {
         title: "Faster Listing Approvals",
-        value: "65%",
+        value: "15 Mins",
         trend: "65%",
         trendDirection: "down",
         sparklineData: [85, 75, 60, 50, 45, 40, 35],
@@ -75,7 +75,7 @@ export default function UnifiedPropertyOperationsPage() {
       },
       {
         title: "User Engagement",
-        value: "50%",
+        value: "1.2 Hrs",
         trend: "50%",
         trendDirection: "up",
         sparklineData: [40, 45, 55, 65, 70, 80, 90],
@@ -84,7 +84,7 @@ export default function UnifiedPropertyOperationsPage() {
       },
       {
         title: "Operational Cost Reduction",
-        value: "40%",
+        value: "1.2 Hrs",
         trend: "40%",
         trendDirection: "down",
         sparklineData: [100, 90, 85, 80, 75, 65, 60],

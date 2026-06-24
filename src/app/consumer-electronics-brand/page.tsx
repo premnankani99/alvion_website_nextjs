@@ -46,7 +46,7 @@ export default function ConsumerElectronicsPage() {
     kpiStats: [
       {
         title: "Operation Speed",
-        value: "60%",
+        value: "15 Mins",
         trend: "60%",
         trendDirection: "down",
         sparklineData: [85, 80, 70, 50, 45, 40, 35],
@@ -55,7 +55,7 @@ export default function ConsumerElectronicsPage() {
       },
       {
         title: "Manual Overhead",
-        value: "45%",
+        value: "1.2 Hrs",
         trend: "45%",
         trendDirection: "down",
         sparklineData: [90, 85, 75, 65, 55, 50, 45],

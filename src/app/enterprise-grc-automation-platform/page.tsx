@@ -46,7 +46,7 @@ export default function EnterpriseGRCPage() {
     kpiStats: [
       {
         title: "Audit Prep Time",
-        value: "50%",
+        value: "1.2 Hrs",
         trend: "50%",
         trendDirection: "down",
         sparklineData: [80, 75, 70, 60, 50, 45, 40],
@@ -55,7 +55,7 @@ export default function EnterpriseGRCPage() {
       },
       {
         title: "Manual Effort",
-        value: "60%",
+        value: "15 Mins",
         trend: "60%",
         trendDirection: "down",
         sparklineData: [90, 85, 75, 60, 45, 40, 36],

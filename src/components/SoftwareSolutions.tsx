@@ -33,7 +33,7 @@ export default function SoftwareSolutions() {
   ];
 
   return (
-    <section id="software-solutions" className="py-12 md:py-20 bg-white text-[#0d1b2a] relative overflow-hidden">
+    <section id="software-solutions" className="py-10 md:py-16 bg-white text-[#0d1b2a] relative overflow-hidden">
       {/* Light matrix lines backdrop */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-80 z-0" />
       

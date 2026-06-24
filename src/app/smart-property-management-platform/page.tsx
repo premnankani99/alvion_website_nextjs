@@ -66,7 +66,7 @@ export default function SmartPropertyManagementPage() {
     kpiStats: [
       {
         title: "Reduction in Response Time",
-        value: "75%",
+        value: "15 Mins",
         trend: "75%",
         trendDirection: "down",
         sparklineData: [80, 70, 60, 50, 45, 30, 25],
@@ -75,7 +75,7 @@ export default function SmartPropertyManagementPage() {
       },
       {
         title: "Resident Satisfaction",
-        value: "92%",
+        value: "2.5x",
         trend: "92%",
         trendDirection: "up",
         sparklineData: [50, 55, 65, 75, 80, 88, 92],
@@ -84,7 +84,7 @@ export default function SmartPropertyManagementPage() {
       },
       {
         title: "Cost Savings",
-        value: "40%",
+        value: "1.2 Hrs",
         trend: "40%",
         trendDirection: "down",
         sparklineData: [100, 95, 85, 80, 70, 65, 60],

@@ -114,7 +114,7 @@ export default function CareersPage() {
         </section>
 
         {/* 2. WHY WORK WITH US */}
-        <section className="py-12 md:py-20 bg-white text-[#0d1b2a] border-b border-zinc-100 relative overflow-hidden">
+        <section className="py-10 md:py-16 bg-white text-[#0d1b2a] border-b border-zinc-100 relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[140px] pointer-events-none z-0" />
 
           <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -177,7 +177,7 @@ export default function CareersPage() {
         </section>
 
         {/* 3. CURRENT OPENINGS */}
-        <section id="openings" className="py-12 md:py-20 bg-[#fafbfc] scroll-mt-20 relative overflow-hidden">
+        <section id="openings" className="py-10 md:py-16 bg-[#fafbfc] scroll-mt-20 relative overflow-hidden">
           <div className="absolute top-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0 animate-pulse" />
 
           <div className="container mx-auto px-6 md:px-12 relative z-10">

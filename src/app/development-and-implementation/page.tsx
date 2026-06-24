@@ -58,7 +58,7 @@ export default function DevelopmentImplementationPage() {
         </section>
 
         {/* CONTENT SECTION */}
-        <section className="py-12 md:py-20 bg-[#fbfcfd] flex-grow">
+        <section className="py-10 md:py-16 bg-[#fbfcfd] flex-grow">
           <div className="container mx-auto px-6 md:px-12 max-w-5xl">
 
             {/* Title & Description */}

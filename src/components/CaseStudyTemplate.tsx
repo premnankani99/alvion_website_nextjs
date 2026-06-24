@@ -275,7 +275,7 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
                         <div className="flex justify-between items-end">
                           <div>
                             <div className="text-slate-800 text-3xl font-bold mb-1">{kpi.value}</div>
-                            <div className={`text-xs font-bold text-[#00c853]`}>
+                            <div className="text-xs font-bold" style={{ color: isDown ? '#ef4444' : '#10b981' }}>
                               {isDown ? '↓' : '↑'} {kpi.trend}
                             </div>
                           </div>

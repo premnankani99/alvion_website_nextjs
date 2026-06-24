@@ -63,7 +63,7 @@ export default function HealthcareWorkflowAutomationPage() {
     kpiStats: [
       {
         title: "Faster Patient Processing",
-        value: "65%",
+        value: "15 Mins",
         trend: "65%",
         trendDirection: "down",
         sparklineData: [85, 75, 60, 50, 45, 40, 35],
@@ -72,7 +72,7 @@ export default function HealthcareWorkflowAutomationPage() {
       },
       {
         title: "Process Visibility",
-        value: "90%",
+        value: "2.5x",
         trend: "90%",
         trendDirection: "up",
         sparklineData: [20, 30, 45, 60, 70, 85, 90],
@@ -81,7 +81,7 @@ export default function HealthcareWorkflowAutomationPage() {
       },
       {
         title: "Compliance Accuracy",
-        value: "99%",
+        value: "24/7",
         trend: "99%",
         trendDirection: "up",
         sparklineData: [60, 70, 80, 85, 90, 95, 99],

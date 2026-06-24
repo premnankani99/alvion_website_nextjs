@@ -150,7 +150,7 @@ export default function HealthcareCaseStudy() {
                 <span>Admission Time</span>
             </div>
             <div className="text-3xl font-bold text-slate-800 mb-1">12 Mins</div>
-            <div className="text-emerald-500 text-sm font-bold flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg> 50%</div>
+            <div className="text-sm font-bold flex items-center gap-1" style={{ color: '#ef4444' }}><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg> 50%</div>
         </div>
         <div className="w-24 h-12">
             <canvas ref={chart1Ref}></canvas>
@@ -165,7 +165,7 @@ export default function HealthcareCaseStudy() {
                 <span>Admin Workload</span>
             </div>
             <div className="text-3xl font-bold text-slate-800 mb-1">40%</div>
-            <div className="text-emerald-500 text-sm font-bold flex items-center gap-1">
+            <div className="text-sm font-bold flex items-center gap-1" style={{ color: '#ef4444' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
                 40%
             </div>

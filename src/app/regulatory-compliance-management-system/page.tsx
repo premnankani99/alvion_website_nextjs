@@ -46,7 +46,7 @@ export default function RegulatoryCompliancePage() {
     kpiStats: [
       {
         title: "Reporting Time",
-        value: "65%",
+        value: "15 Mins",
         trend: "65%",
         trendDirection: "down",
         sparklineData: [85, 80, 70, 50, 45, 35, 30],
@@ -55,7 +55,7 @@ export default function RegulatoryCompliancePage() {
       },
       {
         title: "Manual Tracking",
-        value: "70%",
+        value: "5K+",
         trend: "70%",
         trendDirection: "down",
         sparklineData: [95, 85, 75, 55, 45, 35, 25],

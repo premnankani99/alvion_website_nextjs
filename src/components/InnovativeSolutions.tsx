@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function InnovativeSolutions() {
   return (
-    <section className="py-12 md:py-20 bg-white overflow-hidden">
+    <section className="py-10 md:py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-16">
           <motion.h2 

@@ -46,7 +46,7 @@ export default function WarehouseManagementPage() {
     kpiStats: [
       {
         title: "Processing Time",
-        value: "75%",
+        value: "15 Mins",
         trend: "75%",
         trendDirection: "down",
         sparklineData: [150, 130, 110, 80, 60, 50, 35],

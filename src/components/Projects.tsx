@@ -44,7 +44,7 @@ const caseStudies = [
 
 export default function Projects() {
   return (
-    <section id="case-studies" className="py-12 md:py-20 bg-[#fafbfc] text-[#0d1b2a] relative overflow-hidden">
+    <section id="case-studies" className="py-10 md:py-16 bg-[#fafbfc] text-[#0d1b2a] relative overflow-hidden">
       {/* Soft glowing light effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
@@ -58,7 +58,7 @@ export default function Projects() {
           <motion.h3 
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
             className="text-2xl md:text-3xl font-black text-black"
           >
@@ -73,7 +73,7 @@ export default function Projects() {
               <motion.div 
                 initial={{ opacity: 0, x: study.startX, y: study.startY }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.2, delay: study.delay * 0.2, type: "spring", bounce: 0.1 }}
                 whileHover={{ y: -8 }}
                 className="group bg-white rounded-[24px] overflow-hidden border border-zinc-150 hover:border-blue-500/30 shadow-[0_4px_25px_rgba(0,0,0,0.005)] hover:shadow-[0_15px_35px_rgba(30,58,138,0.05)] transition-all duration-500 relative flex flex-col h-full"
@@ -115,7 +115,7 @@ export default function Projects() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.15 }}
+          viewport={{ once: true, amount: 0.15 }}
           className="flex justify-center mt-12"
         >
           <Link href="/services" className="inline-block px-8 py-3 border border-blue-500/50 text-[#1e3a8a] font-bold rounded-full hover:bg-gradient-to-r hover:from-zinc-950 hover:to-[#1e3a8a] hover:text-white hover:border-transparent transition-all duration-300 text-xs uppercase tracking-widest bg-white shadow-md">

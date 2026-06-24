@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="bg-white">
-      <section className="py-12 md:py-20 relative overflow-hidden bg-[#fbfcfd]">
+      <section className="py-10 md:py-16 relative overflow-hidden bg-[#fbfcfd]">
         {/* Soft Cyber Ambient light effects (Slate Black & Dark Blue) */}
         <div className="absolute top-10 left-10 w-96 h-96 bg-zinc-950/5 rounded-full blur-[100px] pointer-events-none z-0" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
@@ -123,7 +123,7 @@ export default function About() {
       </section>
 
       {/* Our Mission Section - Black & Dark Blue Theme */}
-      <section className="py-12 md:py-20 bg-white relative overflow-hidden">
+      <section className="py-10 md:py-16 bg-white relative overflow-hidden">
         {/* Soft blue backdrop light effect */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[140px] pointer-events-none z-0" />
 

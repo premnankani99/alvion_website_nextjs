@@ -46,7 +46,7 @@ export default function CaseManagementPage() {
     kpiStats: [
       {
         title: "Case Resolution Time",
-        value: "60%",
+        value: "15 Mins",
         trend: "60%",
         trendDirection: "down",
         sparklineData: [80, 75, 60, 50, 45, 35, 30, 20],
@@ -55,7 +55,7 @@ export default function CaseManagementPage() {
       },
       {
         title: "Manual Effort",
-        value: "45%",
+        value: "1.2 Hrs",
         trend: "45%",
         trendDirection: "down",
         sparklineData: [90, 85, 75, 65, 55, 50, 45],

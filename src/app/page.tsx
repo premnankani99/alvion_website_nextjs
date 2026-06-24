@@ -43,7 +43,7 @@ export default function Home() {
                transition={{ duration: 0.32, delay: 0.04 }}
                className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight"
             >
-              Innovative <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-blue-400 drop-shadow-[0_0_15px_rgba(30,58,138,0.3)]">Software Solutions</span>
+              Innovative <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 drop-shadow-[0_0_15px_rgba(30,58,138,0.3)]">Software Solutions</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
@@ -71,7 +71,7 @@ export default function Home() {
         <SoftwareSolutions />
 
         {/* CLIENTS SECTION - OBSIDIAN BLACK / DARK BLUE ACCENT */}
-        <section className="py-12 md:py-20 bg-[#fafbfc] border-y border-zinc-200/60 text-[#0d1b2a] relative overflow-hidden">
+        <section className="py-10 md:py-16 bg-[#fafbfc] border-y border-zinc-200/60 text-[#0d1b2a] relative overflow-hidden">
           {/* Soft blue ambient light effect */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
@@ -119,7 +119,7 @@ export default function Home() {
         <Projects />
 
         {/* CTA SECTION - UNIFIED OBSIDIAN BLACK & BLUE NEBULA */}
-        <section className="py-12 md:py-20 relative overflow-hidden border-t border-zinc-150 bg-white">
+        <section className="py-10 md:py-16 relative overflow-hidden border-t border-zinc-150 bg-white">
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-gradient-to-r from-zinc-50/70 via-blue-50/50 to-zinc-100/70 z-10" />
               <Image 

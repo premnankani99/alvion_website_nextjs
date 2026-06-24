@@ -64,7 +64,7 @@ export default function MedicalInventoryManagementPage() {
     kpiStats: [
       {
         title: "Reduction in Stock Shortages",
-        value: "70%",
+        value: "5K+",
         trend: "70%",
         trendDirection: "down",
         sparklineData: [85, 75, 60, 50, 45, 40, 30],
@@ -73,7 +73,7 @@ export default function MedicalInventoryManagementPage() {
       },
       {
         title: "Inventory Accuracy",
-        value: "95%",
+        value: "2.5x",
         trend: "95%",
         trendDirection: "up",
         sparklineData: [40, 50, 60, 75, 80, 90, 95],
@@ -82,7 +82,7 @@ export default function MedicalInventoryManagementPage() {
       },
       {
         title: "Cost Optimization",
-        value: "40%",
+        value: "1.2 Hrs",
         trend: "40%",
         trendDirection: "down",
         sparklineData: [100, 95, 85, 80, 70, 65, 60],

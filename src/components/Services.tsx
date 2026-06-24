@@ -47,7 +47,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services-grid" className="py-12 md:py-20 bg-white text-[#0d1b2a] relative overflow-hidden">
+    <section id="services-grid" className="py-10 md:py-16 bg-white text-[#0d1b2a] relative overflow-hidden">
       {/* Background Soft Cyber Light Effects */}
       <div className="absolute top-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-zinc-950/5 rounded-full blur-[100px] pointer-events-none z-0" />
@@ -82,7 +82,7 @@ export default function Services() {
                 className={`group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 hover:rotate-1 hover:skew-x-1 transition-all duration-500 ${service.borderGlow} ${service.glowColor}`}
               >
                 {/* Image Container with high-tech scanner line overlay & Gloss Swipe Reflect */}
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-video overflow-hidden rounded-t-[24px] [transform:translateZ(0)]">
                   {/* Gloss Swipe Reflect overlay */}
                   <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-out pointer-events-none z-20" />
 

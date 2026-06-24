@@ -205,7 +205,7 @@ export default function QuantumConsole() {
   }, [activeTab]);
 
   return (
-    <section className="py-12 md:py-20 bg-[#040814] text-white relative overflow-hidden border-t border-slate-900">
+    <section className="py-10 md:py-16 bg-[#040814] text-white relative overflow-hidden border-t border-slate-900">
       {/* Background Glowing Nebula */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/5 to-purple-500/5 rounded-full blur-[140px] pointer-events-none z-0" />
 

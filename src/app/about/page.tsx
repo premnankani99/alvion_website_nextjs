@@ -55,7 +55,7 @@ export default function AboutPage() {
         </section>
 
         {/* MAIN SECTIONS CONTAINER */}
-        <main className="container mx-auto px-6 py-12 md:py-20 max-w-[95%] lg:max-w-6xl space-y-16 md:space-y-24 flex-grow">
+        <main className="container mx-auto px-6 py-10 md:py-16 max-w-[95%] lg:max-w-6xl space-y-16 md:space-y-24 flex-grow">
 
           {/* 2. WHO WE ARE */}
           <motion.div

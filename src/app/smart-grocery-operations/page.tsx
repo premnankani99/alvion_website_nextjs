@@ -46,7 +46,7 @@ export default function SmartGroceryOperationsPage() {
     kpiStats: [
       {
         title: "Inventory Wastage",
-        value: "32%",
+        value: "10K+",
         trend: "32%",
         trendDirection: "down",
         sparklineData: [80, 75, 70, 60, 55, 45, 40],
@@ -55,7 +55,7 @@ export default function SmartGroceryOperationsPage() {
       },
       {
         title: "Replenishment Time",
-        value: "28%",
+        value: "10K+",
         trend: "28%",
         trendDirection: "down",
         sparklineData: [90, 85, 75, 60, 45, 40, 36],
@@ -64,7 +64,7 @@ export default function SmartGroceryOperationsPage() {
       },
       {
         title: "Stock Accuracy",
-        value: "40%",
+        value: "1.2 Hrs",
         trend: "40%",
         trendDirection: "up",
         sparklineData: [60, 65, 70, 80, 85, 95, 100],

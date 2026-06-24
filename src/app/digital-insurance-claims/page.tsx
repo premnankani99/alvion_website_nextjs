@@ -46,7 +46,7 @@ export default function DigitalInsuranceClaimsPage() {
     kpiStats: [
       {
         title: "Settlement Time",
-        value: "65%",
+        value: "15 Mins",
         trend: "65%",
         trendDirection: "down",
         sparklineData: [120, 100, 80, 60, 55, 45, 40, 35],
@@ -55,7 +55,7 @@ export default function DigitalInsuranceClaimsPage() {
       },
       {
         title: "Manual Effort",
-        value: "50%",
+        value: "1.2 Hrs",
         trend: "50%",
         trendDirection: "down",
         sparklineData: [90, 85, 75, 65, 55, 50, 45],
