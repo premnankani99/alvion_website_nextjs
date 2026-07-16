@@ -60,7 +60,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
-            className="text-2xl md:text-3xl font-black text-black"
+            className="text-2xl md:text-4xl font-black text-black"
           >
             <span className="text-[#1e3a8a] drop-shadow-[0_2px_8px_rgba(30,58,138,0.05)]">Case Studies</span>
           </motion.h3>
@@ -118,7 +118,7 @@ export default function Projects() {
           viewport={{ once: true, amount: 0.15 }}
           className="flex justify-center mt-12"
         >
-          <Link href="/services" className="inline-block px-8 py-3 border border-blue-500/50 text-[#1e3a8a] font-bold rounded-full hover:bg-gradient-to-r hover:from-zinc-950 hover:to-[#1e3a8a] hover:text-white hover:border-transparent transition-all duration-300 text-xs uppercase tracking-widest bg-white shadow-md">
+          <Link href="/services#case-studies" className="inline-block px-8 py-3 border border-blue-500/50 text-[#1e3a8a] font-bold rounded-full hover:bg-gradient-to-r hover:from-zinc-950 hover:to-[#1e3a8a] hover:text-white hover:border-transparent transition-all duration-300 text-xs uppercase tracking-widest bg-white shadow-md">
             View More
           </Link>
         </motion.div>

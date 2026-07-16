@@ -46,18 +46,18 @@ export default function QualityEngineeringAssurance() {
             
             {/* Intro & Industries */}
             <div className="mb-16">
-              <h2 className="text-[28px] font-bold text-[#1a233a] mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1a233a] mb-5">
                 Enterprise Quality Engineering & Assurance
               </h2>
-              <p className="text-[#555] text-base leading-relaxed mb-6">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-6">
                 Deliver reliable, high-performance applications through structured quality engineering practices embedded across the software lifecycle.
               </p>
-              <p className="text-[#555] text-base leading-relaxed mb-8">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-8">
                 Our QA framework integrates automation, performance validation, and security testing to ensure enterprise-grade stability before go-live.
               </p>
               
-              <h3 className="text-xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
-              <ul className="space-y-2 text-[#555] text-base">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
+              <ul className="list-disc list-inside pl-3 md:pl-8 space-y-3 text-zinc-600 text-[15px] md:text-base mt-3 marker:text-blue-500">
                 <li>Banking & Financial Services</li>
                 <li>Insurance</li>
                 <li>Healthcare</li>
@@ -69,29 +69,29 @@ export default function QualityEngineeringAssurance() {
 
             {/* Our Quality Capabilities */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Our Quality Capabilities</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Our Quality Capabilities</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Functional & Regression Testing</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Functional & Regression Testing</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Comprehensive validation cycles ensuring application stability and reliability across releases.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Automation Testing</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Automation Testing</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Automated frameworks accelerating release cycles while reducing manual intervention.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Performance & Load Testing</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Performance & Load Testing</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Validation of scalability and responsiveness under real-world workload conditions.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Security & Compliance Testing</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Security & Compliance Testing</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Identification of vulnerabilities and validation against regulatory standards.
                   </p>
                 </div>
@@ -100,48 +100,48 @@ export default function QualityEngineeringAssurance() {
 
             {/* Business Impact */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">40%</h4>
-                  <p className="text-sm text-[#555]">Reduction in Production Defects</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">40%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Reduction in Production Defects</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">30%</h4>
-                  <p className="text-sm text-[#555]">Accelerated Release Cycles</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">30%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Accelerated Release Cycles</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">100%</h4>
-                  <p className="text-sm text-[#555]">Enhanced System Stability</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">100%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Enhanced System Stability</p>
                 </div>
               </div>
             </div>
 
             {/* Why Choose Us */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Certified QA Engineers</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Certified QA Engineers</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Experienced professionals delivering enterprise-grade quality standards.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Automation-First Strategy</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Automation-First Strategy</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Structured automated testing frameworks aligned with modern DevOps practices.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">CI/CD Integration</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">CI/CD Integration</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Quality engineering seamlessly embedded into continuous integration pipelines.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Continuous Quality Improvement</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Continuous Quality Improvement</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Ongoing monitoring, reporting, and optimization for sustained excellence.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function QualityEngineeringAssurance() {
 
             {/* FAQs */}
             <div>
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">FAQs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">FAQs</h3>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-200 rounded-[8px] overflow-hidden">

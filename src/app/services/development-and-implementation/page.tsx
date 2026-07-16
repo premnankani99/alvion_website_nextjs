@@ -46,18 +46,18 @@ export default function DevelopmentImplementation() {
             
             {/* Intro & Industries */}
             <div className="mb-16">
-              <h2 className="text-[28px] font-bold text-[#1a233a] mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1a233a] mb-5">
                 Appian Development & Implementation Services
               </h2>
-              <p className="text-[#555] text-base leading-relaxed mb-6">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-6">
                 We deliver full-cycle Appian development and enterprise implementation services, transforming business requirements into scalable, secure, and high-performance applications.
               </p>
-              <p className="text-[#555] text-base leading-relaxed mb-8">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-8">
                 From architecture planning to deployment and post-go-live optimization, our approach ensures long-term stability, performance efficiency, and digital scalability.
               </p>
               
-              <h3 className="text-xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
-              <ul className="space-y-2 text-[#555] text-base">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
+              <ul className="list-disc list-inside pl-3 md:pl-8 space-y-3 text-zinc-600 text-[15px] md:text-base mt-3 marker:text-blue-500">
                 <li>Banking & Financial Services</li>
                 <li>Insurance</li>
                 <li>Healthcare</li>
@@ -69,29 +69,29 @@ export default function DevelopmentImplementation() {
 
             {/* Our Development Capabilities */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Our Development Capabilities</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Our Development Capabilities</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Enterprise Solution Architecture</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Enterprise Solution Architecture</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Design scalable, secure, and future-ready Appian architectures aligned with enterprise standards.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Application & Workflow Engineering</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Application & Workflow Engineering</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Develop optimized process models, automation logic, and dynamic user interfaces.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Integration & Data Fabric Implementation</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Integration & Data Fabric Implementation</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Enable seamless integration with ERP, CRM, APIs, databases, and legacy systems.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Deployment & Performance Optimization</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Deployment & Performance Optimization</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Structured release management, CI/CD pipelines, and performance tuning for enterprise readiness.
                   </p>
                 </div>
@@ -100,48 +100,48 @@ export default function DevelopmentImplementation() {
 
             {/* Business Impact */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">50%</h4>
-                  <p className="text-sm text-[#555]">Accelerated Application Deployment</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">50%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Accelerated Application Deployment</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">35%</h4>
-                  <p className="text-sm text-[#555]">Reduction in Development Effort</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">35%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Reduction in Development Effort</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">100%</h4>
-                  <p className="text-sm text-[#555]">Scalable & Secure Architecture</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">100%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Scalable & Secure Architecture</p>
                 </div>
               </div>
             </div>
 
             {/* Why Choose Us */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Certified Appian Professionals</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Certified Appian Professionals</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Experienced experts delivering enterprise-grade implementations and scalable solutions.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Agile Delivery Framework</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Agile Delivery Framework</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Rapid, collaborative, and predictable execution aligned with business milestones.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Integration Excellence</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Integration Excellence</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Proven expertise connecting Appian with complex enterprise ecosystems securely.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Post-Go-Live Optimization</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Post-Go-Live Optimization</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Continuous enhancement, monitoring, and performance optimization services.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function DevelopmentImplementation() {
 
             {/* FAQs */}
             <div>
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">FAQs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">FAQs</h3>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-200 rounded-[8px] overflow-hidden">

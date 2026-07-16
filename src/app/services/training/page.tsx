@@ -46,18 +46,18 @@ export default function TrainingServices() {
             
             {/* Intro & Industries */}
             <div className="mb-16">
-              <h2 className="text-[28px] font-bold text-[#1a233a] mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1a233a] mb-5">
                 Enterprise Training & Enablement
               </h2>
-              <p className="text-[#555] text-base leading-relaxed mb-6">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-6">
                 Empower your workforce with structured, hands-on training programs designed to strengthen technical expertise and accelerate digital transformation.
               </p>
-              <p className="text-[#555] text-base leading-relaxed mb-8">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-8">
                 Our programs combine theory, live demonstrations, real-world case studies, and guided implementation exercises to ensure measurable skill development.
               </p>
               
-              <h3 className="text-xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
-              <ul className="space-y-2 text-[#555] text-base">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
+              <ul className="list-disc list-inside pl-3 md:pl-8 space-y-3 text-zinc-600 text-[15px] md:text-base mt-3 marker:text-blue-500">
                 <li>Banking & Financial Services</li>
                 <li>Insurance</li>
                 <li>Healthcare</li>
@@ -69,29 +69,29 @@ export default function TrainingServices() {
 
             {/* Our Training Programs */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Our Training Programs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Our Training Programs</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Appian Developer Training</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Appian Developer Training</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Comprehensive modules covering process models, integrations, SAIL interfaces, and deployment best practices.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Automation & RPA Programs</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Automation & RPA Programs</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Hands-on training on automation frameworks, workflow orchestration, and optimization strategies.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Corporate Upskilling</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Corporate Upskilling</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Customized enterprise programs aligned with business objectives and project requirements.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Hands-On Workshops</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Hands-On Workshops</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Interactive workshops with live use cases and guided implementation exercises.
                   </p>
                 </div>
@@ -100,48 +100,48 @@ export default function TrainingServices() {
 
             {/* Business Impact */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">45%</h4>
-                  <p className="text-sm text-[#555]">Improved Workforce Productivity</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">45%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Improved Workforce Productivity</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">30%</h4>
-                  <p className="text-sm text-[#555]">Faster Project Execution</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">30%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Faster Project Execution</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">100%</h4>
-                  <p className="text-sm text-[#555]">Industry-Ready Professionals</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">100%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Industry-Ready Professionals</p>
                 </div>
               </div>
             </div>
 
             {/* Why Choose Us */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Expert Trainers</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Expert Trainers</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Industry professionals with real-world enterprise experience.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Practical Learning Model</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Practical Learning Model</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Hands-on projects and live scenarios for deeper understanding.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Customized Curriculum</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Customized Curriculum</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Programs tailored to your organization's tools and transformation goals.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Post-Training Support</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Post-Training Support</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Continuous guidance and mentorship after completion of training.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function TrainingServices() {
 
             {/* FAQs */}
             <div>
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">FAQs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">FAQs</h3>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-200 rounded-[8px] overflow-hidden">

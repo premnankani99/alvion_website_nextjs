@@ -49,15 +49,15 @@ export default function IntelligentAutomation() {
             
             {/* Intro & Industries */}
             <div className="mb-16">
-              <h2 className="text-[28px] font-bold text-[#1a233a] mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1a233a] mb-5">
                 Intelligent Automation with Appian
               </h2>
-              <p className="text-[#555] text-base leading-relaxed mb-8">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-8">
                 Intelligent Automation combines workflow orchestration, artificial intelligence, robotic process automation, and unified data management to modernize enterprise operations.
               </p>
               
-              <h3 className="text-xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
-              <ul className="space-y-2 text-[#555] text-base">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
+              <ul className="list-disc list-inside pl-3 md:pl-8 space-y-3 text-zinc-600 text-[15px] md:text-base mt-3 marker:text-blue-500">
                 <li>Banking & Capital Markets</li>
                 <li>Insurance</li>
                 <li>Retail</li>
@@ -68,42 +68,42 @@ export default function IntelligentAutomation() {
 
             {/* Business Impact */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">40–60%</h4>
-                  <p className="text-sm text-[#555]">Faster Processing Across Operations</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">40–60%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Faster Processing Across Operations</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">30–50%</h4>
-                  <p className="text-sm text-[#555]">Reduction in Operational Costs</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">30–50%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Reduction in Operational Costs</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">100%</h4>
-                  <p className="text-sm text-[#555]">Improved Compliance & Audit Visibility</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">100%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Improved Compliance & Audit Visibility</p>
                 </div>
               </div>
             </div>
 
             {/* Why Choose Us */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Domain Expertise</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Domain Expertise</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Extensive experience delivering automation across finance, healthcare, retail, and manufacturing sectors.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">End-to-End Implementation</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">End-to-End Implementation</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     From strategy and design to deployment and continuous optimization, we manage the complete lifecycle.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Enterprise-Grade Security</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Enterprise-Grade Security</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Secure, scalable architectures aligned with global compliance and enterprise standards.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function IntelligentAutomation() {
 
             {/* FAQs */}
             <div>
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">FAQs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">FAQs</h3>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-200 rounded-[8px] overflow-hidden">

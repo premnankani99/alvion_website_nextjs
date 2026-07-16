@@ -213,7 +213,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 3. OUR SERVICES GRID */}
-        <section className="py-10 md:py-16 bg-white relative overflow-hidden">
+        <section id="enterprise-services" className="py-10 md:py-16 bg-white relative overflow-hidden">
           <div className="absolute top-10 right-10 w-96 h-96 bg-blue-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-zinc-950/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
@@ -259,8 +259,8 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Card Body */}
-                    <div className="p-4 md:p-6 flex flex-col flex-grow text-left">
-                      <h4 className="text-base md:text-lg font-bold text-black mb-2 group-hover:text-[#1e3a8a] transition-colors">
+                    <div className="p-5 md:p-8 flex flex-col flex-grow text-left">
+                      <h4 className="text-[18px] md:text-xl font-bold text-black mb-3 group-hover:text-[#1e3a8a] transition-colors">
                         {service.title}
                       </h4>
                       <p className="text-zinc-500 text-sm leading-relaxed mb-6 flex-grow font-normal">

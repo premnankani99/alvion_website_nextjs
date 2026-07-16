@@ -46,18 +46,18 @@ export default function ConsultingServices() {
             
             {/* Intro & Industries */}
             <div className="mb-16">
-              <h2 className="text-[28px] font-bold text-[#1a233a] mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1a233a] mb-5">
                 Strategic Technology & Process Consulting
               </h2>
-              <p className="text-[#555] text-base leading-relaxed mb-6">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-6">
                 Drive transformation with expert consulting services designed to align technology, processes, and long-term business strategy.
               </p>
-              <p className="text-[#555] text-base leading-relaxed mb-8">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-8">
                 Our consultants identify operational gaps, define digital roadmaps, and deliver scalable modernization strategies tailored to your industry.
               </p>
               
-              <h3 className="text-xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
-              <ul className="space-y-2 text-[#555] text-base">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
+              <ul className="list-disc list-inside pl-3 md:pl-8 space-y-3 text-zinc-600 text-[15px] md:text-base mt-3 marker:text-blue-500">
                 <li>Banking & Financial Services</li>
                 <li>Insurance</li>
                 <li>Healthcare</li>
@@ -69,29 +69,29 @@ export default function ConsultingServices() {
 
             {/* Our Consulting Capabilities */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Our Consulting Capabilities</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Our Consulting Capabilities</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Digital Transformation Strategy</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Digital Transformation Strategy</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Structured modernization roadmaps aligned with automation, compliance, and enterprise growth objectives.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Process Optimization</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Process Optimization</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Workflow redesign improving operational efficiency, risk management, and scalability.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Technology Advisory</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Technology Advisory</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Evaluation and recommendation of platforms, integrations, and secure enterprise architectures.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Enterprise Architecture Consulting</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Enterprise Architecture Consulting</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Design of resilient, scalable systems supporting long-term transformation goals.
                   </p>
                 </div>
@@ -100,48 +100,48 @@ export default function ConsultingServices() {
 
             {/* Business Impact */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">50%</h4>
-                  <p className="text-sm text-[#555]">Clear & Actionable Digital Roadmap</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">50%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Clear & Actionable Digital Roadmap</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">35%</h4>
-                  <p className="text-sm text-[#555]">Improved Operational Efficiency</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">35%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Improved Operational Efficiency</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">100%</h4>
-                  <p className="text-sm text-[#555]">Future-Ready Technology Stack</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">100%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Future-Ready Technology Stack</p>
                 </div>
               </div>
             </div>
 
             {/* Why Choose Us */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Industry Expertise</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Industry Expertise</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Deep domain experience across finance, healthcare, retail, and manufacturing sectors.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Business-First Approach</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Business-First Approach</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Solutions aligned with measurable business outcomes and strategic ROI goals.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Certified Consultants</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Certified Consultants</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Experienced professionals delivering enterprise-scale transformation programs.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Long-Term Partnership</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Long-Term Partnership</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Ongoing advisory, governance, and optimization beyond initial implementation.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function ConsultingServices() {
 
             {/* FAQs */}
             <div>
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">FAQs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">FAQs</h3>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-200 rounded-[8px] overflow-hidden">

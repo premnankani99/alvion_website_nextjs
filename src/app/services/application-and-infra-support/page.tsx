@@ -46,18 +46,18 @@ export default function ApplicationInfraSupport() {
             
             {/* Intro & Industries */}
             <div className="mb-16">
-              <h2 className="text-[28px] font-bold text-[#1a233a] mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1a233a] mb-5">
                 Enterprise Application & Infrastructure Support
               </h2>
-              <p className="text-[#555] text-base leading-relaxed mb-6">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-6">
                 Ensure uninterrupted business operations with reliable, secure, and scalable application and infrastructure support services.
               </p>
-              <p className="text-[#555] text-base leading-relaxed mb-8">
+              <p className="text-zinc-600 text-[15px] md:text-base leading-relaxed mb-8">
                 Our proactive monitoring, structured SLAs, and optimization framework minimize downtime, enhance performance, and strengthen operational resilience.
               </p>
               
-              <h3 className="text-xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
-              <ul className="space-y-2 text-[#555] text-base">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-4">Industries We Serve</h3>
+              <ul className="list-disc list-inside pl-3 md:pl-8 space-y-3 text-zinc-600 text-[15px] md:text-base mt-3 marker:text-blue-500">
                 <li>Banking & Financial Services</li>
                 <li>Insurance</li>
                 <li>Healthcare</li>
@@ -69,29 +69,29 @@ export default function ApplicationInfraSupport() {
 
             {/* Our Support Capabilities */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Our Support Capabilities</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Our Support Capabilities</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Application Monitoring & Maintenance</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Application Monitoring & Maintenance</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Continuous monitoring, incident resolution, patching, upgrades, and performance optimization.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Infrastructure Management</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Infrastructure Management</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Cloud and on-prem infrastructure management ensuring scalability, reliability, and security.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Incident & Problem Management</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Incident & Problem Management</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     ITIL-aligned processes with defined SLAs and structured root cause analysis.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Security & Compliance Optimization</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Security & Compliance Optimization</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Vulnerability assessments, governance enforcement, and compliance alignment.
                   </p>
                 </div>
@@ -100,48 +100,48 @@ export default function ApplicationInfraSupport() {
 
             {/* Business Impact */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Business Impact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">99.9%</h4>
-                  <p className="text-sm text-[#555]">Application Uptime & High Availability</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">99.9%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Application Uptime & High Availability</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">40%</h4>
-                  <p className="text-sm text-[#555]">Reduction in Downtime Risk</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">40%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Reduction in Downtime Risk</p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="text-3xl font-bold text-[#1c5fba] mb-2">100%</h4>
-                  <p className="text-sm text-[#555]">Secure & Compliant Operations</p>
+                  <h4 className="text-3xl md:text-4xl font-bold text-[#1c5fba] mb-2">100%</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 font-medium">Secure & Compliant Operations</p>
                 </div>
               </div>
             </div>
 
             {/* Why Choose Us */}
             <div className="mb-16">
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">Why Choose Alvion Technologies?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">24/7 Support Model</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">24/7 Support Model</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Round-the-clock monitoring with rapid response and proactive risk mitigation.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Certified Infrastructure Experts</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Certified Infrastructure Experts</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Skilled professionals managing enterprise-grade environments securely.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Proactive Monitoring</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Proactive Monitoring</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Early detection and prevention of system failures and performance bottlenecks.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-100 rounded-[12px] p-6 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
-                  <h4 className="font-bold text-[#1a233a] text-sm mb-3">Scalable & Secure Framework</h4>
-                  <p className="text-sm text-[#666] leading-relaxed">
+                  <h4 className="text-[17px] md:text-lg font-bold text-[#1a233a] mb-3">Scalable & Secure Framework</h4>
+                  <p className="text-sm md:text-[15px] text-zinc-600 leading-relaxed">
                     Infrastructure aligned with enterprise security, governance, and compliance standards.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function ApplicationInfraSupport() {
 
             {/* FAQs */}
             <div>
-              <h3 className="text-xl font-bold text-[#1a233a] mb-6">FAQs</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a233a] mb-6">FAQs</h3>
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-200 rounded-[8px] overflow-hidden">
