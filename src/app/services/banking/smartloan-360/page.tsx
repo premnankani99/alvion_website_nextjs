@@ -41,12 +41,15 @@ export default function SmartLoanCaseStudy() {
       "Decision Rules Engine", "Document Management", "Core Banking API", "PostgreSQL",
       "OAuth 2.0 Security", "Audit Logging"
     ].map(name => ({ name, icon: "", bg: "" })),
-    sliderImages: [
-      "/screen1.png", "/screen2.png", "/screen3.png", "/screen4.png", "/screen5.png",
-      "/screen6.png", "/screen7.png", "/screen8.png", "/screen9.png", "/screen10.png"
+    // sliderImages: [
+    //   "/screen1.png", "/screen2.png", "/screen3.png", "/screen4.png", "/screen5.png",
+    //   "/screen6.png", "/screen7.png", "/screen8.png", "/screen9.png", "/screen10.png"
+    // ],
+    sliderImages: [],
+    conclusion: [
+      "The new platform completely revitalized the financial institution's lending operations, transforming a slow and tedious process into an instant, seamless customer journey.",
+      "With automated processing and zero manual friction, the institution saw a rapid increase in loan disbursals and a significant drop in operational overhead."
     ],
-    summaryText: "",
-    hideConclusion: true,
     kpiStats: [
       {
         title: "Processing Time",
