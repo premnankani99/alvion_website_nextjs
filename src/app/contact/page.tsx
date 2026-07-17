@@ -2,8 +2,38 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 export default function ContactPage() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+    
+    setStatus("loading");
+    emailjs.sendForm(
+      "service_wlz7nfq",
+      "template_k7yfa7w",
+      formRef.current,
+      { publicKey: "FMCeAPiqEDvk8A5az" }
+    )
+    .then(() => {
+      setStatus("success");
+      formRef.current?.reset();
+      setTimeout(() => setStatus("idle"), 5000);
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error.text || error);
+      alert("Error sending message: " + (error.text || "Please check console"));
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 5000);
+    });
+  };
+
   return (
     <>
       <div className="bg-[#fbfcfd] min-h-screen flex flex-col pt-20">
@@ -56,7 +86,7 @@ export default function ContactPage() {
                 <motion.div
                   initial={{ opacity: 0, x: -80 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.16, type: "spring", bounce: 0.1 }}
                 >
                   {/* Badge removed per user request */}
@@ -75,7 +105,7 @@ export default function ContactPage() {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.18, delay: 0.04, type: "spring", bounce: 0.1 }}
                   className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-zinc-150 text-left"
                 >
@@ -99,7 +129,7 @@ export default function ContactPage() {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.24, type: "spring", bounce: 0.1 }}
                   className="relative w-full aspect-video rounded-[24px] overflow-hidden border border-zinc-200/50 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(30,58,138,0.12)] transition-all duration-700 group cursor-pointer"
                 >
@@ -134,17 +164,18 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
               className="bg-white border border-zinc-150 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10"
             >
-              <form className="space-y-4 md:space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form ref={formRef} className="space-y-4 md:space-y-6" onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left">
                   {/* Name Input */}
                   <div className="flex flex-col">
                     <label className="text-xs font-bold text-black uppercase tracking-wider mb-2">Name*</label>
                     <input
                       type="text"
+                      name="name"
                       required
                       placeholder="Your name"
                       className="w-full px-5 py-3 md:py-4 bg-zinc-50 border border-zinc-150 rounded-xl focus:outline-none focus:bg-white focus:border-blue-500/50 transition-colors placeholder:text-zinc-400 text-sm font-normal"
@@ -156,6 +187,7 @@ export default function ContactPage() {
                     <label className="text-xs font-bold text-black uppercase tracking-wider mb-2">Last name</label>
                     <input
                       type="text"
+                      name="last_name"
                       placeholder="Your last name"
                       className="w-full px-5 py-3 md:py-4 bg-zinc-50 border border-zinc-150 rounded-xl focus:outline-none focus:bg-white focus:border-blue-500/50 transition-colors placeholder:text-zinc-400 text-sm font-normal"
                     />
@@ -167,6 +199,7 @@ export default function ContactPage() {
                   <label className="text-xs font-bold text-black uppercase tracking-wider mb-2">Your email*</label>
                   <input
                     type="email"
+                    name="email"
                     required
                     placeholder="Your email address"
                     className="w-full px-5 py-3 md:py-4 bg-zinc-50 border border-zinc-150 rounded-xl focus:outline-none focus:bg-white focus:border-blue-500/50 transition-colors placeholder:text-zinc-400 text-sm font-normal"
@@ -178,6 +211,7 @@ export default function ContactPage() {
                   <label className="text-xs font-bold text-black uppercase tracking-wider mb-2">Message*</label>
                   <textarea
                     required
+                    name="message"
                     placeholder="Enter your message"
                     rows={4}
                     className="w-full px-5 py-3 md:py-4 bg-zinc-50 border border-zinc-150 rounded-xl focus:outline-none focus:bg-white focus:border-blue-500/50 transition-colors placeholder:text-zinc-400 text-sm font-normal resize-none"
@@ -185,15 +219,23 @@ export default function ContactPage() {
                 </div>
 
                 {/* Submit Button */}
-                <div className="pt-4 flex justify-center">
+                <div className="pt-4 flex flex-col items-center">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     type="submit"
-                    className="px-8 py-3.5 md:py-4 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-[0_10px_25px_rgba(30,58,138,0.2)] uppercase tracking-widest text-xs"
+                    disabled={status === "loading"}
+                    className="px-8 py-3.5 md:py-4 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-[0_10px_25px_rgba(30,58,138,0.2)] uppercase tracking-widest text-xs disabled:opacity-70 disabled:cursor-not-allowed"
                   >
-                    Submit Message
+                    {status === "loading" ? "Sending..." : "Submit Message"}
                   </motion.button>
+                  
+                  {status === "success" && (
+                    <p className="mt-4 text-sm font-bold text-green-600">Message sent successfully! We'll get back to you soon.</p>
+                  )}
+                  {status === "error" && (
+                    <p className="mt-4 text-sm font-bold text-red-600">Something went wrong. Please try again later.</p>
+                  )}
                 </div>
               </form>
             </motion.div>
@@ -207,21 +249,27 @@ export default function ContactPage() {
 
               {/* Contacts */}
               <div className="flex flex-col items-center">
-                <h4 className="text-[20px] font-black text-black mb-4">Contacts</h4>
+                <h4 className="flex items-center gap-2 text-[20px] font-black text-black mb-4">
+                  <Mail className="w-5 h-5 text-[#1e3a8a]" /> Contacts
+                </h4>
                 <p className="text-zinc-500 text-[15px] font-normal">contact-us@alviontechnologies.com</p>
                 <p className="text-zinc-500 text-[15px] font-normal mt-1">+91 97848-65841</p>
               </div>
 
               {/* Address */}
               <div className="flex flex-col items-center">
-                <h4 className="text-[20px] font-black text-black mb-4">Address</h4>
-                <p className="text-zinc-500 text-[15px] font-normal">Alvion Technologies, No. 1, Pulia, 7 Ta 21, Sector 7,</p>
-                <p className="text-zinc-500 text-[15px] font-normal">Jawahar Nagar, Jaipur, Rajasthan - 302004</p>
+                <h4 className="flex items-center gap-2 text-[20px] font-black text-black mb-4">
+                  <MapPin className="w-5 h-5 text-[#1e3a8a]" /> Address
+                </h4>
+                <p className="text-zinc-500 text-[15px] font-normal">Alvion Technologies, 3rd Floor Hotel Ananta Inn,</p>
+                <p className="text-zinc-500 text-[15px] font-normal">Lal Kothi Jaipur Rajasthan - 302015</p>
               </div>
 
               {/* Opening Hours */}
               <div className="flex flex-col items-center">
-                <h4 className="text-[20px] font-black text-black mb-4">Opening hours</h4>
+                <h4 className="flex items-center gap-2 text-[20px] font-black text-black mb-4">
+                  <Clock className="w-5 h-5 text-[#1e3a8a]" /> Opening hours
+                </h4>
                 <p className="text-zinc-500 text-[15px] font-normal">Monday - Friday: 10:00 AM - 8:00 PM</p>
                 <p className="text-zinc-500 text-[15px] font-normal mt-1">Saturday - Sunday: Closed</p>
               </div>
@@ -231,12 +279,12 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
               className="w-full h-[450px] rounded-[24px] overflow-hidden border border-zinc-150 shadow-[0_4px_25px_rgba(0,0,0,0.005)]"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.56238382747!2d75.8239088!3d26.8856238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6d18bd0a561%3A0x6b4cd7c2688b5a!2sSector%207%2C%20Jawahar%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302004!5e0!3m2!1sen!2sin!4v1700000000000"
+                src="https://maps.google.com/maps?q=Hotel%20Ananta%20Inn,%20Lal%20Kothi,%20Jaipur,%20Rajasthan%20302015&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

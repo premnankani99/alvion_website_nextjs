@@ -95,32 +95,37 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
       <div className="bg-[#fbfcfd] pt-20 md:pt-24 min-h-screen text-[#0d1b2a] font-sans">
         
         {/* Header Section */}
-        <div className="container mx-auto px-6 md:px-12 pt-16 pb-12 relative">
+        <div className="container mx-auto px-6 md:px-12 pt-12 pb-16 relative">
+          
           <button 
             onClick={() => router.back()} 
-            className="hidden md:flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm absolute top-16 left-6 md:left-12"
+            className="md:hidden inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm mb-6"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
             Back
           </button>
-          
-          <div className="text-center">
-            <button 
-              onClick={() => router.back()} 
-              className="md:hidden inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm mb-6"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-              Back
-            </button>
-            <p className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Case study</p>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4 max-w-4xl mx-auto">{data.title}</h1>
-            <div className="flex justify-center gap-4 mt-6 flex-wrap">
-              <span className="bg-blue-50 text-blue-700 px-4 py-1 rounded-full font-semibold text-sm border border-blue-100">
-                Industry: {data.industry}
-              </span>
-              <span className="bg-blue-50 text-blue-700 px-4 py-1 rounded-full font-semibold text-sm border border-blue-100">
-                Platform: {data.platform}
-              </span>
+
+          <div className="flex flex-col lg:flex-row gap-12">
+            <div className="hidden lg:block w-1/4 pt-2">
+              <button 
+                onClick={() => router.back()} 
+                className="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back
+              </button>
+            </div>
+            
+            <div className="w-full lg:w-3/4 text-left">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4 max-w-4xl">{data.title}</h1>
+              <div className="flex justify-start gap-4 mt-6 flex-wrap">
+                <span className="bg-blue-50 text-blue-700 px-4 py-1 rounded-full font-semibold text-sm border border-blue-100">
+                  Industry: {data.industry}
+                </span>
+                <span className="bg-blue-50 text-blue-700 px-4 py-1 rounded-full font-semibold text-sm border border-blue-100">
+                  Platform: {data.platform}
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -176,7 +181,6 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
 
           {/* Main Content */}
           <main className="w-full lg:w-3/4 space-y-16">
-            
             <section id="overview" className="scroll-mt-32">
               <h2 className="text-2xl font-bold text-blue-600 mb-4">Executive summary</h2>
               {data.overview.map((para, idx) => (

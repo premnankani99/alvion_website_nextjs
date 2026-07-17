@@ -45,7 +45,7 @@ export default function BlogsPage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="w-full bg-white rounded-[24px] overflow-hidden border border-zinc-150 shadow-[0_4px_25px_rgba(0,0,0,0.005)] hover:shadow-[0_15px_35px_rgba(30,58,138,0.06)] hover:border-blue-500/20 transition-all duration-500 flex flex-col md:flex-row items-stretch min-h-auto md:min-h-[420px] mb-8 group cursor-pointer mt-4 md:mt-8"
           >

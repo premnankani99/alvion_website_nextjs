@@ -83,7 +83,7 @@ export default function Home() {
               <motion.h3
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.36, delay: 0.02, type: "spring", bounce: 0.15 }}
                 className="text-2xl md:text-4xl font-black text-black"
               >
@@ -94,7 +94,7 @@ export default function Home() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.32, delay: 0.04 }}
               className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-center max-w-6xl mx-auto"
             >
@@ -105,7 +105,7 @@ export default function Home() {
                     alt={`Client Logo ${num}`} 
                     initial={{ filter: "grayscale(100%) blur(1px)", opacity: 0.5, scale: 0.98 }}
                     whileInView={{ filter: "grayscale(0%) blur(0px)", opacity: 1, scale: 1.04 }}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.24, ease: "easeOut" }}
                     className="max-w-full max-h-full object-contain"
                   />
@@ -142,7 +142,7 @@ export default function Home() {
                  <motion.h2 
                    initial={{ opacity: 0, x: -80 }}
                    whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: false, amount: 0.15 }}
+                   viewport={{ once: true, amount: 0.15 }}
                    transition={{ duration: 0.32, type: "spring", bounce: 0.15 }}
                    className="text-2xl md:text-4xl font-black text-black mb-4 tracking-tight"
                  >
@@ -153,7 +153,7 @@ export default function Home() {
                  <motion.p 
                    initial={{ opacity: 0, x: 80 }}
                    whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: false, amount: 0.15 }}
+                   viewport={{ once: true, amount: 0.15 }}
                    transition={{ duration: 0.36, delay: 0.02, type: "spring", bounce: 0.12 }}
                    className="text-zinc-600 mb-10 text-base font-light max-w-xl mx-auto"
                  >
@@ -164,7 +164,7 @@ export default function Home() {
                  <motion.div
                    initial={{ opacity: 0, y: 60 }}
                    whileInView={{ opacity: 1, y: 0 }}
-                   viewport={{ once: false, amount: 0.15 }}
+                   viewport={{ once: true, amount: 0.15 }}
                    transition={{ duration: 0.32, delay: 0.04, type: "spring", bounce: 0.18 }}
                  >
                    <Link href="/contact" className="px-12 py-4 bg-gradient-to-r from-zinc-950 to-[#1e3a8a] text-white font-extrabold rounded-full hover:shadow-[0_10px_25px_rgba(30,58,138,0.25)] hover:scale-105 transition-all duration-300 uppercase tracking-widest text-xs shadow-2xl">

@@ -1,4 +1,4 @@
-import CaseStudyClassicSidebarTemplate from "@/components/CaseStudyClassicSidebarTemplate";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 import { CaseStudyData } from "@/types/case-study";
 
 export default function MedicalInventoryManagementPage() {
@@ -96,5 +96,5 @@ export default function MedicalInventoryManagementPage() {
     ]
   };
 
-  return <CaseStudyClassicSidebarTemplate data={pageData} />;
+  return <CaseStudyTemplate data={pageData} />;
 }

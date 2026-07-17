@@ -61,26 +61,26 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-white border border-zinc-150 border-t-8 border-t-[#1e3a8a] rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10 relative overflow-hidden"
           >
-            <h2 className="text-2xl md:text-4xl font-black text-black mb-8 md:mb-12 text-center">
+            <h2 className="text-2xl md:text-4xl font-black text-black mb-4 md:mb-6 text-center">
               Who We <span className="text-[#1e3a8a]">Are</span>
             </h2>
-            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-              <div className="lg:w-1/2 space-y-6">
-                <p className="text-zinc-600 text-[16px] leading-relaxed font-normal">
+            <div className="flex flex-col lg:flex-row lg:items-start items-center gap-8 lg:gap-12">
+              <div className="lg:w-1/2 space-y-4 md:space-y-5 flex flex-col justify-start pt-2">
+                <p className="text-zinc-600 text-lg md:text-xl leading-relaxed font-normal">
                   Alvion Technologies was founded on a powerful vision to bridge the gap between complex technology and real-world business needs.
                 </p>
-                <p className="text-zinc-600 text-[16px] leading-relaxed font-normal">
+                <p className="text-zinc-600 text-lg md:text-xl leading-relaxed font-normal">
                   We specialize in custom software solutions, digital transformation, and innovative technology consulting.
                 </p>
-                <p className="text-zinc-600 text-[16px] leading-relaxed font-normal">
+                <p className="text-zinc-600 text-lg md:text-xl leading-relaxed font-normal">
                   Our mission is to help organizations leverage technology to achieve sustainable growth and competitive advantage.
                 </p>
               </div>
-              <div className="lg:w-1/2 relative aspect-[4/3] w-full rounded-[24px] overflow-hidden border border-zinc-150 shadow-sm group cursor-pointer lg:pl-8">
+              <div className="lg:w-1/2 relative w-full rounded-[24px] overflow-hidden border border-zinc-150 shadow-sm group cursor-pointer" style={{ aspectRatio: '3/2' }}>
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-out pointer-events-none z-20" />
                 <Image
                   src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000"
@@ -97,7 +97,7 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-white border border-zinc-150 border-t-8 border-t-[#1e3a8a] rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10"
           >
@@ -114,7 +114,7 @@ export default function AboutPage() {
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.18, delay: idx * 0.03, type: "spring", bounce: 0.1 }}
                   className="bg-white rounded-[24px] overflow-hidden border border-zinc-150 hover:border-blue-500/20 shadow-sm flex flex-col h-full hover:shadow-md transition-all duration-300 group cursor-pointer"
                 >
@@ -141,7 +141,7 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-white border border-zinc-150 border-t-8 border-t-[#1e3a8a] rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10"
           >
@@ -150,15 +150,15 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-zinc-100">
               <div className="py-4 md:py-0 flex flex-col items-center justify-center">
-                <span className="text-[40px] md:text-[52px] font-black text-[#1e3a8a] block mb-2 leading-none">100+</span>
+                <span className="text-[32px] md:text-[40px] font-black text-[#1e3a8a] block mb-2 leading-none">100+</span>
                 <span className="text-zinc-400 text-xs md:text-sm font-semibold uppercase tracking-widest">Projects</span>
               </div>
               <div className="py-4 md:py-0 flex flex-col items-center justify-center">
-                <span className="text-[40px] md:text-[52px] font-black text-[#1e3a8a] block mb-2 leading-none">98%</span>
+                <span className="text-[32px] md:text-[40px] font-black text-[#1e3a8a] block mb-2 leading-none">98%</span>
                 <span className="text-zinc-400 text-xs md:text-sm font-semibold uppercase tracking-widest">Client Satisfaction</span>
               </div>
               <div className="py-4 md:py-0 flex flex-col items-center justify-center">
-                <span className="text-[40px] md:text-[52px] font-black text-[#1e3a8a] block mb-2 leading-none">5+</span>
+                <span className="text-[32px] md:text-[40px] font-black text-[#1e3a8a] block mb-2 leading-none">5+</span>
                 <span className="text-zinc-400 text-xs md:text-sm font-semibold uppercase tracking-widest">Years Experience</span>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-white border border-zinc-150 border-t-8 border-t-[#1e3a8a] rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10"
           >
@@ -201,7 +201,7 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-white border border-zinc-150 border-t-8 border-t-[#1e3a8a] rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10"
           >
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.18, delay: idx * 0.03, type: "spring", bounce: 0.1 }}
                   className="bg-white rounded-[24px] overflow-hidden border border-zinc-150 hover:border-blue-500/20 shadow-sm flex flex-col h-full hover:shadow-md transition-all duration-300 group cursor-pointer"
                 >
@@ -245,7 +245,7 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-white border border-zinc-150 border-t-8 border-t-[#1e3a8a] rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] p-5 md:p-10"
           >
@@ -258,7 +258,7 @@ export default function AboutPage() {
                   key={tech.name}
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.16, delay: (idx % 3) * 0.08, type: "spring", bounce: 0.1 }}
                   whileHover={{ y: -6 }}
                   className="bg-white p-6 md:p-8 rounded-[16px] border border-zinc-150 shadow-sm flex flex-col items-center justify-center text-center hover:border-blue-500/20 hover:shadow-[0_10px_25px_rgba(30,58,138,0.04)] transition-all duration-300 cursor-pointer"
@@ -274,7 +274,7 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.2, type: "spring", bounce: 0.1 }}
             className="bg-gradient-to-br from-zinc-950 to-[#1e3a8a] text-white rounded-[24px] p-5 md:p-16 text-center relative overflow-hidden shadow-xl"
           >

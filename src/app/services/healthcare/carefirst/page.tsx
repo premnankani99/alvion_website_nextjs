@@ -71,7 +71,6 @@ export default function HealthcareCaseStudy() {
             
   
   <div className="container mx-auto px-6 md:px-12 pt-32 pb-12 text-center">
-    <p className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Case study 1</p>
     <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4 max-w-4xl mx-auto">CareFirst Hospitals – AI-Powered Hospital Digital Transformation</h1>
     <div className="flex justify-center gap-4 mt-6">
       <span className="bg-blue-50 text-blue-700 px-4 py-1 rounded-full font-semibold text-sm border border-blue-100">Industry: Healthcare &amp; Hospital Management</span>

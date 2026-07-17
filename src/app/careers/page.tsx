@@ -10,7 +10,7 @@ const jobs = [
   {
     title: "Appian Developer",
     exp: "0-2 Years",
-    desc: "Builds and automates business applications using the Appian low-code platform.",
+    desc: "Designs, builds, and automates scalable business applications leveraging the Appian low-code platform.",
     loc: "JAIPUR, INDIA",
     type: "FULL-TIME",
     link: "/appian-developer"
@@ -18,7 +18,7 @@ const jobs = [
   {
     title: "React Native Developer",
     exp: "2-4 Years",
-    desc: "Designs and develops high-performance cross-platform mobile applications using React and JavaScript.",
+    desc: "Designs and develops high-performance, cross-platform mobile applications using React and JavaScript.",
     loc: "JAIPUR, INDIA",
     type: "FULL-TIME",
     link: "/react-native-developer"
@@ -26,7 +26,7 @@ const jobs = [
   {
     title: "HR Executive",
     exp: "0-2 Years",
-    desc: "Supports HR operations and contributes to the development and maintenance of web-based HR systems.",
+    desc: "Manages end-to-end HR operations and contributes to the strategic growth of our workforce and culture.",
     loc: "JAIPUR, INDIA",
     type: "FULL-TIME",
     link: "/hr"
@@ -34,7 +34,7 @@ const jobs = [
   {
     title: "Associate Software Developer",
     exp: "0-2 Years",
-    desc: "Works with the development team to design, develop, and test software solutions under expert guidance.",
+    desc: "Collaborates with cross-functional teams to design, develop, and deploy innovative software solutions.",
     loc: "JAIPUR, INDIA",
     type: "FULL-TIME",
     link: "/associate-software-developer"
@@ -42,7 +42,7 @@ const jobs = [
   {
     title: "Digital Marketing Executive",
     exp: "0-2 Years",
-    desc: "Plans and executes digital marketing campaigns to improve brand visibility and generate quality leads.",
+    desc: "Plans and executes data-driven digital marketing campaigns to boost brand visibility and drive growth.",
     loc: "JAIPUR, INDIA",
     type: "FULL-TIME",
     link: "/digital-marketing-executive"
@@ -50,7 +50,7 @@ const jobs = [
   {
     title: "Automation Tester - Python",
     exp: "3-4 Years",
-    desc: "Designs and executes automated test scripts to ensure software quality and reliable releases.",
+    desc: "Develops and executes robust automated test scripts to ensure software quality and reliable releases.",
     loc: "JAIPUR, INDIA",
     type: "FULL-TIME",
     link: "/automation-tester"
@@ -124,7 +124,7 @@ export default function CareersPage() {
                 <motion.div
                   initial={{ opacity: 0, x: -80 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.16, type: "spring", bounce: 0.1 }}
                 >
                   {/* Badge removed per user request */}
@@ -141,7 +141,7 @@ export default function CareersPage() {
                         key={i}
                         initial={{ opacity: 0, x: -60 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: true, amount: 0.1 }}
                         transition={{ duration: 0.18, delay: i * 0.03, type: "spring", bounce: 0.1 }}
                         whileHover={{ x: 8 }}
                         className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-[#fcfdfe] rounded-[16px] border border-zinc-150 hover:bg-white hover:border-blue-500/20 hover:shadow-[0_10px_35px_rgba(30,58,138,0.05)] transition-all duration-300 h-full"
@@ -162,7 +162,7 @@ export default function CareersPage() {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.24, type: "spring", bounce: 0.1 }}
                   className="relative w-full aspect-[4/3] rounded-[40px] overflow-hidden border border-zinc-200/50 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(30,58,138,0.12)] transition-all duration-700 group cursor-pointer"
                 >
@@ -188,7 +188,7 @@ export default function CareersPage() {
               <motion.h3
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
                 className="text-2xl md:text-4xl font-black text-black"
               >
@@ -204,7 +204,7 @@ export default function CareersPage() {
                   key={job.title}
                   initial={{ opacity: 0, x: (index % 3 === 0 ? -60 : index % 3 === 2 ? 60 : 0), y: 40 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.2, delay: (index % 3) * 0.08, type: "spring", bounce: 0.1 }}
                   whileHover={{ y: -10, scale: 1.02 }}
                   className="p-5 md:p-8 bg-white border border-zinc-150 rounded-[24px] shadow-[0_4px_25px_rgba(0,0,0,0.005)] hover:shadow-[0_15px_35px_rgba(30,58,138,0.06)] hover:border-blue-500/20 transition-all duration-300 group flex flex-col h-full text-left"
@@ -216,9 +216,9 @@ export default function CareersPage() {
                     {job.desc}
                   </p>
 
-                  <div className="flex items-center gap-6 text-zinc-400 text-[10px] font-black uppercase tracking-widest mb-10">
-                    <span className="flex items-center gap-1.5"><MapPin size={12} className="text-[#1e3a8a]" /> <span>{job.loc}</span></span>
-                    <span className="flex items-center gap-1.5"><Clock size={12} className="text-[#1e3a8a]" /> <span>{job.type}</span></span>
+                  <div className="flex items-center gap-5 text-zinc-600 text-xs md:text-[13px] font-bold uppercase tracking-wider mb-10">
+                    <span className="flex items-center gap-2"><MapPin size={15} className="text-[#1e3a8a]" /> <span>{job.loc}</span></span>
+                    <span className="flex items-center gap-2"><Clock size={15} className="text-[#1e3a8a]" /> <span>{job.type}</span></span>
                   </div>
 
                   <div className="w-full mt-auto">

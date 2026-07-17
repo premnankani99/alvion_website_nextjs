@@ -59,7 +59,7 @@ export default function BankingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mb-20">
             {bankingCaseStudies.map((study, index) => (
               <Link key={index} href={study.link} className="flex flex-col group cursor-pointer">
-                <div className="relative w-full aspect-[1.5/1] overflow-hidden mb-6 bg-gray-100">
+                <div className="relative w-full aspect-[1.5/1] overflow-hidden mb-6 bg-gray-100 rounded-[24px] shadow-sm">
                   <Image 
                     src={study.image} 
                     alt={study.title} 

@@ -50,7 +50,7 @@ export default function SoftwareSolutions() {
           <motion.h2 
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
             className="text-2xl md:text-4xl font-black text-black mb-4"
           >
@@ -61,7 +61,7 @@ export default function SoftwareSolutions() {
           <motion.p 
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.18, delay: 0.02, type: "spring", bounce: 0.1 }}
             className="text-zinc-500 text-base md:text-lg max-w-2xl mx-auto font-normal"
           >
@@ -76,7 +76,7 @@ export default function SoftwareSolutions() {
               key={index}
               initial={{ opacity: 0, x: service.startX, y: service.startY }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: false, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.2, delay: service.delay * 0.2, type: "spring", bounce: 0.1 }}
               whileHover={{ y: -12, scale: 1.03, rotateZ: 0.5 }}
               className={`group relative p-5 sm:p-8 rounded-[24px] bg-[#fcfdfe] border border-zinc-150 shadow-[0_4px_25px_rgba(0,0,0,0.005)] hover:scale-103 transition-all duration-300 cursor-pointer flex flex-col h-full ${service.bgGlow}`}

@@ -62,7 +62,7 @@ export default function Services() {
           <motion.h3 
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.15 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
             className="text-2xl md:text-4xl font-black text-black"
           >
@@ -77,9 +77,9 @@ export default function Services() {
               <motion.div 
                 initial={{ opacity: 0, x: service.startX, y: service.startY }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.2, delay: service.delay * 0.2, type: "spring", bounce: 0.1 }}
-                className={`group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 hover:rotate-1 hover:skew-x-1 transition-all duration-500 ${service.borderGlow} ${service.glowColor}`}
+                className={`group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 transition-all duration-500 ${service.borderGlow} ${service.glowColor}`}
               >
                 {/* Image Container with high-tech scanner line overlay & Gloss Swipe Reflect */}
                 <div className="relative aspect-video overflow-hidden rounded-t-[24px] [transform:translateZ(0)]">
@@ -115,7 +115,7 @@ export default function Services() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.15 }}
+          viewport={{ once: true, amount: 0.15 }}
           className="flex justify-center mt-12"
         >
           <Link href="/services#enterprise-services" className="inline-block px-8 py-3 border border-blue-500/50 text-[#1e3a8a] font-bold rounded-full hover:bg-gradient-to-r hover:from-zinc-950 hover:to-[#1e3a8a] hover:text-white hover:border-transparent transition-all duration-300 text-xs uppercase tracking-widest bg-white shadow-md">

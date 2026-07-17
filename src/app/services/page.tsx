@@ -129,7 +129,7 @@ export default function ServicesPage() {
                 <motion.h2
                   initial={{ opacity: 0, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
                   className="text-2xl md:text-4xl font-black text-black mb-6 leading-tight"
                 >
@@ -143,7 +143,7 @@ export default function ServicesPage() {
                 <motion.div
                   initial={{ opacity: 0, scaleX: 0, x: 50 }}
                   whileInView={{ opacity: 1, scaleX: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.16 }}
                   className="origin-left mb-6"
                 >
@@ -156,7 +156,7 @@ export default function ServicesPage() {
                 <motion.p
                   initial={{ opacity: 0, x: 80 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.18, delay: 0.02, type: "spring", bounce: 0.1 }}
                   className="text-zinc-600 text-[16px] leading-relaxed mb-10 max-w-xl font-normal"
                 >
@@ -174,7 +174,7 @@ export default function ServicesPage() {
                       key={i}
                       initial={{ opacity: 0, x: stat.startX, y: 20 }}
                       whileInView={{ opacity: 1, x: 0, y: 0 }}
-                      viewport={{ once: false, amount: 0.15 }}
+                      viewport={{ once: true, amount: 0.15 }}
                       transition={{ duration: 0.2, delay: stat.delay, type: "spring", bounce: 0.1 }}
                       whileHover={{ y: -8, scale: 1.05 }}
                       className="flex-1 min-w-[140px] px-5 py-4 rounded-[16px] bg-white border border-zinc-100/80 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_10px_35px_rgba(30,58,138,0.06)] flex flex-col items-center text-center cursor-default transition-all duration-300"
@@ -192,7 +192,7 @@ export default function ServicesPage() {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false, amount: 0.15 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.24, type: "spring", bounce: 0.1 }}
                   className="relative w-full aspect-[4/3] rounded-[40px] overflow-hidden border border-zinc-200/50 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(30,58,138,0.12)] transition-all duration-700 group cursor-pointer"
                 >
@@ -226,7 +226,7 @@ export default function ServicesPage() {
               <motion.h3
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
                 className="text-2xl md:text-3xl font-black text-black"
               >
@@ -242,9 +242,9 @@ export default function ServicesPage() {
                     key={index}
                     initial={{ opacity: 0, x: (index % 3 === 0 ? -60 : index % 3 === 2 ? 60 : 0), y: 40 }}
                     whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    viewport={{ once: false, amount: 0.15 }}
+                    viewport={{ once: true, amount: 0.15 }}
                     transition={{ duration: 0.2, delay: (index % 3) * 0.1, type: "spring", bounce: 0.1 }}
-                    className="group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 hover:rotate-1 hover:skew-x-1 hover:shadow-[0_15px_35px_rgba(30,58,138,0.08)] hover:border-blue-500/30 transition-all duration-500"
+                    className="group bg-[#fcfdfe] rounded-[24px] overflow-hidden border border-zinc-150 flex flex-col h-full cursor-pointer hover:-translate-y-3 hover:shadow-[0_15px_35px_rgba(30,58,138,0.08)] hover:border-blue-500/30 transition-all duration-500"
                   >
                     {/* Image container */}
                     <div className="relative aspect-video overflow-hidden">
@@ -297,7 +297,7 @@ export default function ServicesPage() {
               <motion.h3
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.18, delay: 0.01, type: "spring", bounce: 0.1 }}
                 className="text-2xl md:text-3xl font-black text-black"
               >

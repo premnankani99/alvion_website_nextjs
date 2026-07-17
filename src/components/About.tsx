@@ -22,7 +22,7 @@ export default function About() {
               <motion.h2
                 initial={{ opacity: 0, x: -120 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.36, delay: 0.02, type: "spring", bounce: 0.15 }}
                 className="text-[28px] md:text-[40px] font-black text-black mb-6 leading-tight"
               >
@@ -36,7 +36,7 @@ export default function About() {
               <motion.div
                 initial={{ opacity: 0, scaleX: 0, x: -50 }}
                 whileInView={{ opacity: 1, scaleX: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.32, delay: 0.04 }}
                 className="origin-left mb-6"
               >
@@ -49,7 +49,7 @@ export default function About() {
               <motion.p
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.36, delay: 0.06, type: "spring", bounce: 0.12 }}
                 className="text-zinc-600 text-[16px] leading-relaxed mb-10 max-w-xl font-normal"
               >
@@ -60,7 +60,7 @@ export default function About() {
               <motion.div
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.32, delay: 0.08, type: "spring", bounce: 0.18 }}
               >
                 <Link 
@@ -82,7 +82,7 @@ export default function About() {
                     key={i}
                     initial={{ opacity: 0, x: stat.startX, y: stat.startY }}
                     whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    viewport={{ once: false, amount: 0.15 }}
+                    viewport={{ once: true, amount: 0.15 }}
                     transition={{ duration: 0.36, delay: stat.delay, type: "spring", bounce: 0.15 }}
                     whileHover={{ y: -8, scale: 1.05 }}
                     className="px-5 py-3 rounded-2xl bg-white border border-zinc-100/80 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_10px_35px_rgba(30,58,138,0.06)] flex flex-col items-start cursor-default transition-all duration-300"
@@ -98,7 +98,7 @@ export default function About() {
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9, rotate: -3 }}
                 whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.44, type: "spring", bounce: 0.15 }}
                 className="relative w-full aspect-[4/3] rounded-[40px] overflow-hidden border border-zinc-200/50 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(30,58,138,0.12)] transition-all duration-700 group cursor-pointer"
               >
@@ -138,7 +138,7 @@ export default function About() {
               <motion.h2 
                 initial={{ opacity: 0, x: 120 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.36, delay: 0.02, type: "spring", bounce: 0.15 }}
                 className="text-2xl md:text-4xl font-extrabold text-black mb-6 leading-tight"
               >
@@ -149,7 +149,7 @@ export default function About() {
               <motion.p 
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.36, delay: 0.04, type: "spring", bounce: 0.12 }}
                 className="text-zinc-600 text-[16px] leading-relaxed font-normal mb-4"
               >
@@ -160,7 +160,7 @@ export default function About() {
               <motion.p 
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.36, delay: 0.06, type: "spring", bounce: 0.12 }}
                 className="text-zinc-500 text-[15px] leading-relaxed font-normal"
               >
@@ -172,7 +172,7 @@ export default function About() {
               <motion.div 
                 initial={{ opacity: 0, x: -120 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.44, type: "spring", bounce: 0.15 }}
                 className="relative w-full aspect-[4/3] rounded-[30px] overflow-hidden border border-zinc-200/50 shadow-[0_15px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_45px_rgba(30,58,138,0.12)] transition-all duration-700 group cursor-pointer flex items-center justify-center"
               >
