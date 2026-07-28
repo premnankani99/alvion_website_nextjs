@@ -4,7 +4,8 @@
 
 ## Table of Contents
 1. [Dynamic Node.js Application](#dynamic-nodejs-application)
-2. [Troubleshooting Common cPanel Issues](#troubleshooting-common-cpanel-issues)
+2. [Redeployment Guide](#redeployment-guide)
+3. [Troubleshooting Common cPanel Issues](#troubleshooting-common-cpanel-issues)
 
 ---
 
@@ -101,6 +102,80 @@ Since your chatbot relies on the Groq API key, you must configure this in the en
 
 ### Step 8: Restart the Application
 Click the **Restart** button at the top of the Setup Node.js App page to apply your environment variables. Open `http://alvion.landmaarkdeveloper.com` in a browser to confirm everything works!
+
+---
+
+## Redeployment Guide
+
+Follow these steps when you need to redeploy updates to the live website:
+
+1. **Pull and Merge Latest Code**
+   * Take a pull from the `main` branch or merge other branches if you have multiple branches to ensure your local workspace is up to date:
+     ```bash
+     git pull origin main
+     ```
+
+2. **Clean and Build Locally**
+   * Delete the old `.next` directory to avoid caching issues:
+     ```bash
+     # On Windows (PowerShell)
+     Remove-Item -Recurse -Force .next
+     # On Windows (cmd) or Mac/Linux
+     rm -rf .next
+     ```
+   * Run the build command in your local project terminal:
+     ```bash
+     npm run build
+     ```
+
+3. **Zip the Deployable Files**
+   Create a ZIP archive containing the following files and folders:
+   * `.next` (Make sure your archiver includes hidden folders/files starting with a dot `.`)
+   * `public`
+   * `src`
+   * `package.json`
+   * `package-lock.json`
+   * `next.config.ts`
+   * `server.js`
+
+4. **Name the ZIP File**
+   Name the resulting ZIP file using the following format:
+   `alvion_newDeploy_DD_MM_HH_MM.zip` (where `DD_MM_HH_MM` represents the current Day, Month, Hour, and Minute).
+
+5. **Access cPanel File Manager**
+   * Log in to your cPanel dashboard.
+   * Open the **File Manager** and navigate to the folder for:
+     `alvion.landmaarkdeveloper.com`
+
+6. **Backup Existing Deployment**
+   * Inside the `alvion.landmaarkdeveloper.com` folder, select all files and directories **except** `node_modules`.
+   * Compress (Zip) them together.
+   * Rename the backup archive to:
+     `alvion_backup_DD_MM_HH_MM.zip`.
+
+7. **Download and Clean Backup**
+   * Download the `alvion_backup_DD_MM_HH_MM.zip` file to your local machine for safety.
+   * Delete the backup ZIP file from the server after downloading to save disk space.
+
+8. **Upload the New Deployment ZIP**
+   * Click the **Upload** button in the File Manager.
+   * Select and upload the `alvion_newDeploy_DD_MM_HH_MM.zip` file.
+
+9. **Extract and Clean Up**
+   * Right-click the uploaded ZIP file in File Manager and select **Extract**.
+   * Once extracted, delete the ZIP file from the server.
+
+10. **Open Setup Node.js App**
+    * In cPanel, search for and open **Setup Node.js App**.
+    * Click the **Edit (pencil) icon** next to `alvion.landmaarkdeveloper.com`.
+
+11. **Environment Variables & NPM Packages**
+    * If you added any new environment variables locally, add them under the **Environment variables** section.
+    * If you installed any new packages/dependencies locally, click **Run NPM Install** (or install via SSH using the virtual environment command).
+
+12. **Restart and Sanity Check**
+    * Click the **Restart** button at the top of the Setup Node.js App page to apply changes.
+    * Visit `http://alvion.landmaarkdeveloper.com` and run a sanity check to verify that the website and chatbot function correctly.
 
 ---
 
