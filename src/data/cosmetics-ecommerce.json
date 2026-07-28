@@ -1,0 +1,81 @@
+{
+  "id": "cosmetics-ecommerce",
+  "title": "Luxe Beauty E-Commerce Platform",
+  "description": "Custom Shopify Theme for Beauty Brand",
+  "industry": "Beauty & Cosmetics / Ecommerce / Retail",
+  "projectType": "Custom Shopify Theme Development",
+  "platform": "Shopify Storefront",
+  "overview": [
+    "A beauty and cosmetics brand wanted to establish a premium ecommerce presence capable of delivering immersive shopping experiences across web and mobile devices for their foundation, skincare, and lipstick product lines.",
+    "The client required a custom Shopify storefront that could showcase products beautifully, simplify product discovery through intelligent search, build customer trust with authentic reviews, and support business growth through upselling and retention strategies.",
+    "Our team designed and developed a fully custom Shopify theme from scratch, integrating cinematic video hero banners, typewriter-animated search, a custom review system with photo uploads, customer wishlists, cart cross-sell and upsell functionality, and curated collection pages into a cohesive digital shopping experience."
+  ],
+  "problemIntro": "The client's existing online presence lacked the visual sophistication and functionality needed to compete in the premium cosmetics market, making it difficult to convert visitors into loyal customers:",
+  "problems": [
+    { "title": "Poor Product Discoverability", "desc": "Customers experienced difficulty finding relevant products across categories like foundation, skincare, and lipsticks." },
+    { "title": "Lack of Social Proof", "desc": "The absence of social proof through reviews and a wishlist feature reduced return-visit conversions and customer engagement." },
+    { "title": "Missed Upsell Opportunities", "desc": "The client required a platform that could increase average order value through intelligent product recommendations at checkout." }
+  ],
+  "solution": [
+    "We developed a custom Shopify theme featuring a cinematic video hero banner, curated best-seller sections, animated typewriter search with contextual suggestions, and elegant collection pages tailored for the beauty industry.",
+    "The platform enables customers to browse products seamlessly, discover items through intelligent search, save favorites to wishlists, read verified customer reviews with photo uploads, and complete purchases through a streamlined checkout experience.",
+    "Additionally, integrated cart cross-sell and upsell engines, dynamic product labels, email signup banners, and mobile-first responsive design help the business maximize conversions, improve customer retention, and drive sustainable growth."
+  ],
+  "modules": [
+    { "num": "01", "title": "Cinematic Video Hero Banner" },
+    { "num": "02", "title": "Typewriter Animated Smart Search" },
+    { "num": "03", "title": "Custom Review System" },
+    { "num": "04", "title": "Customer Wishlist & Favorites" },
+    { "num": "05", "title": "Cart Cross-sell & Upsell Engine" },
+    { "num": "06", "title": "Curated Best Sellers" }
+  ],
+  "outcomes": [
+    { "value": "Premium", "label": "Brand Experience" },
+    { "value": "Enhanced", "label": "Product Discovery" },
+    { "value": "Increased", "label": "Average Order Value" }
+  ],
+  "technologies": [
+    { "name": "Shopify", "icon": "https://cdn.simpleicons.org/shopify/95BF47", "bg": "bg-green-50/60" },
+    { "name": "Liquid", "icon": "https://cdn.simpleicons.org/shopify/95BF47", "bg": "bg-green-50/60" },
+    { "name": "JavaScript (ES6+)", "icon": "https://cdn.simpleicons.org/javascript/F7DF1E", "bg": "bg-yellow-50/60" },
+    { "name": "HTML5 & CSS3", "icon": "https://cdn.simpleicons.org/html5/E34F26", "bg": "bg-orange-50/60" },
+    { "name": "Judge.me", "icon": "", "bg": "" }
+  ],
+  "sliderImages": [
+    "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=1200",
+    "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=1200",
+    "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "kpiStats": [
+    {
+      "title": "Customer Trust",
+      "value": "Boosted",
+      "trend": "Reviews",
+      "trendDirection": "up",
+      "sparklineData": [20, 30, 45, 65, 80, 95, 100],
+      "sparklineColor": "#ffeb3b",
+      "iconType": "heart"
+    },
+    {
+      "title": "Return Visits",
+      "value": "Improved",
+      "trend": "Wishlist",
+      "trendDirection": "up",
+      "sparklineData": [40, 50, 65, 75, 85, 90, 100],
+      "sparklineColor": "#10b981",
+      "iconType": "heart"
+    }
+  ],
+  "conclusion": [
+    "The new custom Shopify storefront successfully elevated the brand's premium identity, delivering a highly visual and immersive shopping experience.",
+    "By implementing advanced search, wishlist functionality, and strategic upsell engines, the brand saw significant improvements in product discoverability, customer engagement, and overall sales conversions."
+  ],
+  "sliderImages": [
+    "/case-studies/cosmetics/sl-1.png",
+    "/case-studies/cosmetics/sl-2.png",
+    "/case-studies/cosmetics/sl-3.png",
+    "/case-studies/cosmetics/sl-4.png",
+    "/case-studies/cosmetics/sl-5.png",
+    "/case-studies/cosmetics/sl-6.png"
+  ]
+}

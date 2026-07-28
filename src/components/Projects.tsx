@@ -5,6 +5,15 @@ import Link from "next/link";
 
 const caseStudies = [
   {
+    title: "Luxe Beauty E-Commerce Platform",
+    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=800",
+    category: "RETAIL & E-COMMERCE",
+    link: "/cosmetics-ecommerce",
+    startX: -100,
+    startY: 0,
+    delay: 0.02
+  },
+  {
     title: "Fixed Deposit System",
     image: "https://blogassets.airtel.in/wp-content/uploads/2025/03/banner_24_fd.png",
     category: "FINTECH SOLUTIONS",

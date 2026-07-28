@@ -5,6 +5,14 @@ import Link from "next/link";
 
 const retailCaseStudies = [
   {
+    title: "Luxe Beauty E-Commerce Platform",
+    desc: "Custom Shopify Theme for Beauty Brand",
+    category: "RETAIL",
+    date: "11/19/2025 · 2 min read",
+    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=800", 
+    link: "/cosmetics-ecommerce"
+  },
+  {
     title: "Omnichannel Retail Transformation & Intelligent Inventory Modernization",
     desc: "",
     category: "RETAIL",
