@@ -17,6 +17,13 @@ const insuranceCaseStudies = [
     date: "11/19/2025 · 1 min read",
     image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?auto=format&fit=crop&w=1800&h=1080",
     link: "/digital-insurance-claims"
+  },
+  {
+    category: "INSURANCE",
+    title: "InsurX – Vehicle Insurance B2B Management Platform",
+    date: "11/20/2025 · 1 min read",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1800&h=1080",
+    link: "/insurx"
   }
 ];
 

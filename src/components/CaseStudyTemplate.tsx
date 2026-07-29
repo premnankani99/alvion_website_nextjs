@@ -195,7 +195,7 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {data.outcomes.map((outcome, idx) => (
                   <div key={idx} className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                    <span className="block text-3xl font-bold text-blue-500 mb-1">{outcome.value}</span>
+                    <span className="block text-xl font-bold text-blue-500 mb-1">{outcome.value}</span>
                     <span className="text-xs text-slate-500">{outcome.label}</span>
                   </div>
                 ))}
@@ -231,7 +231,9 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
                     <strong className="block mb-1 text-sm md:text-base text-slate-800">
                       {String(idx + 1).padStart(2, '0')} | {item.title}
                     </strong>
-                    <span className="text-xs md:text-sm text-slate-500">Feature specific capabilities.</span>
+                    <span className="text-xs md:text-sm text-slate-500">
+                      {item.desc || `Core capabilities and tools for ${item.title.toLowerCase()}.`}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -278,7 +280,7 @@ export default function CaseStudyTemplate({ data, customPreviews }: { data: Case
                         
                         <div className="flex justify-between items-end">
                           <div>
-                            <div className="text-slate-800 text-3xl font-bold mb-1">{kpi.value}</div>
+                            <div className="text-slate-800 text-xl font-bold mb-1">{kpi.value}</div>
                             <div className="text-xs font-bold" style={{ color: isDown ? '#ef4444' : '#10b981' }}>
                               {isDown ? '↓' : '↑'} {kpi.trend}
                             </div>

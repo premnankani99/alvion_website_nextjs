@@ -22,12 +22,12 @@
     "Additionally, integrated cart cross-sell and upsell engines, dynamic product labels, email signup banners, and mobile-first responsive design help the business maximize conversions, improve customer retention, and drive sustainable growth."
   ],
   "modules": [
-    { "num": "01", "title": "Cinematic Video Hero Banner" },
-    { "num": "02", "title": "Typewriter Animated Smart Search" },
-    { "num": "03", "title": "Custom Review System" },
-    { "num": "04", "title": "Customer Wishlist & Favorites" },
-    { "num": "05", "title": "Cart Cross-sell & Upsell Engine" },
-    { "num": "06", "title": "Curated Best Sellers" }
+    { "num": "01", "title": "Cinematic Video Hero Banner", "desc": "Immersive homepage banners showcasing products in elegant motion." },
+    { "num": "02", "title": "Typewriter Animated Smart Search", "desc": "Engaging search experience with contextual product suggestions." },
+    { "num": "03", "title": "Custom Review System", "desc": "Verified customer reviews integrated with rich photo uploads." },
+    { "num": "04", "title": "Customer Wishlist & Favorites", "desc": "Allow users to save preferred beauty items for future purchases." },
+    { "num": "05", "title": "Cart Cross-sell & Upsell Engine", "desc": "Intelligent product recommendations during checkout to boost AOV." },
+    { "num": "06", "title": "Curated Best Sellers", "desc": "Dynamically updated collections of top-performing cosmetic products." }
   ],
   "outcomes": [
     { "value": "Premium", "label": "Brand Experience" },
@@ -65,6 +65,14 @@
       "sparklineColor": "#10b981",
       "iconType": "heart"
     }
+  ],
+  "sliderImages": [
+    "/case-studies/cosmetics/sl-1.png",
+    "/case-studies/cosmetics/sl-2.png",
+    "/case-studies/cosmetics/sl-3.png",
+    "/case-studies/cosmetics/sl-4.png",
+    "/case-studies/cosmetics/sl-5.png",
+    "/case-studies/cosmetics/sl-6.png"
   ],
   "conclusion": [
     "The new custom Shopify storefront successfully elevated the brand's premium identity, delivering a highly visual and immersive shopping experience.",

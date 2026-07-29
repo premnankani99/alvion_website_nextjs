@@ -1,0 +1,188 @@
+{
+  "id": "smart-grocery-operations",
+  "title": "Smart Grocery Operations",
+  "description": "FMCG Supply Chain Transformation",
+  "industry": "Grocery & FMCG Retail",
+  "projectType": "Inventory Optimization",
+  "platform": "Appian Low-Code Platform",
+  "overview": [
+    "A leading regional grocery and FMCG retail chain operating more than 120 stores across urban and semi-urban markets partnered with Alvion Technologies to modernize its supply chain and store operations.",
+    "Managing thousands of SKUs including perishable goods and fast-moving consumer products, the organization required a scalable, intelligent system to improve product availability, reduce wastage, and enhance real-time operational visibility."
+  ],
+  "problemIntro": "The retailer relied on manual replenishment planning and disconnected systems between suppliers, warehouses, and stores.",
+  "problems": [
+    {
+      "title": "Frequent Stockouts",
+      "desc": "Disconnected systems resulted in frequent stockouts of high-demand products."
+    },
+    {
+      "title": "Margin Erosion",
+      "desc": "Overstocking of perishable items led to massive inventory losses and margin erosion."
+    },
+    {
+      "title": "Approval Bottlenecks",
+      "desc": "Procurement approvals via emails limited transparency and slowed supplier coordination."
+    }
+  ],
+  "solution": [
+    "Alvion Technologies implemented a centralized retail operations platform powered by Appian for workflow automation and seamless supply chain orchestration.",
+    "AI-driven demand forecasting models analyzed seasonal patterns, regional buying behavior, and promotional trends to automatically trigger smart replenishment cycles."
+  ],
+  "modules": [
+    {
+      "num": "01",
+      "title": "Automated Procurement",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for automated procurement."
+    },
+    {
+      "num": "02",
+      "title": "Vendor Onboarding Portal",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for vendor onboarding portal."
+    },
+    {
+      "num": "03",
+      "title": "Inter-Store Transfers",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for inter-store transfers."
+    },
+    {
+      "num": "04",
+      "title": "AI Demand Forecasting",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for ai demand forecasting."
+    },
+    {
+      "num": "05",
+      "title": "Warehouse Sync",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for warehouse sync."
+    },
+    {
+      "num": "06",
+      "title": "Real-Time Analytics",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for real-time analytics."
+    }
+  ],
+  "outcomes": [
+    {
+      "value": "32%",
+      "label": "Reduction in Inventory Wastage"
+    },
+    {
+      "value": "28%",
+      "label": "Faster Replenishment Cycles"
+    },
+    {
+      "value": "40%",
+      "label": "Improved Stock Accuracy"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Appian Low-Code Platform",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Appian Process Models",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "SAIL Interfaces",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Azure Cloud",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "AI Demand Forecasting",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Machine Learning Models",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "DevOps CI/CD",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Power BI Analytics",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "PostgreSQL / Oracle",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "RESTful APIs",
+      "icon": "",
+      "bg": ""
+    }
+  ],
+  "sliderImages": [],
+  "summaryText": "",
+  "kpiStats": [
+    {
+      "title": "Inventory Wastage",
+      "value": "10K+",
+      "trend": "32%",
+      "trendDirection": "down",
+      "sparklineData": [
+        80,
+        75,
+        70,
+        60,
+        55,
+        45,
+        40
+      ],
+      "sparklineColor": "#9c27b0",
+      "iconType": "clock"
+    },
+    {
+      "title": "Replenishment Time",
+      "value": "10K+",
+      "trend": "28%",
+      "trendDirection": "down",
+      "sparklineData": [
+        90,
+        85,
+        75,
+        60,
+        45,
+        40,
+        36
+      ],
+      "sparklineColor": "#ff9800",
+      "iconType": "document"
+    },
+    {
+      "title": "Stock Accuracy",
+      "value": "1.2 Hrs",
+      "trend": "40%",
+      "trendDirection": "up",
+      "sparklineData": [
+        60,
+        65,
+        70,
+        80,
+        85,
+        95,
+        100
+      ],
+      "sparklineColor": "#ffeb3b",
+      "iconType": "heart"
+    }
+  ],
+  "conclusion": [
+    "The transformation significantly improved supply chain transparency and operational efficiency across the retail network. Automated workflows reduced approval delays and predictive analytics minimized stock imbalances.",
+    "The retailer now operates on a scalable digital foundation capable of supporting rapid expansion while maintaining healthy margins and consistent product availability."
+  ]
+}

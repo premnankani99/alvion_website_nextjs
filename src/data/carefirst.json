@@ -1,0 +1,208 @@
+{
+  "id": "carefirst-hospitals",
+  "title": "CareFirst Hospitals – AI-Powered Hospital Digital Transformation",
+  "description": "AI-Powered Hospital Digital Transformation",
+  "industry": "Healthcare & Hospital Management",
+  "projectType": "Healthcare Digital Transformation Platform",
+  "platform": "Web & Mobile Ecosystem",
+  "overview": [
+    "CareFirst Hospitals, a 350-bed multi-specialty healthcare network, was struggling with fragmented patient records, manual administrative processes, appointment bottlenecks, and limited operational visibility.",
+    "Alvion Technologies implemented a centralized healthcare management platform that unified appointments, patient records, billing workflows, insurance processes, and operational dashboards within a secure cloud ecosystem.",
+    "The solution streamlined hospital operations, reduced administrative burden, improved patient engagement, and enabled healthcare professionals to make faster, data-driven decisions."
+  ],
+  "problemIntro": "The hospital operated through multiple disconnected systems spread across departments.",
+  "problems": [
+    {
+      "title": "Fragmented Patient Records",
+      "desc": "Patient information was stored in different applications, making it difficult for doctors and staff to access complete medical histories."
+    },
+    {
+      "title": "Manual Administrative Processes",
+      "desc": "Administrative teams spent significant time managing appointments, documentation, billing, and insurance-related processes. These manual workflows resulted in operational inefficiencies, longer patient wait times, and increased staff workload."
+    },
+    {
+      "title": "Limited Operational Visibility",
+      "desc": "The organization required a centralized and scalable healthcare platform capable of improving operational efficiency, patient engagement, and visibility across departments."
+    }
+  ],
+  "solution": [
+    "Alvion Technologies designed and deployed a unified Healthcare Digital Transformation Platform that centralized clinical, operational, and administrative functions within a secure cloud environment.",
+    "The platform integrated appointment scheduling, patient records, billing management, insurance assistance, performance dashboards, and patient communication channels into a single ecosystem.",
+    "AI-powered capabilities were introduced to automate administrative tasks, summarize patient records, improve scheduling efficiency, and provide intelligent insights for hospital resource planning.",
+    "This enabled healthcare professionals and patients to access real-time information while maintaining compliance with healthcare security and privacy standards."
+  ],
+  "modules": [
+    {
+      "num": "01",
+      "title": "Centralized Cloud Platform",
+      "desc": "Unified hospital data and operations."
+    },
+    {
+      "num": "02",
+      "title": "Automated Appointment Scheduling",
+      "desc": "Smart appointment booking and reminders."
+    },
+    {
+      "num": "03",
+      "title": "Admin Task Automation",
+      "desc": "Automated documentation and form processing."
+    },
+    {
+      "num": "04",
+      "title": "Billing Process Automation",
+      "desc": "Faster billing and insurance verification."
+    },
+    {
+      "num": "05",
+      "title": "Real-Time Performance Dashboard",
+      "desc": "Live hospital performance monitoring."
+    },
+    {
+      "num": "06",
+      "title": "Multi-Device Patient Engagement",
+      "desc": "Patient communication across multiple channels."
+    },
+    {
+      "num": "07",
+      "title": "Patient Record AI Summarizer",
+      "desc": "AI-powered patient record summaries."
+    },
+    {
+      "num": "08",
+      "title": "Insurance Navigator AI",
+      "desc": "Insurance coverage and cost guidance."
+    },
+    {
+      "num": "09",
+      "title": "Digital Medical Records Access",
+      "desc": "Secure access to medical records."
+    },
+    {
+      "num": "10",
+      "title": "Smart Bed & Rounds Predictor",
+      "desc": "Predictive bed and patient flow management."
+    }
+  ],
+  "outcomes": [
+    {
+      "value": "60%",
+      "label": "Reduction in Manual Data Errors"
+    },
+    {
+      "value": "20%",
+      "label": "Faster Billing & Claims Processing"
+    },
+    {
+      "value": "35%",
+      "label": "Improvement in Bed Utilization"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Next.js",
+      "icon": "",
+      "bg": "bg-blue-50/60"
+    },
+    {
+      "name": "Node.js",
+      "icon": "",
+      "bg": "bg-indigo-50/60"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "",
+      "bg": "bg-blue-50/60"
+    },
+    {
+      "name": "AWS",
+      "icon": "",
+      "bg": "bg-indigo-50/60"
+    },
+    {
+      "name": "OpenAI GPT",
+      "icon": "",
+      "bg": "bg-blue-50/60"
+    },
+    {
+      "name": "Whisper Speech-to-Text",
+      "icon": "",
+      "bg": "bg-indigo-50/60"
+    },
+    {
+      "name": "FHIR APIs",
+      "icon": "",
+      "bg": "bg-blue-50/60"
+    },
+    {
+      "name": "Power BI",
+      "icon": "",
+      "bg": "bg-indigo-50/60"
+    }
+  ],
+  "kpiStats": [
+    {
+      "title": "Admission Time",
+      "value": "12 Mins",
+      "trend": "50%",
+      "trendDirection": "down",
+      "sparklineData": [
+        42,
+        38,
+        35,
+        30,
+        32,
+        28,
+        25,
+        20,
+        22,
+        18
+      ],
+      "sparklineColor": "#8b5cf6",
+      "iconType": "clock"
+    },
+    {
+      "title": "Admin Workload",
+      "value": "40%",
+      "trend": "40%",
+      "trendDirection": "down",
+      "sparklineData": [
+        100,
+        90,
+        85,
+        75,
+        80,
+        60,
+        55,
+        65,
+        45,
+        40
+      ],
+      "sparklineColor": "#f97316",
+      "iconType": "document"
+    },
+    {
+      "title": "Satisfaction",
+      "value": "91%",
+      "trend": "25%",
+      "trendDirection": "up",
+      "sparklineData": [
+        71,
+        72,
+        75,
+        74,
+        78,
+        80,
+        85,
+        82,
+        88,
+        91
+      ],
+      "sparklineColor": "#eab308",
+      "iconType": "heart"
+    }
+  ],
+  "conclusion": [
+    "By combining cloud modernization, workflow automation, AI-powered decision support, and patient engagement technologies, Alvion Technologies successfully transformed CareFirst Hospitals into a digitally connected healthcare organization.",
+    "The platform streamlined hospital operations, reduced administrative overhead, improved patient experiences, and provided healthcare teams with the tools needed to deliver faster and more efficient care."
+  ]
+}

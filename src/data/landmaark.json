@@ -21,12 +21,12 @@
     "Administrators can now manage projects, update inventory, and approve payouts from a centralized dashboard. Simultaneously, brokers are empowered to instantly book client site visits, access high-quality marketing materials, and track their earnings in real-time, resulting in a highly motivated and efficient sales force."
   ],
   "modules": [
-    { "num": "01", "title": "Smart Broker Dashboard" },
-    { "num": "02", "title": "Live Property Inventory" },
-    { "num": "03", "title": "Multi-Level Referral Network" },
-    { "num": "04", "title": "Automated Visit Booking" },
-    { "num": "05", "title": "Commission Tracker" },
-    { "num": "06", "title": "Marketing Asset Hub" }
+    { "num": "01", "title": "Smart Broker Dashboard", "desc": "Centralized interface for brokers to manage leads, visits, and clients." },
+    { "num": "02", "title": "Live Property Inventory", "desc": "Real-time tracking of unit availability and pricing to avoid double-bookings." },
+    { "num": "03", "title": "Multi-Level Referral Network", "desc": "Manage and track broker hierarchies and multi-tier referral structures." },
+    { "num": "04", "title": "Automated Visit Booking", "desc": "Streamlined scheduling for customer site visits and follow-ups." },
+    { "num": "05", "title": "Commission Tracker", "desc": "Transparent real-time tracking of broker payouts and earnings." },
+    { "num": "06", "title": "Marketing Asset Hub", "desc": "Central repository for brochures, floor plans, and promotional materials." }
   ],
   "outcomes": [
     { "value": "100%", "label": "Digital Inventory Management" },
@@ -42,20 +42,19 @@
     { "name": "MySQL", "icon": "https://cdn.simpleicons.org/mysql/4479A1", "bg": "bg-blue-50/60" },
     { "name": "cPanel", "icon": "https://cdn.simpleicons.org/cpanel/FF6C2C", "bg": "bg-orange-50/60" },
     { "name": "ngrok", "icon": "https://cdn.simpleicons.org/ngrok/1F1E37", "bg": "bg-slate-100/60" },
-    { "name": "React", "icon": "", "bg": "" },
-    { "name": "Appian Low-Code", "icon": "", "bg": "" }
+    { "name": "React", "icon": "", "bg": "" }
   ],
   "sliderImages": [
-    "/screen1.png",
-    "/screen2.png",
-    "/screen3.png",
-    "/screen4.png",
-    "/screen5.png",
-    "/screen6.png",
-    "/screen7.png",
-    "/screen8.png",
-    "/screen9.png",
-    "/screen10.png"
+    "/case-studies/landmaark/slider-1.png",
+    "/case-studies/landmaark/slider-2.png",
+    "/case-studies/landmaark/slider-3.png",
+    "/case-studies/landmaark/slider-4.png",
+    "/case-studies/landmaark/slider-5.png",
+    "/case-studies/landmaark/slider-6.png",
+    "/case-studies/landmaark/slider-7.png",
+    "/case-studies/landmaark/slider-8.png",
+    "/case-studies/landmaark/slider-9.png",
+    "/case-studies/landmaark/slider-10.png"
   ],
   "kpiStats": [
     {

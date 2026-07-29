@@ -1,0 +1,193 @@
+{
+  "id": "smartloan-360",
+  "title": "SmartLoan 360",
+  "description": "End-to-End Digital Lending Transformation",
+  "industry": "Banking & Financial Services",
+  "projectType": "Digital Lending Modernization",
+  "platform": "Appian Low-Code Platform",
+  "overview": [
+    "A leading financial institution sought to modernize its lending operations to address slow processing times and manual bottlenecks. They required a unified digital platform to handle the entire loan lifecycle from origination to disbursal.",
+    "By replacing fragmented legacy systems with a streamlined digital approach, the institution aimed to enhance customer experience, ensure stringent compliance, and significantly accelerate loan approvals."
+  ],
+  "problemIntro": "The existing loan processing system was heavily reliant on manual data entry and disconnected applications.",
+  "problems": [
+    {
+      "title": "Manual Data Entry",
+      "desc": "Heavy reliance on manual entry led to frequent errors and prolonged processing times."
+    },
+    {
+      "title": "Siloed Operations",
+      "desc": "Disconnected systems prevented a unified view of the customer and loan status."
+    },
+    {
+      "title": "Compliance Risks",
+      "desc": "Manual document tracking increased the risk of regulatory non-compliance."
+    }
+  ],
+  "solution": [
+    "An end-to-end digital lending platform was implemented using Appian, automating the loan lifecycle from application to final approval and disbursal.",
+    "The solution integrated intelligent document processing, automated credit scoring, and dynamic workflows to eliminate manual touchpoints and ensure real-time visibility."
+  ],
+  "modules": [
+    {
+      "num": "01",
+      "title": "Digital Origination Portal",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for digital origination portal."
+    },
+    {
+      "num": "02",
+      "title": "Intelligent Credit Scoring",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for intelligent credit scoring."
+    },
+    {
+      "num": "03",
+      "title": "Automated Document Processing",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for automated document processing."
+    },
+    {
+      "num": "04",
+      "title": "Risk & Compliance Checks",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for risk & compliance checks."
+    },
+    {
+      "num": "05",
+      "title": "Dynamic Approval Workflows",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for dynamic approval workflows."
+    },
+    {
+      "num": "06",
+      "title": "Real-Time Tracking Dashboard",
+      "desc": "Advanced capabilities and comprehensive tools specifically designed for real-time tracking dashboard."
+    }
+  ],
+  "outcomes": [
+    {
+      "value": "40%",
+      "label": "Faster Approvals"
+    },
+    {
+      "value": "35%",
+      "label": "Cost Reduction"
+    },
+    {
+      "value": "100%",
+      "label": "Audit Traceability"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Appian Low-Code Platform",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Process Models",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "SAIL Interfaces",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Appian RPA",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Decision Rules Engine",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Document Management",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Core Banking API",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "OAuth 2.0 Security",
+      "icon": "",
+      "bg": ""
+    },
+    {
+      "name": "Audit Logging",
+      "icon": "",
+      "bg": ""
+    }
+  ],
+  "sliderImages": [],
+  "conclusion": [
+    "The new platform completely revitalized the financial institution's lending operations, transforming a slow and tedious process into an instant, seamless customer journey.",
+    "With automated processing and zero manual friction, the institution saw a rapid increase in loan disbursals and a significant drop in operational overhead."
+  ],
+  "kpiStats": [
+    {
+      "title": "Processing Time",
+      "value": "12 Mins",
+      "trend": "50%",
+      "trendDirection": "down",
+      "sparklineData": [
+        45,
+        42,
+        38,
+        35,
+        30,
+        25,
+        20,
+        15,
+        12
+      ],
+      "sparklineColor": "#9c27b0",
+      "iconType": "clock"
+    },
+    {
+      "title": "Admin Workload",
+      "value": "1.2 Hrs",
+      "trend": "40%",
+      "trendDirection": "down",
+      "sparklineData": [
+        80,
+        75,
+        78,
+        65,
+        60,
+        55,
+        45,
+        42,
+        40
+      ],
+      "sparklineColor": "#ff9800",
+      "iconType": "document"
+    },
+    {
+      "title": "Satisfaction",
+      "value": "91%",
+      "trend": "25%",
+      "trendDirection": "up",
+      "sparklineData": [
+        60,
+        65,
+        62,
+        70,
+        75,
+        80,
+        85,
+        88,
+        91
+      ],
+      "sparklineColor": "#ffeb3b",
+      "iconType": "heart"
+    }
+  ]
+}

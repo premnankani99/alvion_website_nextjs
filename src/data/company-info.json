@@ -15,8 +15,18 @@
   ],
   "topProjects": [
     {
+      "name": "SmartLoan 360 (Banking)",
+      "description": "Comprehensive banking workflow for smart loans.",
+      "link": "/services/banking/smartloan-360"
+    },
+    {
+      "name": "Loan Automation System (Banking)",
+      "description": "Automated loan processing and management system.",
+      "link": "/loan-automation"
+    },
+    {
       "name": "Fix Deposit (Banking)",
-      "description": "Secure banking workflow.",
+      "description": "Secure banking workflow for fixed deposits.",
       "link": "/fixed-diposit"
     },
     {
@@ -25,24 +35,79 @@
       "link": "/bill-payment"
     },
     {
-      "name": "LOAN AUTOMATION SYSTEM (Banking)",
-      "description": "Automated loan processing and management system.",
-      "link": "/loan-automation"
-    },
-    {
-      "name": "BANKING APPROVAL MANAGEMENT SYSTEM (Banking)",
+      "name": "Banking Approval Management System (Banking)",
       "description": "Streamlined approval workflows for banking operations.",
       "link": "/banking-approval"
     },
     {
-      "name": "Case Management System (Insurance)",
-      "description": "Comprehensive case management for insurance.",
-      "link": "/case-management"
+      "name": "CareFirst Hospitals (Healthcare)",
+      "description": "AI-Powered Hospital Digital Transformation.",
+      "link": "/services/healthcare/carefirst"
+    },
+    {
+      "name": "Healthcare Workflow Automation (Healthcare)",
+      "description": "Modernizing healthcare delivery and patient management.",
+      "link": "/services/healthcare/healthcare-workflow-automation"
+    },
+    {
+      "name": "Medical Inventory Management System (Healthcare)",
+      "description": "Automating and managing medical inventory operations.",
+      "link": "/services/healthcare/medical-inventory-management-system"
+    },
+    {
+      "name": "InsurX (Insurance)",
+      "description": "Next-generation digital insurance platform.",
+      "link": "/insurx"
     },
     {
       "name": "Digital Insurance Claims Management Platform (Insurance)",
       "description": "End-to-end digital claims management platform.",
       "link": "/digital-insurance-claims"
+    },
+    {
+      "name": "Landmaark Developer (Real Estate)",
+      "description": "Property management and real estate operations.",
+      "link": "/landmaark-developer"
+    },
+    {
+      "name": "Smart Property Management Platform (Real Estate)",
+      "description": "Comprehensive platform for property management operations.",
+      "link": "/smart-property-management-platform"
+    },
+    {
+      "name": "Unified Property Operations Platform (Real Estate)",
+      "description": "Unified platform to manage real estate operations.",
+      "link": "/unified-property-operations-platform"
+    },
+    {
+      "name": "Cosmetics E-Commerce (Retail)",
+      "description": "Digital storefront and inventory management for cosmetics.",
+      "link": "/cosmetics-ecommerce"
+    },
+    {
+      "name": "Smart Grocery Operations (Retail)",
+      "description": "Transforming grocery operations and supply chain management.",
+      "link": "/smart-grocery-operations"
+    },
+    {
+      "name": "Omnichannel Retail Transformation (Retail)",
+      "description": "Modernizing inventory operations and creating an omnichannel retail experience.",
+      "link": "/omnichannel-retail-transformation"
+    },
+    {
+      "name": "Consumer Electronics Brand (Retail / Electronics)",
+      "description": "Retail & distribution platform for managing dealers.",
+      "link": "/consumer-electronics-brand"
+    },
+    {
+      "name": "Warehouse Management System (Retail / Logistics)",
+      "description": "Scalable logistics, inventory and eCommerce fulfilment.",
+      "link": "/warehouse-management-system"
+    },
+    {
+      "name": "Case Management System (Governance / Legal)",
+      "description": "Comprehensive case management.",
+      "link": "/case-management"
     },
     {
       "name": "Enterprise GRC Automation Platform (Governance)",
@@ -53,46 +118,6 @@
       "name": "Regulatory Compliance Management System (Governance)",
       "description": "Automated regulatory intake and compliance workflows.",
       "link": "/regulatory-compliance-management-system"
-    },
-    {
-      "name": "Smart Property Management Platform (Real Estate / Property)",
-      "description": "Comprehensive platform for property management operations.",
-      "link": "/smart-property-management-platform"
-    },
-    {
-      "name": "Unified Property Operations Platform (Real Estate / Property)",
-      "description": "Unified platform to manage real estate operations and tenant relations.",
-      "link": "/unified-property-operations-platform"
-    },
-    {
-      "name": "Omnichannel Retail Transformation & Intelligent Inventory Modernization (Retail)",
-      "description": "Modernizing inventory operations and creating an omnichannel retail experience.",
-      "link": "/omnichannel-retail-transformation-and-intelligent-inventory-modernization"
-    },
-    {
-      "name": "Smart Grocery Operations & FMCG Supply Chain Transformation (Retail / FMCG)",
-      "description": "Transforming grocery operations and supply chain management.",
-      "link": "/smart-grocery-operations-and-fmcg-supply-chain-transformation"
-    },
-    {
-      "name": "Consumer Electronics Brand (Retail / Electronics)",
-      "description": "Retail & distribution platform for managing dealers and service networks.",
-      "link": "/consumer-electronics-brand"
-    },
-    {
-      "name": "Warehouse Management System (Retail / Logistics)",
-      "description": "Scalable logistics, inventory and eCommerce fulfilment platform.",
-      "link": "/warehouse-management-system"
-    },
-    {
-      "name": "Healthcare Workflow Automation (Healthcare / Medical)",
-      "description": "Modernizing healthcare delivery and patient management operations.",
-      "link": "/services/healthcare/healthcare-workflow-automation"
-    },
-    {
-      "name": "Medical Inventory Management System (Healthcare / Medical)",
-      "description": "Automating and managing medical inventory operations.",
-      "link": "/services/healthcare/medical-inventory-management-system"
     }
   ],
   "contactEmail": "info@alviontechnologies.com",

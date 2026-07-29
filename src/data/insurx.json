@@ -1,0 +1,99 @@
+{
+  "id": "insurx",
+  "title": "InsurX – Vehicle Insurance B2B Management Platform",
+  "description": "Centralized Vehicle Insurance B2B Management Platform",
+  "industry": "Insurance & Financial Services",
+  "projectType": "Web Application (B2B Insurance Management)",
+  "platform": "Appian Low-Code Platform",
+  "overview": [
+    "InsurX is a centralized Vehicle Insurance B2B Management Platform developed to streamline the complete insurance sales and policy management process for insurance agents, brokers, dealerships, and back-office teams. The platform replaces manual operations with a unified digital system for managing customer information, vehicle details, insurance quotations, document uploads, and policy applications.",
+    "Built on the Appian Low-Code Platform, InsurX digitizes the entire insurance workflow from lead creation to application submission. It enables users to compare quotes from multiple insurers, manage supporting documents, and track application progress through a single interface, while providing management with real-time visibility into leads, applications, and overall business operations."
+  ],
+  "problemIntro": "Before implementing the platform, insurance agents relied heavily on manual processes to manage customer information, vehicle details, quotations, and policy documents. This created multiple challenges:",
+  "problems": [
+    { "title": "Scattered Records", "desc": "Delayed application processing, scattered customer records, and inefficient follow-ups due to manual processes." },
+    { "title": "Manual Quote Comparison", "desc": "Comparing insurance quotes required significant manual effort, increasing turnaround time and making it difficult to provide best options." },
+    { "title": "Poor Document Handling", "desc": "Document collection and verification handled through emails and messaging, leading to missing or duplicate documents." },
+    { "title": "Lack of Centralized System", "desc": "Managers lacked a centralized system to monitor lead progress, application status, and team performance, making it challenging to track business operations." }
+  ],
+  "solution": [
+    "We developed a centralized Vehicle Insurance B2B Management Platform that digitizes the complete insurance lifecycle.",
+    "The application enables insurance agents to manage customer details, capture vehicle information, configure insurance add-ons, compare quotes from multiple insurers, upload policy documents, and submit applications through a guided workflow.",
+    "A unified dashboard provides real-time visibility into leads, application status, and operational activities, allowing organizations to improve efficiency, reduce manual work, and deliver faster insurance services."
+  ],
+  "modules": [
+    { "num": "01", "title": "Insurance Dashboard", "desc": "Centralized view of overall performance and key policy metrics." },
+    { "num": "02", "title": "Lead Management", "desc": "Track, assign, and follow up with prospective insurance clients." },
+    { "num": "03", "title": "Customer & Vehicle Details", "desc": "Securely store and manage client and vehicle information profiles." },
+    { "num": "04", "title": "Add-On Management", "desc": "Easily configure and upsell optional insurance coverages." },
+    { "num": "05", "title": "Quote Comparison", "desc": "Instantly compare multiple insurer quotes side-by-side." },
+    { "num": "06", "title": "Document Management", "desc": "Secure upload and verification of policy-related documents." },
+    { "num": "07", "title": "Application Submission", "desc": "Guided workflows for reviewing and submitting final applications." },
+    { "num": "08", "title": "AI Quote Recommendation", "desc": "Automated suggestions for the best premium and coverage options." },
+    { "num": "09", "title": "AI Lead Scoring", "desc": "Prioritize leads based on their calculated conversion probability." },
+    { "num": "10", "title": "AI Document Validation", "desc": "Automatically detect missing or incorrect policy documents." }
+  ],
+  "outcomes": [
+    { "value": "Faster", "label": "Policy Processing" },
+    { "value": "Centralized", "label": "Management" },
+    { "value": "Improved", "label": "Visibility" },
+    { "value": "Scalable", "label": "Digital Platform" }
+  ],
+  "technologies": [
+    { "name": "Appian Low-Code Platform", "icon": "", "bg": "bg-blue-50/60" },
+    { "name": "REST APIs", "icon": "", "bg": "bg-green-50/60" },
+    { "name": "SQL Database", "icon": "", "bg": "bg-gray-50/60" }
+  ],
+  "sliderImages": [
+    "/case-studies/insurx/ins-1.jpeg",
+    "/case-studies/insurx/ins-2.jpeg",
+    "/case-studies/insurx/ins-3.jpeg",
+    "/case-studies/insurx/ins-4.jpeg",
+    "/case-studies/insurx/ins-5.jpeg",
+    "/case-studies/insurx/ins-6.jpeg",
+    "/case-studies/insurx/ins-7.jpeg",
+    "/case-studies/insurx/ins-8.jpeg"
+  ],
+  "kpiStats": [
+    {
+      "title": "Quote Processing Time",
+      "value": "Decreased",
+      "trend": "70%",
+      "trendDirection": "down",
+      "sparklineData": [100, 80, 65, 50, 40, 35, 30],
+      "sparklineColor": "#ef4444",
+      "iconType": "heart"
+    },
+    {
+      "title": "Manual Documentation",
+      "value": "Reduced",
+      "trend": "90%",
+      "trendDirection": "down",
+      "sparklineData": [100, 85, 70, 50, 30, 20, 10],
+      "sparklineColor": "#f97316",
+      "iconType": "heart"
+    },
+    {
+      "title": "Application Processing Speed",
+      "value": "Increased",
+      "trend": "65%",
+      "trendDirection": "up",
+      "sparklineData": [20, 35, 45, 60, 75, 80, 85],
+      "sparklineColor": "#10b981",
+      "iconType": "heart"
+    },
+    {
+      "title": "Operational Visibility",
+      "value": "Improved",
+      "trend": "100%",
+      "trendDirection": "up",
+      "sparklineData": [0, 20, 45, 65, 85, 95, 100],
+      "sparklineColor": "#3b82f6",
+      "iconType": "heart"
+    }
+  ],
+  "conclusion": [
+    "The InsurX Vehicle Insurance B2B platform successfully transformed a manual insurance process into a streamlined digital workflow.",
+    "By centralizing lead management, quotation comparison, document handling, and application submission, the solution improved operational efficiency, reduced processing time, and provided complete visibility across the insurance lifecycle for agents and management."
+  ]
+}

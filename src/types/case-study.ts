@@ -1,6 +1,7 @@
 export interface CaseStudyModule {
   num: string;
   title: string;
+  desc?: string;
 }
 
 export interface CaseStudyProblem {
