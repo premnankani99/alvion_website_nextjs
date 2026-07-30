@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 import { CaseStudyData } from "@/types/case-study";
-import pageData from "@/data/warehouse-management-system.json";
+import pageData from "@/data/releaseops.json";
 
-export default function WarehouseManagementPage() {
-  const sliderImages = Array.from({ length: 8 }, (_, i) => `/case-studies/Wms/w${i + 1}.png`);
+export default function ReleaseOpsCaseStudy() {
+  const sliderImages = Array.from({ length: 4 }, (_, i) => `/case-studies/releaseops/r${i + 1}.png`);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -21,7 +21,7 @@ export default function WarehouseManagementPage() {
     <div id="previews" className="w-full bg-[#f0f4f8] pt-16 pb-16 border-t border-zinc-200 mt-8 shadow-inner overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-8 text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-4">Platform Previews</h2>
-        <p className="text-gray-500 max-w-2xl mx-auto">Explore intuitive interfaces for inventory management, warehouse operations, sales analytics, and logistics insights.</p>
+        <p className="text-gray-500 max-w-2xl mx-auto">Explore the intuitive interfaces designed for release planning, deployment tracking, compliance monitoring, and governance management from a centralized platform.</p>
       </div>
 
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pb-10">
@@ -51,7 +51,7 @@ export default function WarehouseManagementPage() {
                   <div className="w-[320px] md:w-[950px] h-[220px] md:h-[550px] relative drop-shadow-2xl transition-transform duration-500 hover:scale-105">
                     <Image
                       src={src}
-                      alt={`Warehouse Platform Preview ${idx + 1}`}
+                      alt={`ReleaseOps Platform Preview ${idx + 1}`}
                       fill
                       className="object-contain"
                       unoptimized={true}

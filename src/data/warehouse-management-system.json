@@ -1,188 +1,95 @@
 {
   "id": "warehouse-management-system",
-  "title": "Warehouse Management System",
-  "description": "Global eCommerce Fulfilment Platform",
+  "title": "WMS – Warehouse Management System",
+  "description": "Warehouse Management System",
   "industry": "Logistics & eCommerce Fulfilment",
-  "projectType": "Warehouse Management Platform",
+  "projectType": "Warehouse Management System",
   "platform": "Appian Low-Code Platform",
   "overview": [
-    "A leading eCommerce fulfilment and 3PL logistics provider required a digital system to manage warehouse operations, inventory, and order processing across multiple distribution centres.",
-    "The objective was to build a scalable platform accessible via web and mobile devices to streamline operations, improve order accuracy, and provide real-time inventory visibility."
+    "WMS is a centralized Warehouse Management System built on the Appian Low-Code Platform to simplify inventory management, warehouse operations, order fulfilment, sales & lead management and AI Powered Insights. It provides a single workspace to manage stock, warehouse activities, shipments, sales, and workforce operations.",
+    "The platform replaces manual processes and disconnected systems with real-time dashboards, inventory tracking, warehouse heatmaps, and AI-powered operational insights. This helps organizations improve inventory accuracy, optimize warehouse operations, and deliver orders faster."
   ],
-  "problemIntro": "Traditional warehouse workflows lacked automation and resulted in severe delays and manual errors.",
+  "problemIntro": "The client's warehouse operations relied on manual processes and disconnected systems, making inventory and fulfilment difficult to manage.",
   "problems": [
-    {
-      "title": "Delayed Processing",
-      "desc": "High volumes of eCommerce orders overwhelmed manual processing systems."
-    },
-    {
-      "title": "Inaccurate Inventory",
-      "desc": "Lack of barcode scanning led to frequent picking errors and stock discrepancies."
-    },
-    {
-      "title": "Limited Visibility",
-      "desc": "Stakeholders had no real-time visibility into inventory and shipment status."
-    }
+    { "title": "Scattered Inventory Data", "desc": "Stock information was spread across multiple systems." },
+    { "title": "Limited Operational Visibility", "desc": "Teams lacked a real-time view of inventory and warehouse activities." },
+    { "title": "Manual Warehouse Processes", "desc": "Inventory updates and shipment tracking were time-consuming." },
+    { "title": "Poor Demand Planning", "desc": "No predictive insights for stock shortages or fulfilment risks." }
   ],
   "solution": [
-    "We developed a custom Warehouse Management System featuring a centralized web portal for managers and a ruggedized mobile application for warehouse staff.",
-    "The platform optimized picking, packing, and shipment workflows using integrated barcode scanning, significantly improving inventory accuracy and processing speed."
+    "We designed a centralized Warehouse Management System on the Appian Low-Code Platform to manage inventory, warehouse operations, shipments, sales, and workforce activities from a single platform.",
+    "The solution provides real-time dashboards, inventory management, warehouse heatmaps, fulfilment tracking, and AI-powered demand forecasting, enabling faster operations, better inventory control, and smarter business decisions."
   ],
   "modules": [
-    {
-      "num": "01",
-      "title": "Multi-Warehouse Inventory",
-      "desc": "Advanced capabilities and comprehensive tools specifically designed for multi-warehouse inventory."
-    },
-    {
-      "num": "02",
-      "title": "Order Processing Engine",
-      "desc": "Advanced capabilities and comprehensive tools specifically designed for order processing engine."
-    },
-    {
-      "num": "03",
-      "title": "Mobile Pick & Pack",
-      "desc": "Advanced capabilities and comprehensive tools specifically designed for mobile pick & pack."
-    },
-    {
-      "num": "04",
-      "title": "Barcode Validation",
-      "desc": "Advanced capabilities and comprehensive tools specifically designed for barcode validation."
-    },
-    {
-      "num": "05",
-      "title": "Shipment Integration",
-      "desc": "Advanced capabilities and comprehensive tools specifically designed for shipment integration."
-    },
-    {
-      "num": "06",
-      "title": "Real-Time Dashboards",
-      "desc": "Advanced capabilities and comprehensive tools specifically designed for real-time dashboards."
-    }
+    { "num": "01", "title": "Executive Dashboard", "desc": "Monitor warehouse KPIs, inventory, and fulfilment performance in real time." },
+    { "num": "02", "title": "Inventory Management", "desc": "Track stock levels, SKU availability, and low-stock alerts across warehouses." },
+    { "num": "03", "title": "Warehouse Operations", "desc": "Manage warehouse zones, storage capacity, equipment, and fulfilment activities." },
+    { "num": "04", "title": "Sales & Lead Management", "desc": "Track sales performance, customer leads, and regional business insights." },
+    { "num": "05", "title": "Workforce Management", "desc": "Manage employee attendance, payroll, recruitment, and warehouse staff." },
+    { "num": "06", "title": "AI Powered Insights", "desc": "Predict demand, identify stock risks, and optimize warehouse capacity using AI." }
   ],
   "outcomes": [
-    {
-      "value": "75%",
-      "label": "Faster Processing"
-    },
-    {
-      "value": "99%",
-      "label": "Inventory Accuracy"
-    },
-    {
-      "value": "100%",
-      "label": "Real-Time Visibility"
-    }
+    { "value": "100%", "label": "Centralized Inventory Visibility" },
+    { "value": "Faster", "label": "Order Fulfilment" },
+    { "value": "Improved", "label": "Inventory Accuracy" }
   ],
   "technologies": [
-    {
-      "name": "Appian Low-Code",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "Android (Kotlin)",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "RESTful APIs",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "Barcode SDK",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "Honeywell Integration",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "Process Models",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "PostgreSQL",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "Order API",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "Warehouse Dashboards",
-      "icon": "",
-      "bg": ""
-    },
-    {
-      "name": "MDM Integration",
-      "icon": "",
-      "bg": ""
-    }
+    { "name": "Appian Low-Code Platform", "icon": "", "bg": "bg-blue-50/60" },
+    { "name": "Workflow Automation", "icon": "", "bg": "bg-blue-50/60" },
+    { "name": "Dashboard & Data Visualization", "icon": "", "bg": "bg-indigo-50/60" },
+    { "name": "Responsive Design", "icon": "", "bg": "bg-blue-50/60" },
+    { "name": "AI-Powered Insights", "icon": "", "bg": "bg-indigo-50/60" }
   ],
-  "sliderImages": [],
-  "summaryText": "",
+  "sliderImages": [
+    "/case-studies/Wms/w1.png",
+    "/case-studies/Wms/w2.png",
+    "/case-studies/Wms/w3.png",
+    "/case-studies/Wms/w4.png",
+    "/case-studies/Wms/w5.png",
+    "/case-studies/Wms/w6.png",
+    "/case-studies/Wms/w7.png",
+    "/case-studies/Wms/w8.png"
+  ],
   "kpiStats": [
     {
-      "title": "Processing Time",
-      "value": "15 Mins",
-      "trend": "75%",
+      "title": "Order Fulfilment Time",
+      "value": "55%",
+      "trend": "55%",
       "trendDirection": "down",
-      "sparklineData": [
-        150,
-        130,
-        110,
-        80,
-        60,
-        50,
-        35
-      ],
+      "sparklineData": [80, 75, 70, 50, 45, 35, 30],
       "sparklineColor": "#9c27b0",
       "iconType": "clock"
     },
     {
-      "title": "Picking Errors",
-      "value": "99%",
-      "trend": "95%",
+      "title": "Manual Inventory Tracking",
+      "value": "80%",
+      "trend": "80%",
       "trendDirection": "down",
-      "sparklineData": [
-        45,
-        30,
-        20,
-        10,
-        5,
-        2,
-        1
-      ],
+      "sparklineData": [90, 80, 60, 40, 30, 20, 10],
       "sparklineColor": "#ff9800",
       "iconType": "document"
     },
     {
-      "title": "Visibility",
+      "title": "Warehouse Visibility",
       "value": "100%",
-      "trend": "90%",
+      "trend": "100%",
       "trendDirection": "up",
-      "sparklineData": [
-        10,
-        20,
-        35,
-        55,
-        75,
-        90,
-        100
-      ],
+      "sparklineData": [20, 35, 50, 70, 85, 95, 100],
       "sparklineColor": "#ffeb3b",
+      "iconType": "heart"
+    },
+    {
+      "title": "Inventory Accuracy",
+      "value": "92%",
+      "trend": "92%",
+      "trendDirection": "up",
+      "sparklineData": [40, 55, 65, 75, 82, 88, 92],
+      "sparklineColor": "#0ea5e9",
       "iconType": "heart"
     }
   ],
   "conclusion": [
-    "The custom Warehouse Management System revolutionized fulfilment operations, enabling the 3PL provider to seamlessly scale and handle surging eCommerce demand.",
-    "With mobile-enabled pick and pack workflows, warehouse staff achieved near-perfect accuracy and dramatically faster processing times across all locations."
+    "WMS centralizes warehouse operations, inventory management, and fulfilment into a single platform. By combining automation, real-time visibility, and AI-powered insights, it enables organizations to improve operational efficiency, reduce manual effort, and scale logistics operations with confidence.",
+    "Values Delivered: ✓ Faster Order Fulfilment ✓ Centralized Inventory Visibility ✓ Improved Inventory Accuracy ✓ Reduced Manual Processes ✓ Better Warehouse Utilization ✓ AI-Powered Demand Forecasting ✓ Enhanced Team Productivity ✓ Scalable Warehouse Operations"
   ]
 }

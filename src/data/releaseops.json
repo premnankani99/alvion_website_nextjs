@@ -1,0 +1,84 @@
+{
+  "id": "releaseops",
+  "title": "ReleaseOps – Release Management & Compliance Hub",
+  "description": "Release Management & Compliance Hub",
+  "industry": "Enterprise Software & DevOps",
+  "projectType": "Release Management & Compliance Hub",
+  "platform": "Release Management & Compliance Hub",
+  "overview": [
+    "ReleaseOps is a centralized Release Management & Compliance Hub designed to simplify software release planning, deployment tracking, and compliance management for enterprise DevOps teams. It provides administrators with a single workspace to manage releases, monitor deployment requests, and ensure secure, compliant software delivery.",
+    "The platform replaces fragmented manual processes with an intuitive interface featuring release dashboards, list and calendar views, deployment tracking, and governance monitoring. This enables organizations to improve release visibility, streamline collaboration, and accelerate software delivery while maintaining operational control."
+  ],
+  "problemIntro": "The release management process relied on disconnected tools and manual workflows, making releases difficult to manage efficiently.",
+  "problems": [
+    { "title": "Fragmented Release Tracking", "desc": "Release data was spread across multiple tools and spreadsheets." },
+    { "title": "Limited Visibility", "desc": "Admins lacked a centralized view of release and deployment status." },
+    { "title": "Manual Compliance Monitoring", "desc": "Compliance and security checks were tracked manually." },
+    { "title": "Delayed Coordination", "desc": "Deployment requests and approvals often caused release delays." }
+  ],
+  "solution": [
+    "We designed a centralized Release Management & Compliance Hub that digitizes the complete software release lifecycle. The solution provides administrators with a unified dashboard to plan releases, monitor deployment requests, and track release progress from one place.",
+    "The platform introduces both list and calendar views, allowing teams to easily organize upcoming releases, monitor schedules, and identify potential conflicts before deployment. Detailed release pages provide complete visibility into compliance, security checks, and deployment readiness.",
+    "By consolidating release planning, governance, and deployment tracking into a single interface, organizations can improve collaboration, reduce manual effort, and deliver software releases with greater confidence."
+  ],
+  "modules": [
+    { "num": "01", "title": "Release Dashboard", "desc": "Monitor all release activities from one place." },
+    { "num": "02", "title": "List & Calendar View", "desc": "Track and schedule releases with flexible views." },
+    { "num": "03", "title": "Release Details", "desc": "View release progress, compliance, and security status." },
+    { "num": "04", "title": "Deployment Requests", "desc": "Manage deployment requests and monitor readiness." },
+    { "num": "05", "title": "Governance & Compliance", "desc": "Ensure releases meet compliance requirements." },
+    { "num": "06", "title": "AI Release Insights", "desc": "Predict release risks and summarize deployment readiness." }
+  ],
+  "outcomes": [
+    { "value": "100%", "label": "Centralized Release Visibility" },
+    { "value": "Faster", "label": "Release Planning" },
+    { "value": "Improved", "label": "Compliance Tracking" }
+  ],
+  "technologies": [
+    { "name": "Appian Low-Code Platform", "icon": "", "bg": "bg-blue-50/60" },
+    { "name": "REST APIs", "icon": "", "bg": "bg-indigo-50/60" },
+    { "name": "Cloud Database", "icon": "", "bg": "bg-blue-50/60" }
+  ],
+  "kpiStats": [
+    {
+      "title": "Release Planning Time",
+      "value": "60%",
+      "trend": "60%",
+      "trendDirection": "down",
+      "sparklineData": [80, 75, 65, 55, 45, 40, 32],
+      "sparklineColor": "#9c27b0",
+      "iconType": "clock"
+    },
+    {
+      "title": "Manual Tracking",
+      "value": "80%",
+      "trend": "80%",
+      "trendDirection": "down",
+      "sparklineData": [90, 80, 60, 40, 30, 20, 10],
+      "sparklineColor": "#ff9800",
+      "iconType": "document"
+    },
+    {
+      "title": "Operational Visibility",
+      "value": "100%",
+      "trend": "100%",
+      "trendDirection": "up",
+      "sparklineData": [20, 35, 50, 70, 85, 95, 100],
+      "sparklineColor": "#ffeb3b",
+      "iconType": "heart"
+    },
+    {
+      "title": "Deployment Readiness",
+      "value": "70%",
+      "trend": "70%",
+      "trendDirection": "up",
+      "sparklineData": [40, 50, 60, 65, 75, 82, 85],
+      "sparklineColor": "#0ea5e9",
+      "iconType": "heart"
+    }
+  ],
+  "conclusion": [
+    "ReleaseOps transforms fragmented release operations into a centralized, transparent, and governance-driven workflow. By providing complete visibility into releases, deployment requests, and compliance activities, the platform enables organizations to deliver software faster while maintaining security and operational control.",
+    "Values Delivered: ✓ Faster Release Planning ✓ Centralized Release Visibility ✓ Improved Compliance Management ✓ Reduced Manual Tracking ✓ Enhanced Deployment Governance ✓ Better Team Collaboration ✓ Increased Operational Transparency ✓ Scalable Release Management"
+  ]
+}

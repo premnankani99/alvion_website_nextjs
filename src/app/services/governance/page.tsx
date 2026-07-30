@@ -17,6 +17,13 @@ const governanceCaseStudies = [
     date: "11/19/2025 · 1 min read",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=3600&h=2160",
     link: "/regulatory-compliance-management-system"
+  },
+  {
+    title: "ReleaseOps – Release Management & Compliance Hub",
+    desc: "",
+    date: "07/30/2026 · 1 min read",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=3600&h=2160",
+    link: "/releaseops"
   }
 ];
 

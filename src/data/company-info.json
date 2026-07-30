@@ -118,6 +118,11 @@
       "name": "Regulatory Compliance Management System (Governance)",
       "description": "Automated regulatory intake and compliance workflows.",
       "link": "/regulatory-compliance-management-system"
+    },
+    {
+      "name": "ReleaseOps (Governance / DevOps)",
+      "description": "Centralized Release Management & Compliance Hub.",
+      "link": "/releaseops"
     }
   ],
   "contactEmail": "info@alviontechnologies.com",
